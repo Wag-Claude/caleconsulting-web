@@ -101,9 +101,8 @@ Copia/borra un bloque `<article class="card">` en la sección `#services`, agreg
 
 - El correo de la empresa **no aparece en la página**. Los visitantes llenan el formulario de "solicitar consulta".
 - El formulario usa **[Web3Forms](https://web3forms.com)** (gratis hasta 250 envíos al mes), que reenvía cada solicitud al correo de Cale.
-- **Para activarlo:** en web3forms.com se escribe el correo de destino y llega una *Access Key*. Esa clave reemplaza `YOUR_WEB3FORMS_ACCESS_KEY` en `web/index.html`.
+- **Estado:** activo. La *Access Key* ya está en `web/index.html` (campo oculto `access_key`). Para cambiar el correo de destino, se genera una clave nueva en web3forms.com con el otro correo y se reemplaza ahí.
 - La clave es pública por diseño. Solo permite enviar mensajes a ese correo, así que es seguro que esté en la página.
-- Mientras no se ponga la clave, el formulario muestra un mensaje de error al enviar.
 
 ---
 

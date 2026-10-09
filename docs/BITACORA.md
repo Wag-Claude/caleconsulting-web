@@ -4,6 +4,11 @@ Registro de todo lo realizado, del más reciente al más antiguo. Agregar una en
 
 ---
 
+## 2026-10-09 — Sesión 2
+
+### 1. Formulario conectado
+- Se instaló la *Access Key* de Web3Forms en `web/index.html`. Las solicitudes llegan al correo con el que se generó la clave, que no aparece en la página.
+
 ## 2026-10-08 — Sesión 1: diseño y construcción inicial
 
 ### 5. Preparación para publicar
