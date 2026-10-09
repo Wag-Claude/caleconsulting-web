@@ -1,0 +1,56 @@
+# Bitácora del proyecto
+
+Registro de todo lo realizado, del más reciente al más antiguo. Agregar una entrada nueva arriba cada vez que se haga un cambio.
+
+---
+
+## 2026-10-08 — Sesión 1: diseño y construcción inicial
+
+### 4. Nombre más visible + proyecto organizado
+- Menú: el nombre aparece completo, **"Cale Consulting"**, en 20px ("Cale" en blanco, "Consulting" en gris claro) y también se ve en celular. El botón de menú del celular pasó a ser un ícono (☰) para dejarle espacio al nombre.
+- Portada: la etiqueta superior ahora dice **"CALE CONSULTING / Technology & AI for SMBs"**.
+- Pie de página: el nombre completo **"Cale Consulting"** en letras gigantes.
+- `logo.svg` actualizado con el nombre completo.
+- Se creó la estructura de proyecto: `README.md`, `docs/BITACORA.md`, `.claude/launch.json` y un repositorio git con el primer commit.
+- Servidor local de vista previa: configuración `cale-web` (puerto 5500).
+
+### 3. Versión 2 — contenido real del negocio, en 3 idiomas
+Información del cliente:
+- Servicios: consultoría tecnológica, adopción de IA, transformación digital, automatización de procesos y afines.
+- Público: pequeñas y medianas empresas.
+- Empresa nueva, **sin casos ni clientes todavía**. El fundador tiene más de 20 años en tecnología y una red de partners de distintas especialidades.
+- Sin logo: se diseñó uno.
+- El correo no debe mostrarse; el contacto es por un formulario de solicitud de cita.
+- Pidió imágenes acordes al estilo, animación con "brillo", y contenido en inglés con opción a español y portugués.
+
+Lo construido:
+- **Logo:** una "C" abierta con un punto naranja de "señal en vivo" (`web/assets/`).
+- **Secciones:** Portada → franja de capacidades → Servicios (4) → Cómo trabajamos (4 pasos) → Por qué Cale → Nosotros (órbita de partners) → Preguntas frecuentes → Contacto (formulario) → Pie.
+- **Se quitaron las cifras y casos inventados** de la versión 1. La credibilidad se apoya en los +20 años de experiencia y la red de partners.
+- **Animaciones:**
+  - fondo de puntos que se ilumina y sigue al mouse (canvas);
+  - resplandor naranja que "respira";
+  - borde de luz giratorio en el panel;
+  - terminal que simula un diagnóstico, con contadores (marcada "Illustrative example");
+  - destello que recorre la palabra "AI" del titular;
+  - foco de luz en las tarjetas de servicio;
+  - íconos que se dibujan al pasar el cursor;
+  - órbita de partners girando;
+  - barra de progreso en los pasos;
+  - textos que aparecen al hacer scroll;
+  - marquesina continua.
+
+  Todas se desactivan si el visitante tiene activado "reducir movimiento" en su sistema.
+- **Idiomas:** diccionario `I18N` con EN/ES/PT. Detecta el idioma del navegador y recuerda la elección.
+- **Formulario:** nombre, correo, empresa, tamaño, servicio de interés, fecha y horario preferidos, y mensaje. Envía vía Web3Forms (falta la clave), con antispam y validación.
+- **SEO básico:** título y descripción por idioma, Open Graph y datos estructurados (schema.org `ProfessionalService`).
+- Se revisó en escritorio (1440px) y en celular (360–375px): sin desbordes y sin errores en la consola.
+
+### 2. Decisión de plataforma: sitio a la medida en vez de Google Sites
+- El cliente compartió una guía de estilo (`DESIGN.md`, estética "Factory": fondo #101010, tarjetas #eeeeee, Geist 400).
+- Google Sites no permite esa tipografía, el espaciado, las tarjetas ni los radios → el cliente eligió la **opción C**: HTML estático a la medida + hosting gratuito + su dominio.
+- Versión 1 (maqueta) con textos y cifras de ejemplo.
+
+### 1. Inicio
+- Pedido original: página web de Cale Consulting en Google Sites con el dominio caleconsulting.net (Google Workspace).
+- Se entregó el cuestionario de descubrimiento y la propuesta de estructura.

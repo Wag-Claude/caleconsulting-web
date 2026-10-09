@@ -1,0 +1,1175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cale Consulting — Technology & AI Consulting for SMBs</title>
+  <meta name="description" content="Cale Consulting helps small and mid-sized businesses adopt AI, automate processes and modernize their technology.">
+  <meta property="og:title" content="Cale Consulting — Technology & AI Consulting for SMBs">
+  <meta property="og:description" content="AI adoption, process automation, digital transformation and technology consulting for small and mid-sized businesses.">
+  <meta property="og:url" content="https://caleconsulting.net/">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#101010">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500&family=Geist+Mono:wght@400&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Cale Consulting",
+    "url": "https://caleconsulting.net/",
+    "description": "Technology and AI consulting for small and mid-sized businesses: AI adoption, process automation, digital transformation and technology consulting.",
+    "knowsLanguage": ["en", "es", "pt"]
+  }
+  </script>
+  <script>document.documentElement.classList.add('js')</script>
+  <style>
+    @property --angle { syntax: '<angle>'; initial-value: 0deg; inherits: false; }
+
+    :root {
+      --canvas: #101010;
+      --deep: #0b0b0b;
+      --lift: #1d1a18;
+      --stroke: #3d3a39;
+      --graphite: #4d4947;
+      --granite: #8a8380;
+      --stone: #b8b3b0;
+      --bone: #eeeeee;
+      --chalk: #fafafa;
+      --orange: #ee6018;
+      --green: #a0ca92;
+      --ink: #101010;
+
+      --font: 'Geist', ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      --mono: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+      --max: 1200px;
+      --gutter: 24px;
+      --section: 128px;
+      --ease: cubic-bezier(0.4, 0, 0.2, 1);
+      --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; color-scheme: dark; }
+    body {
+      margin: 0; background: var(--canvas); color: var(--bone);
+      font-family: var(--font); font-weight: 400; font-size: 16px; line-height: 1.5;
+      -webkit-font-smoothing: antialiased; overflow-x: hidden;
+    }
+    a { color: inherit; text-decoration: none; }
+    svg { display: block; }
+    ::selection { background: var(--orange); color: var(--ink); }
+
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter); }
+
+    /* ---------- Tipografía ---------- */
+    .mono { font-family: var(--mono); font-size: 12px; line-height: 1.2; letter-spacing: -0.02em; text-transform: uppercase; }
+    .eyebrow { color: var(--stone); display: inline-flex; align-items: center; gap: 8px; }
+    .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--orange); flex: none; }
+    .dot.green { background: var(--green); }
+    .dot.pulse { box-shadow: 0 0 0 0 rgba(238,96,24,.6); animation: pulse 2.4s var(--ease) infinite; }
+    @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(238,96,24,.55); } 70% { box-shadow: 0 0 0 8px rgba(238,96,24,0); } 100% { box-shadow: 0 0 0 0 rgba(238,96,24,0); } }
+
+    .display { font-size: 76px; line-height: 1; letter-spacing: -0.045em; margin: 0; font-weight: 400; }
+    .h-lg { font-size: 48px; line-height: 1.08; letter-spacing: -0.03em; margin: 0; font-weight: 400; }
+    .h { font-size: 36px; line-height: 1.1; letter-spacing: -0.031em; margin: 0; font-weight: 400; }
+    .muted { color: var(--granite); }
+    .lead { font-size: 18px; color: var(--granite); max-width: 500px; margin: 28px 0 0; }
+
+    /* Brillo sobre texto */
+    .shine {
+      background: linear-gradient(110deg, var(--bone) 0%, var(--bone) 38%, #fff 46%, #ffb68f 50%, #fff 54%, var(--bone) 62%, var(--bone) 100%);
+      background-size: 300% 100%;
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+      animation: shine 6s var(--ease) infinite;
+    }
+    @keyframes shine { 0% { background-position: 100% 0; } 55%, 100% { background-position: 0% 0; } }
+
+    /* ---------- Botones ---------- */
+    .btn {
+      position: relative; overflow: hidden;
+      display: inline-flex; align-items: center; gap: 8px;
+      height: 44px; padding: 0 18px;
+      border-radius: 3px; border: 1px solid transparent;
+      font-family: var(--font); font-size: 14px; cursor: pointer; white-space: nowrap;
+      transition: background-color .2s var(--ease), color .2s var(--ease), border-color .2s var(--ease), box-shadow .3s var(--ease);
+    }
+    .btn-light { background: var(--chalk); color: var(--ink); }
+    .btn-light:hover { box-shadow: 0 0 0 1px rgba(255,255,255,.4), 0 8px 40px -8px rgba(238,96,24,.55); }
+    .btn-light::after, .btn-ink::after {
+      content: ""; position: absolute; top: 0; bottom: 0; left: -60%; width: 40%;
+      background: linear-gradient(100deg, transparent, rgba(255,255,255,.75), transparent);
+      transform: skewX(-20deg); transition: left .6s var(--ease-out);
+    }
+    .btn-ink::after { background: linear-gradient(100deg, transparent, rgba(255,255,255,.18), transparent); }
+    .btn-light:hover::after, .btn-ink:hover::after { left: 130%; }
+    .btn-ink { background: var(--ink); color: var(--bone); }
+    .btn-ink:hover { background: #24201e; }
+    .btn-ghost { background: transparent; color: var(--bone); border-color: var(--stroke); }
+    .btn-ghost:hover { color: var(--chalk); border-color: var(--granite); }
+    .btn-sm { height: 36px; padding: 0 14px; }
+    .arrow { display: inline-block; transition: transform .2s var(--ease); }
+    .btn:hover .arrow, .link:hover .arrow { transform: translateX(3px); }
+    .link { display: inline-flex; gap: 6px; align-items: center; font-size: 14px; color: var(--bone); transition: color .2s var(--ease); }
+    .link:hover { color: var(--chalk); }
+
+    /* ---------- Navegación ---------- */
+    .nav { position: fixed; inset: 0 0 auto 0; z-index: 50; transition: background-color .3s var(--ease), border-color .3s var(--ease); border-bottom: 1px solid transparent; }
+    .nav.scrolled { background: rgba(16,16,16,.78); border-bottom-color: var(--lift); backdrop-filter: saturate(140%) blur(12px); -webkit-backdrop-filter: saturate(140%) blur(12px); }
+    .nav .wrap { height: 68px; display: flex; align-items: center; gap: 24px; }
+    .brand { display: inline-flex; align-items: center; gap: 10px; }
+    .brand svg { width: 28px; height: 28px; }
+    .brand-name { font-size: 20px; font-weight: 500; letter-spacing: -0.035em; white-space: nowrap; color: var(--chalk); }
+    .brand-name em { font-style: normal; color: var(--stone); }
+    .nav-links { display: flex; gap: 28px; font-size: 14px; margin-left: auto; }
+    .nav-links a { color: var(--stone); transition: color .2s var(--ease); }
+    .nav-links a:hover { color: var(--chalk); }
+    .nav-links .only-mobile { display: none; }
+    .nav-right { display: flex; gap: 16px; align-items: center; }
+    .lang { display: flex; align-items: center; border: 1px solid var(--lift); border-radius: 3px; padding: 2px; }
+    .lang button {
+      background: none; border: 0; color: var(--granite); cursor: pointer;
+      font-family: var(--mono); font-size: 11px; padding: 6px 8px; border-radius: 2px;
+      transition: color .2s var(--ease), background-color .2s var(--ease);
+    }
+    .lang button:hover { color: var(--bone); }
+    .lang button[aria-pressed="true"] { background: var(--lift); color: var(--bone); }
+    .menu-btn { display: none; background: none; border: 1px solid var(--stroke); color: var(--bone); height: 34px; padding: 0 12px; border-radius: 3px; cursor: pointer; }
+
+    /* ---------- Hero ---------- */
+    .hero { position: relative; padding: 168px 0 var(--section); overflow: hidden; isolation: isolate; }
+    #grid {
+      position: absolute; inset: 0; width: 100%; height: 100%; z-index: -1;
+      -webkit-mask-image: radial-gradient(ellipse 80% 70% at 60% 45%, #000 30%, transparent 85%);
+      mask-image: radial-gradient(ellipse 80% 70% at 60% 45%, #000 30%, transparent 85%);
+    }
+    .hero::before {
+      content: ""; position: absolute; z-index: -1; width: 760px; height: 760px; right: -160px; top: 40px;
+      background: radial-gradient(circle, rgba(238,96,24,.22) 0%, rgba(238,96,24,.06) 35%, transparent 65%);
+      filter: blur(20px); animation: breathe 9s ease-in-out infinite;
+    }
+    @keyframes breathe { 0%,100% { opacity: .75; transform: scale(1); } 50% { opacity: 1; transform: scale(1.08); } }
+    .hero .wrap { display: grid; grid-template-columns: 6fr 6fr; gap: 64px; align-items: center; }
+    .hero .eyebrow { margin-bottom: 32px; flex-wrap: wrap; row-gap: 6px; }
+    .eyebrow-brand { color: var(--chalk); }
+    .eyebrow .sep { color: var(--graphite); }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 40px; }
+    .hero-meta { margin-top: 40px; color: var(--granite); display: flex; flex-wrap: wrap; gap: 8px 20px; }
+    .hero-meta span { display: inline-flex; align-items: center; gap: 8px; }
+
+    /* Borde con brillo giratorio */
+    .glow-frame { position: relative; border-radius: 12px; padding: 1px; background: var(--lift); }
+    .glow-frame::before {
+      content: ""; position: absolute; inset: 0; border-radius: inherit; padding: 1px;
+      background: conic-gradient(from var(--angle), transparent 0deg, transparent 250deg, rgba(238,96,24,.9) 300deg, #fff 330deg, transparent 360deg);
+      -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+      -webkit-mask-composite: xor; mask-composite: exclude;
+      animation: spin 6s linear infinite;
+    }
+    .glow-frame::after {
+      content: ""; position: absolute; inset: -40px; z-index: -1; border-radius: 40px;
+      background: radial-gradient(closest-side, rgba(238,96,24,.16), transparent);
+    }
+    @keyframes spin { to { --angle: 360deg; } }
+
+    .panel { position: relative; background: var(--deep); border-radius: 11px; overflow: hidden; }
+    .panel-bar { display: flex; align-items: center; gap: 16px; padding: 14px 16px; border-bottom: 1px solid var(--lift); color: var(--stone); }
+    .lights { display: flex; gap: 6px; }
+    .lights i { width: 10px; height: 10px; border-radius: 50%; background: var(--graphite); display: block; }
+    .panel-bar .status { margin-left: auto; display: inline-flex; align-items: center; gap: 8px; color: var(--granite); }
+    .term { padding: 22px 20px 18px; min-height: 248px; font-family: var(--mono); font-size: 13px; line-height: 1.5; }
+    .term .cmd { color: var(--bone); margin-bottom: 14px; }
+    .term .cmd b { color: var(--orange); font-weight: 400; }
+    .caret { display: inline-block; width: 7px; height: 14px; background: var(--bone); vertical-align: -2px; margin-left: 2px; animation: blink 1s steps(1) infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+    .tl { display: flex; align-items: baseline; gap: 10px; color: var(--granite); padding: 5px 0; animation: lineIn .4s var(--ease-out) both; }
+    .tl .lbl::before { content: "→ "; color: var(--graphite); }
+    .tl .lead-dots { flex: 1; border-bottom: 1px dotted var(--graphite); transform: translateY(-4px); }
+    .tl .val { color: var(--bone); }
+    .tl.done { color: var(--green); margin-top: 10px; }
+    .tl.done .lbl::before { content: "✓ "; color: var(--green); }
+    @keyframes lineIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+    .stages { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--lift); }
+    .stage { padding: 14px 16px; color: var(--graphite); display: flex; flex-direction: column; gap: 10px; transition: color .4s var(--ease); }
+    .stage + .stage { border-left: 1px solid var(--lift); }
+    .stage .bar { height: 2px; background: var(--lift); border-radius: 2px; overflow: hidden; }
+    .stage .bar i { display: block; height: 100%; width: 0; background: linear-gradient(90deg, var(--orange), #ffb68f); box-shadow: 0 0 12px rgba(238,96,24,.8); transition: width 1.2s var(--ease-out); }
+    .stage.on { color: var(--bone); }
+    .stage.on .bar i { width: 100%; }
+    .stage.ok .bar i { background: var(--green); box-shadow: 0 0 10px rgba(160,202,146,.6); }
+    .panel-foot { display: flex; justify-content: space-between; gap: 16px; padding: 12px 16px; border-top: 1px solid var(--lift); color: var(--graphite); }
+
+    /* ---------- Marquesina ---------- */
+    .marquee { border-block: 1px solid var(--lift); padding: 22px 0; overflow: hidden;
+      -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+      mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent); }
+    .marquee-track { display: flex; width: max-content; animation: marquee 48s linear infinite; }
+    .marquee-track span { display: inline-flex; align-items: center; gap: 28px; padding-right: 28px; color: var(--granite); font-size: 20px; letter-spacing: -0.03em; white-space: nowrap; }
+    .marquee-track span::after { content: ""; width: 5px; height: 5px; border-radius: 50%; background: var(--graphite); }
+    @keyframes marquee { to { transform: translateX(-50%); } }
+
+    /* ---------- Secciones ---------- */
+    section[id] { scroll-margin-top: 72px; }
+    .section { padding: var(--section) 0 0; }
+    .section-head { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: end; margin-bottom: 56px; }
+    .section-head .eyebrow { margin-bottom: 24px; }
+    .section-head p { margin: 0; max-width: 480px; }
+
+    /* Tarjetas de servicio con foco de luz */
+    .cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .card {
+      position: relative; overflow: hidden; isolation: isolate;
+      border: 1px solid var(--lift); border-radius: 10px; padding: 24px;
+      display: flex; flex-direction: column; min-height: 400px; background: rgba(13,13,13,.6);
+      transition: border-color .3s var(--ease), transform .4s var(--ease-out);
+    }
+    .card::before {
+      content: ""; position: absolute; inset: 0; z-index: -1; opacity: 0; transition: opacity .3s var(--ease);
+      background: radial-gradient(360px circle at var(--mx, 50%) var(--my, 0%), rgba(238,96,24,.14), transparent 60%);
+    }
+    .card:hover { border-color: var(--stroke); transform: translateY(-4px); }
+    .card:hover::before { opacity: 1; }
+    .card .top { display: flex; justify-content: space-between; align-items: flex-start; }
+    .card .num { color: var(--granite); }
+    .icon { width: 48px; height: 48px; color: var(--bone); }
+    .icon .acc { color: var(--orange); }
+    .icon .draw { stroke-dasharray: 120; stroke-dashoffset: 0; }
+    .card:hover .icon .draw { animation: draw 1.1s var(--ease-out); }
+    @keyframes draw { from { stroke-dashoffset: 120; } to { stroke-dashoffset: 0; } }
+    .card h3 { font-size: 24px; line-height: 1.15; letter-spacing: -0.025em; font-weight: 400; margin: 72px 0 14px; }
+    .card p { color: var(--granite); font-size: 14px; line-height: 1.5; margin: 0 0 20px; }
+    .card .tags { color: var(--stone); margin-bottom: 24px; font-size: 11px; }
+    .card .link { margin-top: auto; }
+
+    /* Metodología */
+    .steps { display: grid; grid-template-columns: repeat(4, 1fr); position: relative; }
+    .steps::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: var(--stroke); }
+    .steps .progress { position: absolute; top: 0; left: 0; height: 1px; width: 0; background: linear-gradient(90deg, var(--orange), #ffb68f); box-shadow: 0 0 12px rgba(238,96,24,.8); transition: width 2.4s var(--ease-out); }
+    .steps.in .progress { width: 100%; }
+    .step { padding: 28px 24px 0 0; }
+    .step + .step { padding-left: 24px; border-left: 1px solid var(--lift); }
+    .step .mono { color: var(--stone); display: flex; align-items: center; gap: 8px; }
+    .step h3 { font-size: 24px; letter-spacing: -0.025em; font-weight: 400; margin: 40px 0 10px; }
+    .step p { color: var(--granite); font-size: 14px; line-height: 1.5; margin: 0; }
+
+    /* Tarjeta clara */
+    .bone { position: relative; background: var(--bone); color: var(--ink); border-radius: 20px; padding: 64px; overflow: hidden; }
+    .bone::after {
+      content: ""; position: absolute; inset: 0; pointer-events: none; opacity: .2; mix-blend-mode: multiply;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='.6'/></svg>");
+    }
+    .bone > * { position: relative; z-index: 1; }
+    .why { display: grid; grid-template-columns: 7fr 5fr; gap: 64px; }
+    .why .eyebrow { color: var(--graphite); margin-bottom: 32px; }
+    .why p { color: var(--graphite); font-size: 17px; max-width: 560px; margin: 28px 0 0; }
+    .why-stats { display: grid; align-content: end; }
+    .why-stats div { padding: 22px 0; border-top: 1px solid #cfccca; }
+    .why-stats .v { font-size: 48px; line-height: 1; letter-spacing: -0.035em; }
+    .why-stats .l { color: var(--graphite); margin-top: 12px; }
+
+    /* Nosotros + órbita */
+    .about { display: grid; grid-template-columns: 6fr 6fr; gap: 64px; align-items: center; }
+    .about .eyebrow { margin-bottom: 24px; }
+    .about-body p { color: var(--granite); margin: 20px 0 0; max-width: 520px; }
+    .orbit-box {
+      position: relative; border: 1px solid var(--lift); border-radius: 20px; aspect-ratio: 1; overflow: hidden;
+      background:
+        radial-gradient(circle at 50% 50%, rgba(238,96,24,.14), transparent 55%),
+        linear-gradient(var(--lift) 1px, transparent 1px) 0 0 / 32px 32px,
+        linear-gradient(90deg, var(--lift) 1px, transparent 1px) 0 0 / 32px 32px,
+        var(--deep);
+    }
+    .orbit-box::after { content: ""; position: absolute; inset: 0; background: radial-gradient(circle, transparent 40%, var(--deep) 85%); pointer-events: none; }
+    .orbit-box svg { position: relative; z-index: 1; width: 100%; height: 100%; }
+    .orbit-box text { font-family: var(--mono); font-size: 11px; text-transform: uppercase; fill: var(--stone); letter-spacing: -0.2px; }
+    .flow { stroke-dasharray: 3 9; animation: flow 1.6s linear infinite; }
+    @keyframes flow { to { stroke-dashoffset: -24; } }
+    .orbit-caption { position: absolute; z-index: 2; left: 20px; bottom: 18px; color: var(--granite); display: flex; align-items: center; gap: 8px; }
+
+    /* FAQ */
+    .faq { display: grid; grid-template-columns: 5fr 7fr; gap: 64px; }
+    .faq .eyebrow { margin-bottom: 24px; }
+    details { border-top: 1px solid var(--lift); }
+    details:last-child { border-bottom: 1px solid var(--lift); }
+    summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; gap: 24px; padding: 24px 0; font-size: 20px; letter-spacing: -0.02em; transition: color .2s var(--ease); }
+    summary::-webkit-details-marker { display: none; }
+    summary:hover { color: var(--chalk); }
+    summary .plus { font-family: var(--mono); color: var(--granite); transition: transform .3s var(--ease); flex: none; }
+    details[open] summary .plus { transform: rotate(45deg); color: var(--orange); }
+    details p { color: var(--granite); margin: 0; padding: 0 48px 24px 0; max-width: 640px; }
+
+    /* Contacto */
+    .contact { position: relative; isolation: isolate; }
+    main { overflow-x: hidden; overflow-x: clip; }
+    .contact::before {
+      content: ""; position: absolute; z-index: -1; left: 50%; top: 40%; width: 1000px; height: 700px; transform: translate(-50%, -50%);
+      background: radial-gradient(closest-side, rgba(238,96,24,.12), transparent);
+    }
+    .contact-grid { display: grid; grid-template-columns: 5fr 7fr; gap: 16px; }
+    .contact .bone { border-radius: 12px; padding: 48px; display: flex; flex-direction: column; }
+    .contact .bone .eyebrow { color: var(--ink); margin-bottom: 28px; }
+    .contact .bone > p { color: var(--graphite); margin: 20px 0 32px; }
+    .benefits { list-style: none; margin: auto 0 0; padding: 0; }
+    .benefits li { padding: 14px 0; border-top: 1px solid #cfccca; display: flex; gap: 10px; align-items: center; font-size: 15px; }
+    .benefits li::before { content: "→"; font-family: var(--mono); color: var(--orange); }
+    form.book { border: 1px solid var(--lift); border-radius: 12px; padding: 40px; background: rgba(11,11,11,.8); display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .field { display: flex; flex-direction: column; gap: 8px; }
+    .field.full { grid-column: 1 / -1; }
+    .field label { color: var(--stone); }
+    .field label .req { color: var(--orange); }
+    .field input, .field select, .field textarea {
+      width: 100%; background: var(--deep); border: 1px solid var(--lift); border-radius: 3px; color: var(--bone);
+      font-family: var(--font); font-size: 15px; padding: 12px 14px; outline: none;
+      transition: border-color .2s var(--ease), box-shadow .2s var(--ease);
+    }
+    .field textarea { min-height: 120px; resize: vertical; line-height: 1.5; }
+    .field select { appearance: none; -webkit-appearance: none; padding-right: 36px; cursor: pointer;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6'><path d='M1 1l4 4 4-4' fill='none' stroke='%238a8380' stroke-width='1.4'/></svg>");
+      background-repeat: no-repeat; background-position: right 14px center; }
+    .field input::placeholder, .field textarea::placeholder { color: var(--graphite); }
+    .field input:focus, .field select:focus, .field textarea:focus { border-color: var(--stone); box-shadow: 0 0 0 3px rgba(238,96,24,.15); }
+    .form-foot { grid-column: 1 / -1; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; margin-top: 4px; }
+    .form-foot .note { color: var(--granite); font-size: 13px; max-width: 320px; }
+    .form-status { grid-column: 1 / -1; font-size: 14px; padding: 14px 16px; border-radius: 3px; display: none; }
+    .form-status.ok { display: block; background: rgba(160,202,146,.1); color: var(--green); border: 1px solid rgba(160,202,146,.3); }
+    .form-status.err { display: block; background: rgba(238,96,24,.1); color: #ffb68f; border: 1px solid rgba(238,96,24,.3); }
+    .hp { position: absolute; left: -9999px; }
+
+    /* Footer */
+    footer { margin-top: var(--section); padding: 96px 0 48px; border-top: 1px solid var(--lift); }
+    .foot { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 32px; }
+    .foot h4 { margin: 0 0 20px; font-weight: 500; color: var(--bone); }
+    .foot ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; font-size: 14px; }
+    .foot ul a { color: var(--granite); transition: color .2s var(--ease); }
+    .foot ul a:hover { color: var(--bone); }
+    .foot-tag { color: var(--granite); font-size: 14px; max-width: 300px; margin: 20px 0 0; }
+    .legal { display: flex; justify-content: space-between; gap: 16px; margin-top: 96px; color: var(--graphite); flex-wrap: wrap; }
+    .bigword { margin-top: 64px; font-size: clamp(40px, 12.4vw, 156px); line-height: .9; letter-spacing: -0.055em; white-space: nowrap; font-weight: 500; text-align: center;
+      background: linear-gradient(180deg, var(--stroke), var(--canvas) 95%); -webkit-background-clip: text; background-clip: text; color: transparent; user-select: none; }
+
+    /* Aparición al hacer scroll */
+    .js .rv { opacity: 0; transform: translateY(20px); transition: opacity .9s var(--ease-out), transform .9s var(--ease-out); transition-delay: var(--d, 0s); }
+    .js .rv.in { opacity: 1; transform: none; }
+
+    /* ---------- Responsive ---------- */
+    @media (max-width: 1080px) {
+      .display { font-size: 60px; }
+      .hero .wrap, .about, .why, .section-head, .contact-grid, .faq { grid-template-columns: 1fr; }
+      .hero .wrap { gap: 56px; }
+      .cards, .steps { grid-template-columns: 1fr 1fr; }
+      .card { min-height: 340px; }
+      .step:nth-child(4) { padding-left: 0; border-left: 0; }
+      .step:nth-child(n+4) { padding-top: 48px; }
+      .orbit-box { max-width: 520px; width: 100%; margin: 0 auto; }
+      .foot { grid-template-columns: 1fr 1fr; }
+      .nav-links { gap: 20px; }
+    }
+    @media (max-width: 860px) {
+      .nav-links { display: none; }
+      .menu-btn { display: inline-flex; align-items: center; }
+      .nav-right .btn { display: none; }
+      .nav-right { margin-left: auto; }
+      .nav.open { background: var(--canvas); border-bottom-color: var(--lift); }
+      .nav.open .nav-links {
+        display: flex; flex-direction: column; gap: 0; position: absolute; top: 68px; left: 0; right: 0;
+        background: var(--canvas); border-bottom: 1px solid var(--lift); padding: 8px var(--gutter) 20px;
+      }
+      .nav.open .nav-links a { padding: 16px 0; border-bottom: 1px solid var(--lift); font-size: 16px; color: var(--bone); }
+      .nav.open .nav-links .only-mobile { display: block; color: var(--orange); border-bottom: 0; }
+    }
+    @media (max-width: 640px) {
+      :root { --gutter: 16px; --section: 96px; }
+      .nav .wrap { gap: 10px; }
+      .nav-right { gap: 8px; }
+      .brand { gap: 8px; }
+      .brand svg { width: 24px; height: 24px; }
+      .brand-name { font-size: 17px; }
+      .lang button { padding: 6px 6px; }
+      .menu-btn { padding: 0 9px; }
+      .hero { padding-top: 120px; }
+      .display { font-size: 46px; letter-spacing: -0.04em; }
+      .h-lg { font-size: 34px; }
+      .h { font-size: 30px; }
+      .lead { font-size: 16px; }
+      .cards, .steps { grid-template-columns: 1fr; }
+      .card { min-height: 0; }
+      .card h3 { margin-top: 48px; }
+      .step, .step + .step { padding: 28px 0 0; border-left: 0; }
+      .step:nth-child(n+2) { padding-top: 40px; }
+      .step h3 { margin-top: 24px; }
+      .term { font-size: 12px; padding: 18px 14px; min-height: 236px; }
+      .stage { padding: 12px 10px; font-size: 10px; }
+      .panel-bar .title { display: none; }
+      .bone { padding: 36px 24px; }
+      .contact .bone { padding: 32px 24px; }
+      form.book { grid-template-columns: 1fr; padding: 24px 18px; }
+      .why-stats .v { font-size: 40px; }
+      summary { font-size: 18px; }
+      details p { padding-right: 0; }
+      .foot { grid-template-columns: 1fr; }
+      .legal { margin-top: 56px; }
+      .marquee-track span { font-size: 17px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation: none !important; transition-duration: .01ms !important; }
+      .js .rv { opacity: 1; transform: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVEGACIÓN ===== -->
+  <header class="nav" id="nav">
+    <div class="wrap">
+      <a href="#top" class="brand" aria-label="Cale Consulting">
+        <svg viewBox="0 0 28 28" aria-hidden="true"><path d="M21.07 6.93A10 10 0 1 0 21.07 21.07" fill="none" stroke="#eeeeee" stroke-width="3.2"/><circle cx="22.6" cy="14" r="2.6" fill="#ee6018"/></svg>
+        <span class="brand-name">Cale <em>Consulting</em></span>
+      </a>
+      <nav class="nav-links" aria-label="Main">
+        <a href="#services" data-i="nav.services">Services</a>
+        <a href="#approach" data-i="nav.approach">Approach</a>
+        <a href="#why" data-i="nav.why">Why Cale</a>
+        <a href="#about" data-i="nav.about">About</a>
+        <a href="#faq" data-i="nav.faq">FAQ</a>
+        <a href="#contact" class="only-mobile" data-i="nav.cta">Book a consultation</a>
+      </nav>
+      <div class="nav-right">
+        <div class="lang" role="group" aria-label="Language">
+          <button type="button" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang="es" aria-pressed="false">ES</button>
+          <button type="button" data-lang="pt" aria-pressed="false">PT</button>
+        </div>
+        <a href="#contact" class="btn btn-light btn-sm" data-i="nav.cta">Book a consultation</a>
+        <button class="menu-btn" type="button" id="menuBtn" aria-expanded="false" aria-label="Menu"><svg width="16" height="12" viewBox="0 0 16 12" aria-hidden="true"><path d="M0 1h16M0 6h16M0 11h16" stroke="currentColor" stroke-width="1.4"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <canvas id="grid" aria-hidden="true"></canvas>
+      <div class="wrap">
+        <div>
+          <span class="eyebrow mono rv"><span class="dot pulse"></span><span class="eyebrow-brand">Cale Consulting</span><span class="sep">/</span><span data-i="hero.eyebrow">Technology &amp; AI for SMBs</span></span>
+          <h1 class="display rv" style="--d:.08s" data-ih="hero.title">Put <span class="shine">AI</span> to work in your business.</h1>
+          <p class="lead rv" style="--d:.16s" data-i="hero.lead">We help small and mid-sized companies adopt AI, automate repetitive work and modernize their technology — with senior guidance and a clear return on every step.</p>
+          <div class="hero-actions rv" style="--d:.24s">
+            <a href="#contact" class="btn btn-light"><span data-i="hero.cta1">Book a free consultation</span> <span class="arrow">→</span></a>
+            <a href="#services" class="btn btn-ghost" data-i="hero.cta2">Explore services</a>
+          </div>
+          <div class="hero-meta mono rv" style="--d:.32s">
+            <span><span class="dot green"></span><span data-i="hero.m1">20+ years in technology</span></span>
+            <span><span class="dot green"></span><span data-i="hero.m2">Specialist partner network</span></span>
+            <span><span class="dot green"></span><span data-i="hero.m3">Built for SMBs</span></span>
+          </div>
+        </div>
+
+        <div class="glow-frame rv" style="--d:.2s">
+          <div class="panel">
+            <div class="panel-bar mono">
+              <span class="lights"><i></i><i></i><i></i></span>
+              <span class="title">cale — readiness-assessment</span>
+              <span class="status"><span class="dot pulse"></span><span data-i="term.status">Running</span></span>
+            </div>
+            <div class="term" id="term" aria-live="off"></div>
+            <div class="stages mono">
+              <div class="stage" id="st1"><span data-i="term.s1">Assess</span><span class="bar"><i></i></span></div>
+              <div class="stage" id="st2"><span data-i="term.s2">Pilot</span><span class="bar"><i></i></span></div>
+              <div class="stage" id="st3"><span data-i="term.s3">Scale</span><span class="bar"><i></i></span></div>
+            </div>
+            <div class="panel-foot mono"><span data-i="term.foot">Illustrative example</span><span>v1.0</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MARQUESINA ===== -->
+    <div class="marquee" aria-hidden="true"><div class="marquee-track" id="marquee"></div></div>
+
+    <!-- ===== SERVICIOS ===== -->
+    <section class="section" id="services">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow mono rv"><span class="dot"></span><span data-i="sv.eyebrow">Services</span></span>
+            <h2 class="h-lg rv" style="--d:.08s" data-i="sv.title">Technology that pays for itself.</h2>
+          </div>
+          <p class="muted rv" style="--d:.16s" data-i="sv.sub">Four practices, one goal: less manual work, better decisions and a business ready to grow.</p>
+        </div>
+        <div class="cards">
+          <article class="card rv">
+            <div class="top">
+              <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+                <path class="draw" d="M20 6c1.2 8.5 5.5 12.8 14 14-8.5 1.2-12.8 5.5-14 14-1.2-8.5-5.5-12.8-14-14 8.5-1.2 12.8-5.5 14-14z"/>
+                <path class="acc draw" d="M37 28c.6 3.6 2.4 5.4 6 6-3.6.6-5.4 2.4-6 6-.6-3.6-2.4-5.4-6-6 3.6-.6 5.4-2.4 6-6z" stroke="currentColor"/>
+              </svg>
+              <span class="num mono">01</span>
+            </div>
+            <h3 data-i="sv.1.t">AI Adoption</h3>
+            <p data-i="sv.1.d">We find where AI creates real value, choose the right tools and train your team to use them safely — from assistants to custom agents.</p>
+            <div class="tags mono" data-i="sv.1.g">GenAI · Agents · Training</div>
+            <a href="#contact" class="link"><span data-i="sv.link">Talk to us</span> <span class="arrow">→</span></a>
+          </article>
+          <article class="card rv" style="--d:.08s">
+            <div class="top">
+              <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+                <path class="draw" d="M38 18a15 15 0 0 0-27-4"/><path d="M10 7v7h7"/>
+                <path class="draw" d="M10 30a15 15 0 0 0 27 4"/><path d="M38 41v-7h-7"/>
+                <circle class="acc" cx="24" cy="24" r="3" fill="currentColor" stroke="none"/>
+              </svg>
+              <span class="num mono">02</span>
+            </div>
+            <h3 data-i="sv.2.t">Process Automation</h3>
+            <p data-i="sv.2.d">We remove repetitive tasks across sales, finance and operations by connecting your systems and automating workflows end to end.</p>
+            <div class="tags mono" data-i="sv.2.g">Workflows · Integrations · RPA</div>
+            <a href="#contact" class="link"><span data-i="sv.link">Talk to us</span> <span class="arrow">→</span></a>
+          </article>
+          <article class="card rv" style="--d:.16s">
+            <div class="top">
+              <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+                <path class="draw" d="M24 8l18 9-18 9-18-9z"/>
+                <path class="draw" d="M6 24l18 9 18-9"/>
+                <path class="acc draw" d="M6 31l18 9 18-9" stroke="currentColor"/>
+              </svg>
+              <span class="num mono">03</span>
+            </div>
+            <h3 data-i="sv.3.t">Digital Transformation</h3>
+            <p data-i="sv.3.d">We modernize how your company works: cloud, data and digital processes that grow with your business instead of holding it back.</p>
+            <div class="tags mono" data-i="sv.3.g">Cloud · Data · Digital processes</div>
+            <a href="#contact" class="link"><span data-i="sv.link">Talk to us</span> <span class="arrow">→</span></a>
+          </article>
+          <article class="card rv" style="--d:.24s">
+            <div class="top">
+              <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+                <circle class="draw" cx="24" cy="24" r="17"/>
+                <path class="acc draw" d="M30.5 17.5l-4 9-9 4 4-9z" stroke="currentColor"/>
+                <path d="M24 4v4M24 40v4M4 24h4M40 24h4"/>
+              </svg>
+              <span class="num mono">04</span>
+            </div>
+            <h3 data-i="sv.4.t">Technology Consulting</h3>
+            <p data-i="sv.4.d">Senior advice on architecture, software selection, security and IT strategy — like having a CTO on call, without the full-time cost.</p>
+            <div class="tags mono" data-i="sv.4.g">Strategy · Architecture · Security</div>
+            <a href="#contact" class="link"><span data-i="sv.link">Talk to us</span> <span class="arrow">→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ENFOQUE ===== -->
+    <section class="section" id="approach">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow mono rv"><span class="dot"></span><span data-i="ap.eyebrow">How we work</span></span>
+            <h2 class="h-lg rv" style="--d:.08s" data-i="ap.title">From idea to results, in small, safe steps.</h2>
+          </div>
+          <p class="muted rv" style="--d:.16s" data-i="ap.sub">No never-ending projects. Every phase delivers something you can use and measure before you invest in the next one.</p>
+        </div>
+        <div class="steps rv" id="steps">
+          <span class="progress"></span>
+          <div class="step">
+            <span class="mono"><span class="dot"></span><span data-i="ap.1.k">01 · Weeks 1–2</span></span>
+            <h3 data-i="ap.1.t">Diagnose</h3>
+            <p data-i="ap.1.d">We map your processes, systems and data to find where technology saves the most time and money.</p>
+          </div>
+          <div class="step">
+            <span class="mono"><span class="dot"></span><span data-i="ap.2.k">02 · Week 3</span></span>
+            <h3 data-i="ap.2.t">Roadmap</h3>
+            <p data-i="ap.2.d">A prioritized plan with costs, timelines and expected return — in plain language.</p>
+          </div>
+          <div class="step">
+            <span class="mono"><span class="dot"></span><span data-i="ap.3.k">03 · Weeks 4–8</span></span>
+            <h3 data-i="ap.3.t">Pilot</h3>
+            <p data-i="ap.3.d">We build and launch the first quick win alongside your team, so results show up early.</p>
+          </div>
+          <div class="step">
+            <span class="mono"><span class="dot green"></span><span data-i="ap.4.k">04 · Ongoing</span></span>
+            <h3 data-i="ap.4.t">Scale</h3>
+            <p data-i="ap.4.d">We extend what works, train your people and stay on as your technology partner.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== POR QUÉ CALE ===== -->
+    <section class="section" id="why">
+      <div class="wrap">
+        <div class="bone rv">
+          <div class="why">
+            <div>
+              <span class="eyebrow mono"><span class="dot"></span><span data-i="why.eyebrow">Why Cale</span></span>
+              <h2 class="h-lg" data-i="why.title">Senior expertise, without big-firm overhead.</h2>
+              <p data-i="why.body">Large consultancies are built for large budgets. Cale brings the same depth of experience to small and mid-sized companies, with direct access to the people doing the work and a network of specialized partners for every challenge.</p>
+            </div>
+            <div class="why-stats">
+              <div><div class="v">20+</div><div class="l mono" data-i="why.s1">Years in technology</div></div>
+              <div><div class="v">1:1</div><div class="l mono" data-i="why.s2">Direct access to a senior lead</div></div>
+              <div><div class="v">ROI</div><div class="l mono" data-i="why.s3">Every initiative tied to a business result</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== NOSOTROS ===== -->
+    <section class="section" id="about">
+      <div class="wrap about">
+        <div class="about-body">
+          <span class="eyebrow mono rv"><span class="dot"></span><span data-i="ab.eyebrow">About</span></span>
+          <h2 class="h-lg rv" style="--d:.08s" data-i="ab.title">Built on two decades of technology experience.</h2>
+          <p class="rv" style="--d:.16s" data-i="ab.p1">Cale Consulting is built on more than 20 years of hands-on experience designing, implementing and managing technology for organizations of every size.</p>
+          <p class="rv" style="--d:.22s" data-i="ab.p2">We work with a network of trusted partners across cloud, data, cybersecurity, software development and AI — so you get the right specialist for each challenge, coordinated by a single point of contact.</p>
+        </div>
+        <div class="orbit-box rv" style="--d:.12s">
+          <svg viewBox="0 0 400 400" id="orbit" aria-hidden="true">
+            <defs>
+              <radialGradient id="core" cx="50%" cy="50%" r="50%">
+                <stop offset="0" stop-color="#ee6018" stop-opacity=".55"/>
+                <stop offset="1" stop-color="#ee6018" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <circle cx="200" cy="200" r="88" fill="none" stroke="#3d3a39" stroke-dasharray="2 6"/>
+            <circle cx="200" cy="200" r="150" fill="none" stroke="#1d1a18"/>
+            <g>
+              <animateTransform attributeName="transform" type="rotate" from="0 200 200" to="360 200 200" dur="90s" repeatCount="indefinite"/>
+              <g stroke="#ee6018" stroke-opacity=".55" stroke-width="1">
+                <line class="flow" x1="200" y1="200" x2="350" y2="200"/>
+                <line class="flow" x1="200" y1="200" x2="275" y2="330"/>
+                <line class="flow" x1="200" y1="200" x2="125" y2="330"/>
+                <line class="flow" x1="200" y1="200" x2="50" y2="200"/>
+                <line class="flow" x1="200" y1="200" x2="125" y2="70"/>
+                <line class="flow" x1="200" y1="200" x2="275" y2="70"/>
+              </g>
+              <g transform="translate(350 200)"><g><animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="90s" repeatCount="indefinite"/><circle r="5" fill="#eeeeee"/><text y="24" text-anchor="middle" data-i="orb.1">AI</text></g></g>
+              <g transform="translate(275 330)"><g><animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="90s" repeatCount="indefinite"/><circle r="5" fill="#eeeeee"/><text y="24" text-anchor="middle" data-i="orb.2">Cloud</text></g></g>
+              <g transform="translate(125 330)"><g><animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="90s" repeatCount="indefinite"/><circle r="5" fill="#a0ca92"/><text y="24" text-anchor="middle" data-i="orb.3">Data</text></g></g>
+              <g transform="translate(50 200)"><g><animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="90s" repeatCount="indefinite"/><circle r="5" fill="#eeeeee"/><text y="24" text-anchor="middle" data-i="orb.4">Security</text></g></g>
+              <g transform="translate(125 70)"><g><animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="90s" repeatCount="indefinite"/><circle r="5" fill="#eeeeee"/><text y="24" text-anchor="middle" data-i="orb.5">Software</text></g></g>
+              <g transform="translate(275 70)"><g><animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="90s" repeatCount="indefinite"/><circle r="5" fill="#a0ca92"/><text y="24" text-anchor="middle" data-i="orb.6">Automation</text></g></g>
+            </g>
+            <circle cx="200" cy="200" r="70" fill="url(#core)">
+              <animate attributeName="r" values="60;78;60" dur="5s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="200" cy="200" r="34" fill="#101010" stroke="#3d3a39"/>
+            <g transform="translate(186 186)">
+              <path d="M21.07 6.93A10 10 0 1 0 21.07 21.07" fill="none" stroke="#eeeeee" stroke-width="3.2"/>
+              <circle cx="22.6" cy="14" r="2.6" fill="#ee6018"/>
+            </g>
+          </svg>
+          <span class="orbit-caption mono"><span class="dot pulse"></span><span data-i="orb.cap">Partner network</span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section" id="faq">
+      <div class="wrap faq">
+        <div>
+          <span class="eyebrow mono rv"><span class="dot"></span><span data-i="faq.eyebrow">FAQ</span></span>
+          <h2 class="h-lg rv" style="--d:.08s" data-i="faq.title">Questions, answered.</h2>
+        </div>
+        <div class="rv" style="--d:.12s">
+          <details><summary><span data-i="faq.q1">Is AI really useful for a company our size?</span><span class="plus">+</span></summary><p data-i="faq.a1">Yes — often more than for large companies, because small teams feel every hour saved. We start with practical, low-cost use cases such as document processing, customer service and reporting.</p></details>
+          <details><summary><span data-i="faq.q2">Do we need to replace our current systems?</span><span class="plus">+</span></summary><p data-i="faq.a2">Usually not. We prefer to connect and get more out of the tools you already have, and only recommend new software when the return is clear.</p></details>
+          <details><summary><span data-i="faq.q3">How much does a project cost?</span><span class="plus">+</span></summary><p data-i="faq.a3">It depends on the scope. The first consultation is free, and after the diagnosis you receive a written proposal with scope, timeline and cost before any commitment.</p></details>
+          <details><summary><span data-i="faq.q4">Do you work remotely?</span><span class="plus">+</span></summary><p data-i="faq.a4">Yes. We work remotely with clients in English, Spanish and Portuguese, and on-site when the project calls for it.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACTO ===== -->
+    <section class="section contact" id="contact">
+      <div class="wrap contact-grid">
+        <div class="bone rv">
+          <span class="eyebrow mono"><span class="dot pulse"></span><span data-i="ct.eyebrow">Free 30-minute consultation</span></span>
+          <h2 class="h" data-i="ct.title">Let's talk about your business.</h2>
+          <p data-i="ct.sub">Tell us a little about your company and what you'd like to improve. We'll get back to you within one business day to schedule a call.</p>
+          <ul class="benefits">
+            <li data-i="ct.b1">A clear view of your quick wins</li>
+            <li data-i="ct.b2">Honest advice, no strings attached</li>
+            <li data-i="ct.b3">Next steps you can act on</li>
+          </ul>
+        </div>
+
+        <!-- Formulario: envía a Web3Forms, que reenvía al correo de Cale sin mostrarlo en la página. -->
+        <form class="book rv" style="--d:.1s" id="bookForm" novalidate>
+          <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+          <input type="hidden" name="subject" value="New consultation request — caleconsulting.net">
+          <input type="hidden" name="from_name" value="Cale Consulting website">
+          <input type="hidden" name="language" id="formLang" value="en">
+          <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off">
+
+          <div class="field">
+            <label class="mono" for="f-name"><span data-i="f.name">Name</span> <span class="req">*</span></label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label class="mono" for="f-email"><span data-i="f.email">Work email</span> <span class="req">*</span></label>
+            <input id="f-email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label class="mono" for="f-company"><span data-i="f.company">Company</span> <span class="req">*</span></label>
+            <input id="f-company" name="company" type="text" autocomplete="organization" required>
+          </div>
+          <div class="field">
+            <label class="mono" for="f-size" data-i="f.size">Company size</label>
+            <select id="f-size" name="company_size">
+              <option value="1-10" data-i="f.size1">1–10 employees</option>
+              <option value="11-50" data-i="f.size2">11–50 employees</option>
+              <option value="51-200" data-i="f.size3">51–200 employees</option>
+              <option value="200+" data-i="f.size4">200+ employees</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label class="mono" for="f-topic" data-i="f.topic">I'm interested in</label>
+            <select id="f-topic" name="interest">
+              <option value="AI Adoption" data-i="sv.1.t">AI Adoption</option>
+              <option value="Process Automation" data-i="sv.2.t">Process Automation</option>
+              <option value="Digital Transformation" data-i="sv.3.t">Digital Transformation</option>
+              <option value="Technology Consulting" data-i="sv.4.t">Technology Consulting</option>
+              <option value="Not sure yet" data-i="f.topic5">Not sure yet</option>
+            </select>
+          </div>
+          <div class="field">
+            <label class="mono" for="f-date" data-i="f.date">Preferred date</label>
+            <input id="f-date" name="preferred_date" type="date">
+          </div>
+          <div class="field">
+            <label class="mono" for="f-time" data-i="f.time">Preferred time</label>
+            <select id="f-time" name="preferred_time">
+              <option value="Morning" data-i="f.time1">Morning</option>
+              <option value="Afternoon" data-i="f.time2">Afternoon</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label class="mono" for="f-msg" data-i="f.msg">Message</label>
+            <textarea id="f-msg" name="message" data-ph="f.msgph" placeholder="What would you like to improve?"></textarea>
+          </div>
+          <div class="form-status" id="formStatus" role="status"></div>
+          <div class="form-foot">
+            <span class="note" data-i="f.note">We only use your information to reply to your request.</span>
+            <button type="submit" class="btn btn-light" id="formBtn"><span data-i="f.submit">Request a consultation</span> <span class="arrow">→</span></button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="wrap">
+      <div class="foot">
+        <div>
+          <a href="#top" class="brand" aria-label="Cale Consulting">
+            <svg viewBox="0 0 28 28" aria-hidden="true"><path d="M21.07 6.93A10 10 0 1 0 21.07 21.07" fill="none" stroke="#eeeeee" stroke-width="3.2"/><circle cx="22.6" cy="14" r="2.6" fill="#ee6018"/></svg>
+            <span class="brand-name">Cale <em>Consulting</em></span>
+          </a>
+          <p class="foot-tag" data-i="ft.tag">Technology and AI consulting for small and mid-sized businesses.</p>
+        </div>
+        <div>
+          <h4 class="mono" data-i="nav.services">Services</h4>
+          <ul>
+            <li><a href="#services" data-i="sv.1.t">AI Adoption</a></li>
+            <li><a href="#services" data-i="sv.2.t">Process Automation</a></li>
+            <li><a href="#services" data-i="sv.3.t">Digital Transformation</a></li>
+            <li><a href="#services" data-i="sv.4.t">Technology Consulting</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="mono" data-i="ft.company">Company</h4>
+          <ul>
+            <li><a href="#approach" data-i="nav.approach">Approach</a></li>
+            <li><a href="#why" data-i="nav.why">Why Cale</a></li>
+            <li><a href="#about" data-i="nav.about">About</a></li>
+            <li><a href="#faq" data-i="nav.faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="mono" data-i="ft.contact">Contact</h4>
+          <ul>
+            <li><a href="#contact" data-i="nav.cta">Book a consultation</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="legal mono">
+        <span>© 2026 Cale Consulting · <span data-i="ft.rights">All rights reserved.</span></span>
+        <span>caleconsulting.net</span>
+      </div>
+      <div class="bigword" aria-hidden="true">Cale Consulting</div>
+    </div>
+  </footer>
+
+  <script>
+  /* ================= TEXTOS (EN / ES / PT) ================= */
+  const I18N = {
+    en: {
+      'meta.title': 'Cale Consulting — Technology & AI Consulting for SMBs',
+      'meta.desc': 'Cale Consulting helps small and mid-sized businesses adopt AI, automate processes and modernize their technology.',
+      'nav.services': 'Services', 'nav.approach': 'Approach', 'nav.why': 'Why Cale', 'nav.about': 'About', 'nav.faq': 'FAQ',
+      'nav.cta': 'Book a consultation', 'nav.menu': 'Menu',
+      'hero.eyebrow': 'Technology & AI for SMBs',
+      'hero.title': 'Put <span class="shine">AI</span> to work in your business.',
+      'hero.lead': 'We help small and mid-sized companies adopt AI, automate repetitive work and modernize their technology — with senior guidance and a clear return on every step.',
+      'hero.cta1': 'Book a free consultation', 'hero.cta2': 'Explore services',
+      'hero.m1': '20+ years in technology', 'hero.m2': 'Specialist partner network', 'hero.m3': 'Built for SMBs',
+      'term.status': 'Running', 'term.s1': 'Assess', 'term.s2': 'Pilot', 'term.s3': 'Scale', 'term.foot': 'Illustrative example',
+      'term.lines': [['Workflows mapped', 24, ''], ['Manual hours per week', 61, ' h'], ['Automation candidates', 9, ''], ['AI quick wins', 4, '']],
+      'term.done': 'Roadmap ready · est. payback 5 months',
+      'marquee': ['AI Adoption', 'Process Automation', 'Digital Transformation', 'Generative AI', 'AI Agents', 'Cloud', 'Data & Analytics', 'Integrations & APIs', 'Cybersecurity', 'Technology Strategy'],
+      'sv.eyebrow': 'Services', 'sv.title': 'Technology that pays for itself.',
+      'sv.sub': 'Four practices, one goal: less manual work, better decisions and a business ready to grow. We start with a diagnosis and only recommend what makes sense for your size and budget.',
+      'sv.1.t': 'AI Adoption', 'sv.1.d': 'We find where AI creates real value, choose the right tools and train your team to use them safely — from assistants to custom agents.', 'sv.1.g': 'GenAI · Agents · Training',
+      'sv.2.t': 'Process Automation', 'sv.2.d': 'We remove repetitive tasks across sales, finance and operations by connecting your systems and automating workflows end to end.', 'sv.2.g': 'Workflows · Integrations · RPA',
+      'sv.3.t': 'Digital Transformation', 'sv.3.d': 'We modernize how your company works: cloud, data and digital processes that grow with your business instead of holding it back.', 'sv.3.g': 'Cloud · Data · Digital processes',
+      'sv.4.t': 'Technology Consulting', 'sv.4.d': 'Senior advice on architecture, software selection, security and IT strategy — like having a CTO on call, without the full-time cost.', 'sv.4.g': 'Strategy · Architecture · Security',
+      'sv.link': 'Talk to us',
+      'ap.eyebrow': 'How we work', 'ap.title': 'From idea to results, in small, safe steps.',
+      'ap.sub': 'No never-ending projects. Every phase delivers something you can use and measure before you invest in the next one.',
+      'ap.1.k': '01 · Weeks 1–2', 'ap.1.t': 'Diagnose', 'ap.1.d': 'We map your processes, systems and data to find where technology saves the most time and money.',
+      'ap.2.k': '02 · Week 3', 'ap.2.t': 'Roadmap', 'ap.2.d': 'A prioritized plan with costs, timelines and expected return — in plain language.',
+      'ap.3.k': '03 · Weeks 4–8', 'ap.3.t': 'Pilot', 'ap.3.d': 'We build and launch the first quick win alongside your team, so results show up early.',
+      'ap.4.k': '04 · Ongoing', 'ap.4.t': 'Scale', 'ap.4.d': 'We extend what works, train your people and stay on as your technology partner.',
+      'why.eyebrow': 'Why Cale', 'why.title': 'Senior expertise, without big-firm overhead.',
+      'why.body': 'Large consultancies are built for large budgets. Cale brings the same depth of experience to small and mid-sized companies, with direct access to the people doing the work and a network of specialized partners for every challenge.',
+      'why.s1': 'Years in technology', 'why.s2': 'Direct access to a senior lead', 'why.s3': 'Every initiative tied to a business result',
+      'ab.eyebrow': 'About', 'ab.title': 'Built on two decades of technology experience.',
+      'ab.p1': 'Cale Consulting is built on more than 20 years of hands-on experience designing, implementing and managing technology for organizations of every size.',
+      'ab.p2': 'We work with a network of trusted partners across cloud, data, cybersecurity, software development and AI — so you get the right specialist for each challenge, coordinated by a single point of contact.',
+      'orb.1': 'AI', 'orb.2': 'Cloud', 'orb.3': 'Data', 'orb.4': 'Security', 'orb.5': 'Software', 'orb.6': 'Automation', 'orb.cap': 'Partner network',
+      'faq.eyebrow': 'FAQ', 'faq.title': 'Questions, answered.',
+      'faq.q1': 'Is AI really useful for a company our size?', 'faq.a1': 'Yes — often more than for large companies, because small teams feel every hour saved. We start with practical, low-cost use cases such as document processing, customer service and reporting.',
+      'faq.q2': 'Do we need to replace our current systems?', 'faq.a2': 'Usually not. We prefer to connect and get more out of the tools you already have, and only recommend new software when the return is clear.',
+      'faq.q3': 'How much does a project cost?', 'faq.a3': 'It depends on the scope. The first consultation is free, and after the diagnosis you receive a written proposal with scope, timeline and cost before any commitment.',
+      'faq.q4': 'Do you work remotely?', 'faq.a4': 'Yes. We work remotely with clients in English, Spanish and Portuguese, and on-site when the project calls for it.',
+      'ct.eyebrow': 'Free 30-minute consultation', 'ct.title': "Let's talk about your business.",
+      'ct.sub': "Tell us a little about your company and what you'd like to improve. We'll get back to you within one business day to schedule a call.",
+      'ct.b1': 'A clear view of your quick wins', 'ct.b2': 'Honest advice, no strings attached', 'ct.b3': 'Next steps you can act on',
+      'f.name': 'Name', 'f.email': 'Work email', 'f.company': 'Company', 'f.size': 'Company size',
+      'f.size1': '1–10 employees', 'f.size2': '11–50 employees', 'f.size3': '51–200 employees', 'f.size4': '200+ employees',
+      'f.topic': "I'm interested in", 'f.topic5': 'Not sure yet', 'f.date': 'Preferred date', 'f.time': 'Preferred time', 'f.time1': 'Morning', 'f.time2': 'Afternoon',
+      'f.msg': 'Message', 'f.msgph': 'What would you like to improve?', 'f.note': 'We only use your information to reply to your request.',
+      'f.submit': 'Request a consultation', 'f.sending': 'Sending…',
+      'f.ok': 'Thank you! We received your request and will contact you shortly.',
+      'f.err': 'Something went wrong. Please try again in a few minutes.',
+      'f.invalid': 'Please fill in your name, a valid email and your company.',
+      'ft.tag': 'Technology and AI consulting for small and mid-sized businesses.', 'ft.company': 'Company', 'ft.contact': 'Contact', 'ft.rights': 'All rights reserved.'
+    },
+    es: {
+      'meta.title': 'Cale Consulting — Consultoría tecnológica y de IA para pymes',
+      'meta.desc': 'Cale Consulting ayuda a pequeñas y medianas empresas a adoptar IA, automatizar procesos y modernizar su tecnología.',
+      'nav.services': 'Servicios', 'nav.approach': 'Cómo trabajamos', 'nav.why': 'Por qué Cale', 'nav.about': 'Nosotros', 'nav.faq': 'Preguntas',
+      'nav.cta': 'Agendar consulta', 'nav.menu': 'Menú',
+      'hero.eyebrow': 'Tecnología e IA para pymes',
+      'hero.title': 'Pon la <span class="shine">IA</span> a trabajar en tu negocio.',
+      'hero.lead': 'Ayudamos a pequeñas y medianas empresas a adoptar inteligencia artificial, automatizar el trabajo repetitivo y modernizar su tecnología, con acompañamiento senior y un retorno claro en cada paso.',
+      'hero.cta1': 'Agenda una consulta gratuita', 'hero.cta2': 'Ver servicios',
+      'hero.m1': '+20 años en tecnología', 'hero.m2': 'Red de partners especialistas', 'hero.m3': 'Pensado para pymes',
+      'term.status': 'En curso', 'term.s1': 'Diagnóstico', 'term.s2': 'Piloto', 'term.s3': 'Escala', 'term.foot': 'Ejemplo ilustrativo',
+      'term.lines': [['Procesos mapeados', 24, ''], ['Horas manuales por semana', 61, ' h'], ['Candidatos a automatizar', 9, ''], ['Victorias rápidas con IA', 4, '']],
+      'term.done': 'Hoja de ruta lista · retorno est. 5 meses',
+      'marquee': ['Adopción de IA', 'Automatización de procesos', 'Transformación digital', 'IA generativa', 'Agentes de IA', 'Nube', 'Datos y analítica', 'Integraciones y APIs', 'Ciberseguridad', 'Estrategia tecnológica'],
+      'sv.eyebrow': 'Servicios', 'sv.title': 'Tecnología que se paga sola.',
+      'sv.sub': 'Cuatro áreas, un objetivo: menos trabajo manual, mejores decisiones y una empresa lista para crecer. Empezamos con un diagnóstico y solo recomendamos lo que tiene sentido para tu tamaño y presupuesto.',
+      'sv.1.t': 'Adopción de IA', 'sv.1.d': 'Identificamos dónde la IA genera valor real, elegimos las herramientas adecuadas y capacitamos a tu equipo para usarlas con seguridad, desde asistentes hasta agentes a la medida.', 'sv.1.g': 'IA generativa · Agentes · Capacitación',
+      'sv.2.t': 'Automatización de procesos', 'sv.2.d': 'Eliminamos tareas repetitivas en ventas, finanzas y operaciones conectando tus sistemas y automatizando flujos de principio a fin.', 'sv.2.g': 'Flujos · Integraciones · RPA',
+      'sv.3.t': 'Transformación digital', 'sv.3.d': 'Modernizamos la forma en que trabaja tu empresa: nube, datos y procesos digitales que crecen con tu negocio en lugar de frenarlo.', 'sv.3.g': 'Nube · Datos · Procesos digitales',
+      'sv.4.t': 'Consultoría tecnológica', 'sv.4.d': 'Asesoría senior en arquitectura, selección de software, seguridad y estrategia de TI: como tener un CTO disponible, sin el costo de tiempo completo.', 'sv.4.g': 'Estrategia · Arquitectura · Seguridad',
+      'sv.link': 'Hablemos',
+      'ap.eyebrow': 'Cómo trabajamos', 'ap.title': 'De la idea a los resultados, en pasos cortos y seguros.',
+      'ap.sub': 'Sin proyectos eternos. Cada fase entrega algo que puedes usar y medir antes de invertir en la siguiente.',
+      'ap.1.k': '01 · Semanas 1–2', 'ap.1.t': 'Diagnóstico', 'ap.1.d': 'Mapeamos tus procesos, sistemas y datos para encontrar dónde la tecnología ahorra más tiempo y dinero.',
+      'ap.2.k': '02 · Semana 3', 'ap.2.t': 'Hoja de ruta', 'ap.2.d': 'Un plan priorizado con costos, plazos y retorno esperado, en lenguaje claro.',
+      'ap.3.k': '03 · Semanas 4–8', 'ap.3.t': 'Piloto', 'ap.3.d': 'Construimos y lanzamos la primera victoria rápida junto a tu equipo, para ver resultados pronto.',
+      'ap.4.k': '04 · Continuo', 'ap.4.t': 'Escala', 'ap.4.d': 'Extendemos lo que funciona, capacitamos a tu gente y seguimos como tu socio tecnológico.',
+      'why.eyebrow': 'Por qué Cale', 'why.title': 'Experiencia senior, sin la estructura de una gran consultora.',
+      'why.body': 'Las grandes consultoras están pensadas para grandes presupuestos. Cale lleva esa misma experiencia a pequeñas y medianas empresas, con acceso directo a quienes hacen el trabajo y una red de partners especializados para cada desafío.',
+      'why.s1': 'Años en tecnología', 'why.s2': 'Acceso directo a un líder senior', 'why.s3': 'Cada iniciativa ligada a un resultado de negocio',
+      'ab.eyebrow': 'Nosotros', 'ab.title': 'Construida sobre dos décadas de experiencia en tecnología.',
+      'ab.p1': 'Cale Consulting nace de más de 20 años de experiencia práctica diseñando, implementando y gestionando tecnología para organizaciones de todos los tamaños.',
+      'ab.p2': 'Trabajamos con una red de partners de confianza en nube, datos, ciberseguridad, desarrollo de software e IA, para que tengas al especialista adecuado en cada desafío, coordinado por un único punto de contacto.',
+      'orb.1': 'IA', 'orb.2': 'Nube', 'orb.3': 'Datos', 'orb.4': 'Seguridad', 'orb.5': 'Software', 'orb.6': 'Automatización', 'orb.cap': 'Red de partners',
+      'faq.eyebrow': 'Preguntas frecuentes', 'faq.title': 'Respuestas claras.',
+      'faq.q1': '¿La IA realmente sirve para una empresa de nuestro tamaño?', 'faq.a1': 'Sí, y muchas veces más que en una gran empresa, porque en equipos pequeños cada hora ahorrada se nota. Empezamos con casos prácticos y de bajo costo, como procesamiento de documentos, atención al cliente y reportes.',
+      'faq.q2': '¿Tenemos que cambiar nuestros sistemas actuales?', 'faq.a2': 'Normalmente no. Preferimos conectar y aprovechar mejor las herramientas que ya tienes, y solo recomendamos software nuevo cuando el retorno es claro.',
+      'faq.q3': '¿Cuánto cuesta un proyecto?', 'faq.a3': 'Depende del alcance. La primera consulta es gratuita y, tras el diagnóstico, recibes una propuesta por escrito con alcance, plazos y costo antes de cualquier compromiso.',
+      'faq.q4': '¿Trabajan de forma remota?', 'faq.a4': 'Sí. Trabajamos de forma remota con clientes en inglés, español y portugués, y de forma presencial cuando el proyecto lo requiere.',
+      'ct.eyebrow': 'Consulta gratuita de 30 minutos', 'ct.title': 'Hablemos de tu negocio.',
+      'ct.sub': 'Cuéntanos un poco sobre tu empresa y qué te gustaría mejorar. Te responderemos en un día hábil para agendar la llamada.',
+      'ct.b1': 'Una visión clara de tus oportunidades rápidas', 'ct.b2': 'Consejo honesto, sin compromiso', 'ct.b3': 'Próximos pasos concretos',
+      'f.name': 'Nombre', 'f.email': 'Correo de trabajo', 'f.company': 'Empresa', 'f.size': 'Tamaño de la empresa',
+      'f.size1': '1–10 empleados', 'f.size2': '11–50 empleados', 'f.size3': '51–200 empleados', 'f.size4': 'Más de 200 empleados',
+      'f.topic': 'Me interesa', 'f.topic5': 'Aún no lo sé', 'f.date': 'Fecha preferida', 'f.time': 'Horario preferido', 'f.time1': 'Mañana', 'f.time2': 'Tarde',
+      'f.msg': 'Mensaje', 'f.msgph': '¿Qué te gustaría mejorar?', 'f.note': 'Solo usamos tus datos para responder a tu solicitud.',
+      'f.submit': 'Solicitar consulta', 'f.sending': 'Enviando…',
+      'f.ok': '¡Gracias! Recibimos tu solicitud y te contactaremos pronto.',
+      'f.err': 'Algo salió mal. Inténtalo de nuevo en unos minutos.',
+      'f.invalid': 'Completa tu nombre, un correo válido y tu empresa.',
+      'ft.tag': 'Consultoría tecnológica y de IA para pequeñas y medianas empresas.', 'ft.company': 'Empresa', 'ft.contact': 'Contacto', 'ft.rights': 'Todos los derechos reservados.'
+    },
+    pt: {
+      'meta.title': 'Cale Consulting — Consultoria em tecnologia e IA para PMEs',
+      'meta.desc': 'A Cale Consulting ajuda pequenas e médias empresas a adotar IA, automatizar processos e modernizar sua tecnologia.',
+      'nav.services': 'Serviços', 'nav.approach': 'Como trabalhamos', 'nav.why': 'Por que a Cale', 'nav.about': 'Sobre nós', 'nav.faq': 'Perguntas',
+      'nav.cta': 'Agendar consulta', 'nav.menu': 'Menu',
+      'hero.eyebrow': 'Tecnologia e IA para PMEs',
+      'hero.title': 'Coloque a <span class="shine">IA</span> para trabalhar no seu negócio.',
+      'hero.lead': 'Ajudamos pequenas e médias empresas a adotar inteligência artificial, automatizar o trabalho repetitivo e modernizar sua tecnologia, com orientação sênior e retorno claro em cada etapa.',
+      'hero.cta1': 'Agende uma consulta gratuita', 'hero.cta2': 'Ver serviços',
+      'hero.m1': '+20 anos em tecnologia', 'hero.m2': 'Rede de parceiros especialistas', 'hero.m3': 'Feito para PMEs',
+      'term.status': 'Em execução', 'term.s1': 'Diagnóstico', 'term.s2': 'Piloto', 'term.s3': 'Escala', 'term.foot': 'Exemplo ilustrativo',
+      'term.lines': [['Processos mapeados', 24, ''], ['Horas manuais por semana', 61, ' h'], ['Candidatos à automação', 9, ''], ['Ganhos rápidos com IA', 4, '']],
+      'term.done': 'Roteiro pronto · retorno est. 5 meses',
+      'marquee': ['Adoção de IA', 'Automação de processos', 'Transformação digital', 'IA generativa', 'Agentes de IA', 'Nuvem', 'Dados e analytics', 'Integrações e APIs', 'Cibersegurança', 'Estratégia de tecnologia'],
+      'sv.eyebrow': 'Serviços', 'sv.title': 'Tecnologia que se paga.',
+      'sv.sub': 'Quatro frentes, um objetivo: menos trabalho manual, decisões melhores e uma empresa pronta para crescer. Começamos com um diagnóstico e só recomendamos o que faz sentido para o seu porte e orçamento.',
+      'sv.1.t': 'Adoção de IA', 'sv.1.d': 'Identificamos onde a IA gera valor real, escolhemos as ferramentas certas e capacitamos sua equipe para usá-las com segurança — de assistentes a agentes sob medida.', 'sv.1.g': 'IA generativa · Agentes · Capacitação',
+      'sv.2.t': 'Automação de processos', 'sv.2.d': 'Eliminamos tarefas repetitivas em vendas, finanças e operações, conectando seus sistemas e automatizando fluxos de ponta a ponta.', 'sv.2.g': 'Fluxos · Integrações · RPA',
+      'sv.3.t': 'Transformação digital', 'sv.3.d': 'Modernizamos a forma como sua empresa trabalha: nuvem, dados e processos digitais que crescem com o seu negócio em vez de travá-lo.', 'sv.3.g': 'Nuvem · Dados · Processos digitais',
+      'sv.4.t': 'Consultoria em tecnologia', 'sv.4.d': 'Assessoria sênior em arquitetura, seleção de software, segurança e estratégia de TI — como ter um CTO à disposição, sem o custo de tempo integral.', 'sv.4.g': 'Estratégia · Arquitetura · Segurança',
+      'sv.link': 'Fale conosco',
+      'ap.eyebrow': 'Como trabalhamos', 'ap.title': 'Da ideia aos resultados, em passos curtos e seguros.',
+      'ap.sub': 'Sem projetos intermináveis. Cada fase entrega algo que você pode usar e medir antes de investir na próxima.',
+      'ap.1.k': '01 · Semanas 1–2', 'ap.1.t': 'Diagnóstico', 'ap.1.d': 'Mapeamos seus processos, sistemas e dados para encontrar onde a tecnologia economiza mais tempo e dinheiro.',
+      'ap.2.k': '02 · Semana 3', 'ap.2.t': 'Roteiro', 'ap.2.d': 'Um plano priorizado com custos, prazos e retorno esperado, em linguagem clara.',
+      'ap.3.k': '03 · Semanas 4–8', 'ap.3.t': 'Piloto', 'ap.3.d': 'Construímos e lançamos o primeiro ganho rápido com sua equipe, para ver resultados cedo.',
+      'ap.4.k': '04 · Contínuo', 'ap.4.t': 'Escala', 'ap.4.d': 'Ampliamos o que funciona, capacitamos sua equipe e seguimos como seu parceiro de tecnologia.',
+      'why.eyebrow': 'Por que a Cale', 'why.title': 'Experiência sênior, sem a estrutura de uma grande consultoria.',
+      'why.body': 'As grandes consultorias são feitas para grandes orçamentos. A Cale leva a mesma experiência a pequenas e médias empresas, com acesso direto a quem faz o trabalho e uma rede de parceiros especializados para cada desafio.',
+      'why.s1': 'Anos em tecnologia', 'why.s2': 'Acesso direto a um líder sênior', 'why.s3': 'Cada iniciativa ligada a um resultado de negócio',
+      'ab.eyebrow': 'Sobre nós', 'ab.title': 'Construída sobre duas décadas de experiência em tecnologia.',
+      'ab.p1': 'A Cale Consulting nasce de mais de 20 anos de experiência prática no desenho, implementação e gestão de tecnologia para organizações de todos os portes.',
+      'ab.p2': 'Trabalhamos com uma rede de parceiros de confiança em nuvem, dados, cibersegurança, desenvolvimento de software e IA — para que você tenha o especialista certo para cada desafio, coordenado por um único ponto de contato.',
+      'orb.1': 'IA', 'orb.2': 'Nuvem', 'orb.3': 'Dados', 'orb.4': 'Segurança', 'orb.5': 'Software', 'orb.6': 'Automação', 'orb.cap': 'Rede de parceiros',
+      'faq.eyebrow': 'Perguntas frequentes', 'faq.title': 'Respostas claras.',
+      'faq.q1': 'A IA é realmente útil para uma empresa do nosso porte?', 'faq.a1': 'Sim — muitas vezes mais do que em grandes empresas, porque em equipes pequenas cada hora economizada faz diferença. Começamos com casos práticos e de baixo custo, como processamento de documentos, atendimento ao cliente e relatórios.',
+      'faq.q2': 'Precisamos trocar nossos sistemas atuais?', 'faq.a2': 'Normalmente não. Preferimos conectar e aproveitar melhor as ferramentas que você já tem, e só recomendamos um novo software quando o retorno é claro.',
+      'faq.q3': 'Quanto custa um projeto?', 'faq.a3': 'Depende do escopo. A primeira consulta é gratuita e, após o diagnóstico, você recebe uma proposta por escrito com escopo, prazos e custo antes de qualquer compromisso.',
+      'faq.q4': 'Vocês trabalham remotamente?', 'faq.a4': 'Sim. Trabalhamos remotamente com clientes em inglês, espanhol e português, e presencialmente quando o projeto exige.',
+      'ct.eyebrow': 'Consulta gratuita de 30 minutos', 'ct.title': 'Vamos conversar sobre o seu negócio.',
+      'ct.sub': 'Conte um pouco sobre sua empresa e o que você gostaria de melhorar. Responderemos em até um dia útil para agendar a conversa.',
+      'ct.b1': 'Uma visão clara dos seus ganhos rápidos', 'ct.b2': 'Conselho honesto, sem compromisso', 'ct.b3': 'Próximos passos concretos',
+      'f.name': 'Nome', 'f.email': 'E-mail corporativo', 'f.company': 'Empresa', 'f.size': 'Porte da empresa',
+      'f.size1': '1–10 funcionários', 'f.size2': '11–50 funcionários', 'f.size3': '51–200 funcionários', 'f.size4': 'Mais de 200 funcionários',
+      'f.topic': 'Tenho interesse em', 'f.topic5': 'Ainda não sei', 'f.date': 'Data preferida', 'f.time': 'Horário preferido', 'f.time1': 'Manhã', 'f.time2': 'Tarde',
+      'f.msg': 'Mensagem', 'f.msgph': 'O que você gostaria de melhorar?', 'f.note': 'Usamos seus dados apenas para responder à sua solicitação.',
+      'f.submit': 'Solicitar consulta', 'f.sending': 'Enviando…',
+      'f.ok': 'Obrigado! Recebemos sua solicitação e entraremos em contato em breve.',
+      'f.err': 'Algo deu errado. Tente novamente em alguns minutos.',
+      'f.invalid': 'Preencha seu nome, um e-mail válido e sua empresa.',
+      'ft.tag': 'Consultoria em tecnologia e IA para pequenas e médias empresas.', 'ft.company': 'Empresa', 'ft.contact': 'Contato', 'ft.rights': 'Todos os direitos reservados.'
+    }
+  };
+
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const store = {
+    get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
+    set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+  };
+
+  /* ================= IDIOMA ================= */
+  let lang = 'en';
+  function t(key) { return (I18N[lang] && I18N[lang][key]) ?? I18N.en[key]; }
+
+  function applyLang(next) {
+    lang = I18N[next] ? next : 'en';
+    document.documentElement.lang = lang;
+    document.title = t('meta.title');
+    document.querySelector('meta[name="description"]').setAttribute('content', t('meta.desc'));
+    document.querySelectorAll('[data-i]').forEach(el => { el.textContent = t(el.dataset.i); });
+    document.querySelectorAll('[data-ih]').forEach(el => { el.innerHTML = t(el.dataset.ih); });
+    document.querySelectorAll('[data-ph]').forEach(el => { el.placeholder = t(el.dataset.ph); });
+    document.querySelectorAll('.lang button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.lang === lang)));
+    document.getElementById('formLang').value = lang;
+    document.getElementById('menuBtn').setAttribute('aria-label', t('nav.menu'));
+    buildMarquee();
+    runTerminal();
+    store.set('cale-lang', lang);
+  }
+
+  document.querySelectorAll('.lang button').forEach(b => b.addEventListener('click', () => applyLang(b.dataset.lang)));
+
+  function initialLang() {
+    const saved = store.get('cale-lang');
+    if (saved && I18N[saved]) return saved;
+    const nav = (navigator.language || 'en').slice(0, 2).toLowerCase();
+    return I18N[nav] ? nav : 'en';
+  }
+
+  /* ================= NAVEGACIÓN ================= */
+  const navEl = document.getElementById('nav');
+  const menuBtn = document.getElementById('menuBtn');
+  const onScroll = () => navEl.classList.toggle('scrolled', window.scrollY > 12);
+  window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
+  menuBtn.addEventListener('click', () => { const o = navEl.classList.toggle('open'); menuBtn.setAttribute('aria-expanded', o); });
+  document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', () => { navEl.classList.remove('open'); menuBtn.setAttribute('aria-expanded', 'false'); }));
+
+  /* ================= MARQUESINA ================= */
+  function buildMarquee() {
+    const items = t('marquee').map(s => `<span>${s}</span>`).join('');
+    document.getElementById('marquee').innerHTML = items + items;
+  }
+
+  /* ================= TERMINAL ANIMADA ================= */
+  const term = document.getElementById('term');
+  const stages = [1, 2, 3].map(n => document.getElementById('st' + n));
+  let runId = 0;
+  const sleep = ms => new Promise(r => setTimeout(r, ms));
+
+  function setStage(i) {
+    stages.forEach((s, k) => { s.classList.toggle('on', k <= i); s.classList.toggle('ok', k < i); });
+  }
+  function lineHTML(label, val, cls) {
+    return `<div class="tl ${cls || ''}"><span class="lbl">${label}</span>${val !== undefined ? `<span class="lead-dots"></span><span class="val">${val}</span>` : ''}</div>`;
+  }
+
+  async function runTerminal() {
+    const id = ++runId;
+    const lines = t('term.lines');
+    const cmd = '$ cale assess <b>--company</b> your-business';
+    if (reduceMotion) {
+      term.innerHTML = `<div class="cmd">${cmd}</div>` + lines.map(([l, v, u]) => lineHTML(l, v + u)).join('') + lineHTML(t('term.done'), undefined, 'done');
+      setStage(2); return;
+    }
+    setStage(-1);
+    term.innerHTML = '<div class="cmd"><span id="typed"></span><span class="caret"></span></div>';
+    const typed = document.getElementById('typed');
+    const plain = '$ cale assess --company your-business';
+    for (let i = 1; i <= plain.length; i++) {
+      if (id !== runId) return;
+      typed.textContent = plain.slice(0, i);
+      await sleep(28 + Math.random() * 40);
+    }
+    typed.innerHTML = cmd;
+    await sleep(350);
+    setStage(0);
+    for (let n = 0; n < lines.length; n++) {
+      await sleep(520);
+      if (id !== runId) return;
+      const [label, value, unit] = lines[n];
+      term.insertAdjacentHTML('beforeend', lineHTML(label, '0' + unit));
+      const valEl = term.lastElementChild.querySelector('.val');
+      const t0 = performance.now();
+      await new Promise(done => {
+        (function tick(now) {
+          if (id !== runId) return done();
+          const p = Math.min(1, (now - t0) / 700);
+          valEl.textContent = Math.round(value * (1 - Math.pow(1 - p, 3))) + unit;
+          p < 1 ? requestAnimationFrame(tick) : done();
+        })(t0);
+      });
+      if (n === 1) setStage(1);
+    }
+    await sleep(600);
+    if (id !== runId) return;
+    term.insertAdjacentHTML('beforeend', lineHTML(t('term.done'), undefined, 'done'));
+    setStage(2);
+    await sleep(6500);
+    if (id === runId) runTerminal();
+  }
+
+  /* ================= FONDO DE PUNTOS CON LUZ ================= */
+  (function grid() {
+    const cv = document.getElementById('grid');
+    const ctx = cv.getContext('2d');
+    const hero = cv.parentElement;
+    let W = 0, H = 0, visible = true, raf = 0;
+    const mouse = { x: -9999, y: -9999, tx: -9999, ty: -9999 };
+
+    function size() {
+      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+      W = hero.clientWidth; H = hero.clientHeight;
+      cv.width = W * dpr; cv.height = H * dpr;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    }
+    function draw(time) {
+      ctx.clearRect(0, 0, W, H);
+      mouse.x += (mouse.tx - mouse.x) * 0.08; mouse.y += (mouse.ty - mouse.y) * 0.08;
+      const lx = W * (0.68 + 0.16 * Math.sin(time / 5200));
+      const ly = H * (0.45 + 0.22 * Math.sin(time / 3700));
+      const gap = W < 640 ? 22 : 28;
+      for (let x = gap / 2; x < W; x += gap) {
+        for (let y = gap / 2; y < H; y += gap) {
+          const d1 = ((x - lx) ** 2 + (y - ly) ** 2) / 90000;
+          const d2 = ((x - mouse.x) ** 2 + (y - mouse.y) ** 2) / 22000;
+          const k = Math.min(1, Math.exp(-d1) * 0.85 + Math.exp(-d2) * 0.9);
+          const a = 0.08 + k * 0.62;
+          ctx.fillStyle = `rgba(238,${Math.round(238 - 142 * k)},${Math.round(238 - 214 * k)},${a})`;
+          const s = 1.2 + k * 1.2;
+          ctx.fillRect(x - s / 2, y - s / 2, s, s);
+        }
+      }
+    }
+    function loop(time) { draw(time); if (visible) raf = requestAnimationFrame(loop); }
+
+    size();
+    window.addEventListener('resize', size);
+    hero.addEventListener('pointermove', e => { const r = hero.getBoundingClientRect(); mouse.tx = e.clientX - r.left; mouse.ty = e.clientY - r.top; });
+    hero.addEventListener('pointerleave', () => { mouse.tx = mouse.ty = -9999; });
+    if (reduceMotion) { draw(0); return; }
+    new IntersectionObserver(([e]) => {
+      visible = e.isIntersecting;
+      cancelAnimationFrame(raf);
+      if (visible) raf = requestAnimationFrame(loop);
+    }).observe(hero);
+  })();
+
+  /* ================= FOCO DE LUZ EN TARJETAS ================= */
+  document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('pointermove', e => {
+      const r = card.getBoundingClientRect();
+      card.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+      card.style.setProperty('--my', (e.clientY - r.top) + 'px');
+    });
+  });
+
+  /* ================= APARICIÓN AL HACER SCROLL ================= */
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+  if (reduceMotion) { const o = document.getElementById('orbit'); o.pauseAnimations && o.pauseAnimations(); }
+
+  /* ================= FORMULARIO ================= */
+  const form = document.getElementById('bookForm');
+  const statusEl = document.getElementById('formStatus');
+  const btn = document.getElementById('formBtn');
+  const dateEl = document.getElementById('f-date');
+  dateEl.min = new Date().toISOString().slice(0, 10);
+
+  function showStatus(kind, msg) { statusEl.className = 'form-status ' + kind; statusEl.textContent = msg; }
+
+  form.addEventListener('submit', async e => {
+    e.preventDefault();
+    const f = form.elements;
+    const name = f['name'].value.trim(), email = f['email'].value.trim(), company = f['company'].value.trim();
+    if (!name || !company || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { showStatus('err', t('f.invalid')); return; }
+    if (f['botcheck'].checked) return;
+    const label = btn.querySelector('span');
+    btn.disabled = true; label.textContent = t('f.sending');
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify(Object.fromEntries(new FormData(form)))
+      });
+      const data = await res.json();
+      if (!data.success) throw new Error(data.message);
+      form.reset();
+      showStatus('ok', t('f.ok'));
+    } catch (err) {
+      showStatus('err', t('f.err'));
+    } finally {
+      btn.disabled = false; label.textContent = t('f.submit');
+    }
+  });
+
+  applyLang(initialLang());
+  </script>
+</body>
+</html>

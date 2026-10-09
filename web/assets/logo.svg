@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 40" width="792" height="120">
+  <!-- Logo horizontal Cale Consulting. El texto usa la fuente Geist: si no está instalada se verá con la fuente del sistema. -->
+  <rect width="264" height="40" fill="#101010"/>
+  <g transform="translate(8 6)">
+    <path d="M21.07 6.93A10 10 0 1 0 21.07 21.07" fill="none" stroke="#eeeeee" stroke-width="3.2"/>
+    <circle cx="22.6" cy="14" r="2.6" fill="#ee6018"/>
+  </g>
+  <text x="46" y="27" font-family="Geist, Inter, system-ui, sans-serif" font-size="20" font-weight="500" letter-spacing="-0.7"><tspan fill="#fafafa">Cale</tspan><tspan fill="#b8b3b0"> Consulting</tspan></text>
+</svg>
