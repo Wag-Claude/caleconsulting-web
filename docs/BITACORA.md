@@ -10,6 +10,10 @@ Registro de todo lo realizado, del más reciente al más antiguo. Agregar una en
 - Se instaló la *Access Key* de Web3Forms en `web/index.html`. Las solicitudes llegan al correo con el que se generó la clave, que no aparece en la página.
 - Prueba de envío hecha desde la vista previa local: Web3Forms respondió con éxito y el usuario confirmó que el correo llegó.
 
+### 2. Código subido a GitHub
+- Repositorio: https://github.com/Wag-Claude/caleconsulting-web (público, rama `main`).
+- La primera ejecución de "Publicar sitio" falló porque GitHub Pages aún no estaba activado (falta poner **Source = GitHub Actions** en Settings → Pages).
+
 ## 2026-10-08 — Sesión 1: diseño y construcción inicial
 
 ### 5. Preparación para publicar
