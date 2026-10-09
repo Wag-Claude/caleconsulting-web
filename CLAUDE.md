@@ -43,6 +43,7 @@ Sitio corporativo de Cale Consulting para `caleconsulting.net` (dominio en Googl
 | Guía de estilo | [DESIGN.md](DESIGN.md) |
 | Historial | [docs/BITACORA.md](docs/BITACORA.md) |
 | Repositorio en GitHub | https://github.com/Wag-Claude/caleconsulting-web |
+| DNS (respaldo y registros de la web) | [docs/DNS.md](docs/DNS.md) |
 | Guía de publicación paso a paso | [docs/PUBLICAR.md](docs/PUBLICAR.md) |
 | Vista previa | config `cale-web` en `C:\Users\wwpch\.claude\launch.json` (la que lee el navegador integrado) y en `.claude/launch.json` → http://localhost:5500 |
 
