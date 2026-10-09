@@ -14,6 +14,11 @@ Registro de todo lo realizado, del más reciente al más antiguo. Agregar una en
 - Repositorio: https://github.com/Wag-Claude/caleconsulting-web (público, rama `main`).
 - La primera ejecución de "Publicar sitio" falló porque GitHub Pages aún no estaba activado (falta poner **Source = GitHub Actions** en Settings → Pages).
 
+### 3. Página en línea (dirección temporal)
+- El usuario activó Pages (Source = GitHub Actions) y ejecutó el flujo: terminó con éxito.
+- En línea en https://wag-claude.github.io/caleconsulting-web/ : responde 200, el logo y el favicon cargan, y no hay errores en la consola.
+- Siguiente: conectar el dominio caleconsulting.net (Pasos 1, 5, 6 y 7 de `docs/PUBLICAR.md`).
+
 ## 2026-10-08 — Sesión 1: diseño y construcción inicial
 
 ### 5. Preparación para publicar
