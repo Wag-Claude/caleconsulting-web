@@ -17,7 +17,7 @@ Sitio corporativo de Cale Consulting para `caleconsulting.net` (dominio en Googl
 - Contenido en **inglés** (principal) + **español** + **portugués**. Todo texto nuevo va en las 3 versiones del diccionario `I18N`.
 - Estilo: [DESIGN.md](DESIGN.md), más el "brillo" y las animaciones que pidió el cliente. Respetar siempre `prefers-reduced-motion`.
 - Al cambiar DNS: **nunca tocar los registros MX** (correo de Workspace).
-- El usuario prefiere: español, guía paso a paso, documentar todo. Él maneja sus cuentas y contraseñas; Claude no.
+- El usuario prefiere: español, guía paso a paso, documentar todo. El usuario maneja sus cuentas y contraseñas; Claude no.
 - Después de cada cambio: verificar en escritorio y celular (360px), agregar una entrada en `docs/BITACORA.md` y hacer commit.
 
 ## Decisiones tomadas
@@ -25,7 +25,7 @@ Sitio corporativo de Cale Consulting para `caleconsulting.net` (dominio en Googl
 | Fecha | Decisión | Motivo |
 |---|---|---|
 | 2026-10-08 | Sitio estático a la medida, **no** Google Sites | Sites no reproduce la guía de estilo. |
-| 2026-10-08 | Hosting gratuito (Cloudflare Pages o GitHub Pages — por decidir) | $0, rápido, mejor SEO. |
+| 2026-10-08 | Hosting: **GitHub Pages** vía GitHub Actions (`.github/workflows/publicar.yml` publica `web/`) | $0 y HTTPS automático. El dominio se conecta con registros A/CNAME sin mover los nameservers, así que el correo de Workspace no corre riesgo (Cloudflare Pages exigía mover los nameservers para usar el dominio raíz). |
 | 2026-10-08 | Un solo `index.html` con CSS/JS/textos incluidos | Simple de mantener y publicar; sin dependencias ni compilación. |
 | 2026-10-08 | Traducción por JS (`I18N`), con detección del idioma del navegador y memoria en `localStorage` | Pedido EN/ES/PT. Limitación: Google solo indexa la versión en inglés. |
 | 2026-10-08 | Formulario → Web3Forms | Gratis, sin servidor, oculta el correo. |
@@ -42,6 +42,7 @@ Sitio corporativo de Cale Consulting para `caleconsulting.net` (dominio en Googl
 | Logo y favicon | [web/assets/](web/assets/) |
 | Guía de estilo | [DESIGN.md](DESIGN.md) |
 | Historial | [docs/BITACORA.md](docs/BITACORA.md) |
+| Guía de publicación paso a paso | [docs/PUBLICAR.md](docs/PUBLICAR.md) |
 | Vista previa | config `cale-web` en `C:\Users\wwpch\.claude\launch.json` (la que lee el navegador integrado) y en `.claude/launch.json` → http://localhost:5500 |
 
 ## Pendiente
@@ -52,7 +53,7 @@ Sitio corporativo de Cale Consulting para `caleconsulting.net` (dominio en Googl
 - [ ] LinkedIn de la empresa.
 - [ ] Logo con el texto convertido a trazos (hoy `logo.svg` depende de la fuente Geist) y PNG para redes.
 - [ ] Imagen para compartir en redes (`og:image`, 1200×630).
-- [ ] Elegir hosting, publicar `web/` y conectar el dominio (solo registros web, no MX).
+- [ ] Publicar en GitHub Pages y conectar el dominio, siguiendo [docs/PUBLICAR.md](docs/PUBLICAR.md) (solo registros web, no MX).
 - [ ] Google Analytics + Search Console.
 - [ ] (Opcional) Páginas `/es/` y `/pt/` para SEO multilingüe.
 - [ ] (Opcional) Política de privacidad, recomendable al recoger datos con el formulario.

@@ -109,7 +109,7 @@ Copia/borra un bloque `<article class="card">` en la sección `#services`, agreg
 
 ## Publicación (pendiente)
 
-Plan acordado: hosting gratuito (**Cloudflare Pages** o **GitHub Pages**) publicando la carpeta `web/`, y apuntar `caleconsulting.net` a ese hosting.
+Plan elegido: **GitHub Pages**. El archivo `.github/workflows/publicar.yml` publica la carpeta `web/` automáticamente cada vez que se suben cambios a la rama `main`. El dominio se conecta con registros A (`@`) y CNAME (`www`) en el DNS actual, sin mover los nameservers. Los pasos detallados están en `docs/PUBLICAR.md`.
 
 **Importante:** al cambiar el DNS del dominio solo se tocan los registros de la web (A/CNAME). **Nunca los registros MX**, porque son los del correo de Google Workspace.
 

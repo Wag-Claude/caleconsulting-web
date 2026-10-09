@@ -6,6 +6,11 @@ Registro de todo lo realizado, del más reciente al más antiguo. Agregar una en
 
 ## 2026-10-08 — Sesión 1: diseño y construcción inicial
 
+### 5. Preparación para publicar
+- Se eligió **GitHub Pages**: gratis y con HTTPS, y el dominio se conecta sin mover los nameservers, así que el correo de Workspace queda a salvo.
+- Se agregó `.github/workflows/publicar.yml`, que publica la carpeta `web/` automáticamente con cada `git push` a `main`.
+- Se escribió la guía paso a paso en `docs/PUBLICAR.md`: DNS, GitHub, verificación del dominio, HTTPS, pruebas y qué hacer si algo falla.
+
 ### 4. Nombre más visible + proyecto organizado
 - Menú: el nombre aparece completo, **"Cale Consulting"**, en 20px ("Cale" en blanco, "Consulting" en gris claro) y también se ve en celular. El botón de menú del celular pasó a ser un ícono (☰) para dejarle espacio al nombre.
 - Portada: la etiqueta superior ahora dice **"CALE CONSULTING / Technology & AI for SMBs"**.
