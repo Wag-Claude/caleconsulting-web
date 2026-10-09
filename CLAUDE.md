@@ -47,7 +47,7 @@ Sitio corporativo de Cale Consulting para `caleconsulting.net` (dominio en Googl
 
 ## Pendiente
 
-- [x] Clave de Web3Forms instalada (2026-10-09). Falta confirmar con un envío de prueba que llega al correo.
+- [x] Formulario conectado a Web3Forms y probado: el envío de prueba llegó al correo (2026-10-09).
 - [ ] Confirmar los textos que implican compromisos: "respondemos en 1 día hábil", "atendemos en EN/ES/PT", plazos del método (semanas 1–2 / 3 / 4–8).
 - [ ] Nombre y foto del fundador para "About".
 - [ ] LinkedIn de la empresa.

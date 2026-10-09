@@ -8,6 +8,7 @@ Registro de todo lo realizado, del más reciente al más antiguo. Agregar una en
 
 ### 1. Formulario conectado
 - Se instaló la *Access Key* de Web3Forms en `web/index.html`. Las solicitudes llegan al correo con el que se generó la clave, que no aparece en la página.
+- Prueba de envío hecha desde la vista previa local: Web3Forms respondió con éxito y el usuario confirmó que el correo llegó.
 
 ## 2026-10-08 — Sesión 1: diseño y construcción inicial
 
