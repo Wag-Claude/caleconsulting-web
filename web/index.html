@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cale Consulting — Technology Consulting, Networks & AI for SMBs</title>
-  <meta name="description" content="Cale Consulting helps small and mid-sized businesses with technology consulting, network design (wired and Wi-Fi), international connectivity, digital transformation, automation and AI.">
+  <meta name="description" content="Cale Consulting helps small and mid-sized businesses with IT strategy, network infrastructure (wired and Wi-Fi), global connectivity and SD-WAN, cloud and digital transformation, process automation, AI and web design.">
   <meta property="og:title" content="Cale Consulting — Technology Consulting, Networks & AI for SMBs">
-  <meta property="og:description" content="Technology consulting, network design, international connectivity, digital transformation, automation and AI for small and mid-sized businesses.">
+  <meta property="og:description" content="IT strategy, network infrastructure, global connectivity, cloud, automation, AI and web design for small and mid-sized businesses.">
   <meta property="og:url" content="https://caleconsulting.net/">
   <meta property="og:type" content="website">
   <meta name="theme-color" content="#101010">
@@ -20,7 +20,7 @@
     "@type": "ProfessionalService",
     "name": "Cale Consulting",
     "url": "https://caleconsulting.net/",
-    "description": "Technology consulting for small and mid-sized businesses: network design (wired and Wi-Fi), international connectivity, digital transformation, process automation and AI adoption.",
+    "description": "Technology consulting for small and mid-sized businesses: IT strategy and advisory, network infrastructure (wired and Wi-Fi), global connectivity and SD-WAN, cloud and digital transformation, business process automation, AI strategy and implementation, and web design and development.",
     "knowsLanguage": ["en", "es", "pt"]
   }
   </script>
@@ -219,11 +219,13 @@
     .section-head p { margin: 0; max-width: 480px; }
 
     /* Tarjetas de servicio con foco de luz */
-    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .cards { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-flow: dense; gap: 16px; }
+    .card.featured { grid-column: span 2; }
+    .card.featured p { max-width: 460px; }
     .card {
       position: relative; overflow: hidden; isolation: isolate;
       border: 1px solid var(--lift); border-radius: 10px; padding: 24px;
-      display: flex; flex-direction: column; min-height: 380px; background: rgba(13,13,13,.6);
+      display: flex; flex-direction: column; min-height: 400px; background: rgba(13,13,13,.6);
       transition: border-color .3s var(--ease), transform .4s var(--ease-out);
     }
     .card::before {
@@ -243,7 +245,7 @@
     .icon .draw { stroke-dasharray: 120; stroke-dashoffset: 0; }
     .card:hover .icon .draw { animation: draw 1.1s var(--ease-out); }
     @keyframes draw { from { stroke-dashoffset: 120; } to { stroke-dashoffset: 0; } }
-    .card h3 { font-size: 24px; line-height: 1.15; letter-spacing: -0.025em; font-weight: 400; margin: 72px 0 14px; }
+    .card h3 { font-size: 24px; line-height: 1.15; letter-spacing: -0.025em; font-weight: 400; margin: 56px 0 14px; }
     .card p { color: var(--granite); font-size: 14px; line-height: 1.5; margin: 0 0 20px; }
     .card .tags { color: var(--stone); margin-bottom: 24px; font-size: 11px; }
     .card .link { margin-top: auto; }
@@ -402,6 +404,7 @@
       .lead { font-size: 16px; }
       .cards, .steps { grid-template-columns: 1fr; }
       .card { min-height: 0; }
+      .card.featured { grid-column: auto; }
       .card h3 { margin-top: 48px; }
       .step, .step + .step { padding: 28px 0 0; border-left: 0; }
       .step:nth-child(n+2) { padding-top: 40px; }
@@ -517,7 +520,7 @@
             <div class="tags mono" data-i="sv.cons.g"></div>
             <a href="#contact" class="link"><span data-i="sv.link">Talk to us</span> <span class="arrow">→</span></a>
           </article>
-          <article class="card rv featured" style="--d:0.08s">
+          <article class="card rv featured" style="--d:0.06s">
             <div class="top">
               <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path class="draw" d="M20 6c1.2 8.5 5.5 12.8 14 14-8.5 1.2-12.8 5.5-14 14-1.2-8.5-5.5-12.8-14-14 8.5-1.2 12.8-5.5 14-14z"/><path class="acc draw" d="M37 28c.6 3.6 2.4 5.4 6 6-3.6.6-5.4 2.4-6 6-.6-3.6-2.4-5.4-6-6 3.6-.6 5.4-2.4 6-6z" stroke="currentColor"/></svg>
               <span class="badge mono"><span class="dot pulse"></span><span data-i="sv.featured">Featured</span></span>
@@ -527,44 +530,54 @@
             <div class="tags mono" data-i="sv.ai.g"></div>
             <a href="#contact" class="link"><span data-i="sv.link">Talk to us</span> <span class="arrow">→</span></a>
           </article>
-          <article class="card rv" style="--d:0.16s">
+          <article class="card rv" style="--d:0.12s">
             <div class="top">
               <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path class="draw" d="M8 20a22 22 0 0 1 32 0"/><path class="draw" d="M13.5 25.5a14 14 0 0 1 21 0"/><path class="acc draw" d="M19 31a6.5 6.5 0 0 1 10 0" stroke="currentColor"/><circle class="acc" cx="24" cy="36" r="2" fill="currentColor" stroke="none"/><path d="M6 42h36M12 42v-3M24 42v-3M36 42v-3"/></svg>
-              <span class="num mono">03</span>
+              <span class="num mono">02</span>
             </div>
             <h3 data-i="sv.net.t"></h3>
             <p data-i="sv.net.d"></p>
             <div class="tags mono" data-i="sv.net.g"></div>
             <a href="#contact" class="link"><span data-i="sv.link">Talk to us</span> <span class="arrow">→</span></a>
           </article>
-          <article class="card rv">
+          <article class="card rv" style="--d:0.18s">
             <div class="top">
               <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle class="draw" cx="24" cy="24" r="17"/><ellipse class="draw" cx="24" cy="24" rx="7.5" ry="17"/><path d="M7 24h34M10 15h28M10 33h28"/><circle class="acc" cx="38" cy="12" r="3" fill="currentColor" stroke="none"/><circle class="acc" cx="10" cy="36" r="3" fill="currentColor" stroke="none"/></svg>
-              <span class="num mono">04</span>
+              <span class="num mono">03</span>
             </div>
             <h3 data-i="sv.intl.t"></h3>
             <p data-i="sv.intl.d"></p>
             <div class="tags mono" data-i="sv.intl.g"></div>
             <a href="#contact" class="link"><span data-i="sv.link">Talk to us</span> <span class="arrow">→</span></a>
           </article>
-          <article class="card rv" style="--d:0.08s">
+          <article class="card rv">
             <div class="top">
               <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path class="draw" d="M38 18a15 15 0 0 0-27-4"/><path d="M10 7v7h7"/><path class="draw" d="M10 30a15 15 0 0 0 27 4"/><path d="M38 41v-7h-7"/><circle class="acc" cx="24" cy="24" r="3" fill="currentColor" stroke="none"/></svg>
-              <span class="num mono">05</span>
+              <span class="num mono">04</span>
             </div>
             <h3 data-i="sv.auto.t"></h3>
             <p data-i="sv.auto.d"></p>
             <div class="tags mono" data-i="sv.auto.g"></div>
             <a href="#contact" class="link"><span data-i="sv.link">Talk to us</span> <span class="arrow">→</span></a>
           </article>
-          <article class="card rv" style="--d:0.16s">
+          <article class="card rv" style="--d:0.06s">
             <div class="top">
               <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path class="draw" d="M24 8l18 9-18 9-18-9z"/><path class="draw" d="M6 24l18 9 18-9"/><path class="acc draw" d="M6 31l18 9 18-9" stroke="currentColor"/></svg>
-              <span class="num mono">06</span>
+              <span class="num mono">05</span>
             </div>
             <h3 data-i="sv.dx.t"></h3>
             <p data-i="sv.dx.d"></p>
             <div class="tags mono" data-i="sv.dx.g"></div>
+            <a href="#contact" class="link"><span data-i="sv.link">Talk to us</span> <span class="arrow">→</span></a>
+          </article>
+          <article class="card rv" style="--d:0.12s">
+            <div class="top">
+              <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect class="draw" x="5" y="9" width="38" height="30" rx="3"/><path d="M5 16h38"/><circle class="acc" cx="10" cy="12.5" r="1.3" fill="currentColor" stroke="none"/><path class="acc draw" d="M19 23l-5 4.5 5 4.5M29 23l5 4.5-5 4.5" stroke="currentColor"/><path d="M26 21.5l-4 12"/></svg>
+              <span class="num mono">06</span>
+            </div>
+            <h3 data-i="sv.web.t"></h3>
+            <p data-i="sv.web.d"></p>
+            <div class="tags mono" data-i="sv.web.g"></div>
             <a href="#contact" class="link"><span data-i="sv.link">Talk to us</span> <span class="arrow">→</span></a>
           </article>
         </div>
@@ -739,12 +752,13 @@
           <div class="field full">
             <label class="mono" for="f-topic" data-i="f.topic">I'm interested in</label>
             <select id="f-topic" name="interest">
-              <option value="Technology Consulting" data-i="sv.cons.t">Technology Consulting</option>
-              <option value="AI Adoption" data-i="sv.ai.t">AI Adoption</option>
-              <option value="Network Design (Wired & Wi-Fi)" data-i="sv.net.t">Network Design: Wired &amp; Wi-Fi</option>
-              <option value="International Connectivity" data-i="sv.intl.t">International Connectivity</option>
-              <option value="Process Automation" data-i="sv.auto.t">Process Automation</option>
-              <option value="Digital Transformation" data-i="sv.dx.t">Digital Transformation</option>
+              <option value="IT Strategy &amp; Advisory" data-i="sv.cons.t">IT Strategy &amp; Advisory</option>
+              <option value="AI Strategy &amp; Implementation" data-i="sv.ai.t">AI Strategy &amp; Implementation</option>
+              <option value="Network Infrastructure: Wired &amp; Wi-Fi" data-i="sv.net.t">Network Infrastructure: Wired &amp; Wi-Fi</option>
+              <option value="Global Connectivity &amp; SD-WAN" data-i="sv.intl.t">Global Connectivity &amp; SD-WAN</option>
+              <option value="Business Process Automation" data-i="sv.auto.t">Business Process Automation</option>
+              <option value="Cloud &amp; Digital Transformation" data-i="sv.dx.t">Cloud &amp; Digital Transformation</option>
+              <option value="Web Design &amp; Development" data-i="sv.web.t">Web Design &amp; Development</option>
               <option value="Not sure yet" data-i="f.topic5">Not sure yet</option>
             </select>
           </div>
@@ -787,12 +801,13 @@
         <div>
           <h4 class="mono" data-i="nav.services">Services</h4>
           <ul>
-            <li><a href="#services" data-i="sv.cons.t">Technology Consulting</a></li>
-            <li><a href="#services" data-i="sv.ai.t">AI Adoption</a></li>
-            <li><a href="#services" data-i="sv.net.t">Network Design</a></li>
-            <li><a href="#services" data-i="sv.intl.t">International Connectivity</a></li>
-            <li><a href="#services" data-i="sv.auto.t">Process Automation</a></li>
-            <li><a href="#services" data-i="sv.dx.t">Digital Transformation</a></li>
+            <li><a href="#services" data-i="sv.cons.t">IT Strategy &amp; Advisory</a></li>
+            <li><a href="#services" data-i="sv.ai.t">AI Strategy &amp; Implementation</a></li>
+            <li><a href="#services" data-i="sv.net.t">Network Infrastructure: Wired &amp; Wi-Fi</a></li>
+            <li><a href="#services" data-i="sv.intl.t">Global Connectivity &amp; SD-WAN</a></li>
+            <li><a href="#services" data-i="sv.auto.t">Business Process Automation</a></li>
+            <li><a href="#services" data-i="sv.dx.t">Cloud &amp; Digital Transformation</a></li>
+            <li><a href="#services" data-i="sv.web.t">Web Design &amp; Development</a></li>
           </ul>
         </div>
         <div>
@@ -824,7 +839,7 @@
   const I18N = {
     en: {
       'meta.title': 'Cale Consulting — Technology Consulting, Networks & AI for SMBs',
-      'meta.desc': 'Cale Consulting helps small and mid-sized businesses with technology consulting, network design (wired and Wi-Fi), international connectivity, digital transformation, automation and AI.',
+      'meta.desc': 'Cale Consulting helps small and mid-sized businesses with IT strategy, network infrastructure (wired and Wi-Fi), global connectivity and SD-WAN, cloud and digital transformation, process automation, AI and web design.',
       'nav.services': 'Services', 'nav.approach': 'Approach', 'nav.why': 'Why Cale', 'nav.about': 'About', 'nav.faq': 'FAQ',
       'nav.cta': 'Book a consultation', 'nav.menu': 'Menu',
       'hero.eyebrow': 'Technology consulting for SMBs',
@@ -835,16 +850,17 @@
       'term.status': 'Running', 'term.s1': 'Assess', 'term.s2': 'Pilot', 'term.s3': 'Scale', 'term.foot': 'Illustrative example',
       'term.lines': [['Sites & networks reviewed', 3, ''], ['Wi-Fi coverage gaps', 7, ''], ['Manual hours per week', 61, ' h'], ['AI quick wins', 4, '']],
       'term.done': 'Technology roadmap ready · est. payback 5 months',
-      'marquee': ['Technology Consulting', 'Network Design', 'Enterprise Wi-Fi', 'Structured Cabling', 'International Connectivity', 'SD-WAN', 'Cloud', 'Cybersecurity', 'Digital Transformation', 'Process Automation', 'AI Adoption', 'AI Agents'],
+      'marquee': ['IT Strategy', 'Fractional CTO', 'Network Infrastructure', 'Enterprise Wi-Fi', 'Structured Cabling', 'SD-WAN', 'SASE', 'Global Connectivity', 'Cloud Migration', 'Business Process Automation', 'AI Strategy', 'AI Agents', 'Web Design & Development', 'SEO'],
       'sv.eyebrow': 'Services', 'sv.title': 'Everything your business technology needs.',
-      'sv.sub': 'Six practices, one goal: technology that works reliably today and is ready for what\'s next. We start with a diagnosis and only recommend what makes sense for your size and budget.',
+      'sv.sub': 'Seven practices, one goal: technology that works reliably today and is ready for what\'s next. We start with a diagnosis and only recommend what makes sense for your size and budget.',
       'sv.featured': 'Featured',
-      'sv.cons.t': 'Technology Consulting', 'sv.cons.d': 'Senior advice on IT strategy, architecture, software selection and security — like having a CTO on call, without the full-time cost.', 'sv.cons.g': 'Strategy · Architecture · Security',
-      'sv.ai.t': 'AI Adoption', 'sv.ai.d': 'We find where AI creates real value, choose the right tools and train your team to use them safely — from assistants to custom agents.', 'sv.ai.g': 'GenAI · Agents · Training',
-      'sv.net.t': 'Network Design: Wired & Wi-Fi', 'sv.net.d': 'Reliable networks for offices, warehouses and venues: structured cabling, switching and enterprise Wi-Fi with full coverage, performance and security.', 'sv.net.g': 'Cabling · Switching · Wi-Fi · Site surveys',
-      'sv.intl.t': 'International Connectivity', 'sv.intl.d': 'We connect your sites and teams across countries with the right mix of carriers, SD-WAN, VPN and cloud links — secure, stable and cost-effective.', 'sv.intl.g': 'SD-WAN · VPN · Carriers · Multi-country',
-      'sv.auto.t': 'Process Automation', 'sv.auto.d': 'We remove repetitive tasks across sales, finance and operations by connecting your systems and automating workflows end to end.', 'sv.auto.g': 'Workflows · Integrations · RPA',
-      'sv.dx.t': 'Digital Transformation', 'sv.dx.d': 'We modernize how your company works: cloud, data and digital processes that grow with your business instead of holding it back.', 'sv.dx.g': 'Cloud · Data · Digital processes',
+      'sv.cons.t': 'IT Strategy & Advisory', 'sv.cons.d': 'Senior guidance on IT strategy, architecture, vendor and software selection, and security — a fractional CTO for your business, without the full-time cost.', 'sv.cons.g': 'Fractional CTO · Architecture · Vendor selection',
+      'sv.ai.t': 'AI Strategy & Implementation', 'sv.ai.d': 'We identify high-impact use cases, choose the right tools and put AI to work safely — from copilots and assistants to custom AI agents, with your team trained to use them.', 'sv.ai.g': 'Generative AI · AI agents · Copilots · Training',
+      'sv.net.t': 'Network Infrastructure: Wired & Wi-Fi', 'sv.net.d': 'Design and deployment of reliable LAN and enterprise Wi-Fi for offices, warehouses and venues: structured cabling, switching, wireless site surveys and network security.', 'sv.net.g': 'LAN · Structured cabling · Wi-Fi 6/7 · Site surveys',
+      'sv.intl.t': 'Global Connectivity & SD-WAN', 'sv.intl.d': 'We connect your sites, remote teams and cloud services across countries with the right mix of carriers, SD-WAN, SASE and secure VPN — reliable and cost-effective.', 'sv.intl.g': 'SD-WAN · SASE · Carriers · Multi-country',
+      'sv.auto.t': 'Business Process Automation', 'sv.auto.d': 'We eliminate repetitive work across sales, finance and operations by integrating your systems and automating workflows end to end — increasingly powered by AI.', 'sv.auto.g': 'Workflows · Integrations · RPA · No-code',
+      'sv.dx.t': 'Cloud & Digital Transformation', 'sv.dx.d': 'We modernize how your company works: cloud migration, Microsoft 365 or Google Workspace, data and digital processes that scale with your business.', 'sv.dx.g': 'Cloud migration · M365 / Workspace · Data',
+      'sv.web.t': 'Web Design & Development', 'sv.web.d': 'Fast, modern, mobile-first websites that strengthen your digital presence, build trust and generate leads — with SEO, analytics and hosting set up from day one.', 'sv.web.g': 'Websites · SEO · Analytics · Hosting',
       'sv.link': 'Talk to us',
       'ap.eyebrow': 'How we work', 'ap.title': 'From idea to results, in small, safe steps.',
       'ap.sub': 'No never-ending projects. Every phase delivers something you can use and measure before you invest in the next one.',
@@ -880,7 +896,7 @@
     },
     es: {
       'meta.title': 'Cale Consulting — Consultoría tecnológica, redes e IA para pymes',
-      'meta.desc': 'Cale Consulting ayuda a pequeñas y medianas empresas con consultoría tecnológica, diseño de redes cableadas y Wi-Fi, conectividad internacional, transformación digital, automatización e IA.',
+      'meta.desc': 'Cale Consulting ayuda a pequeñas y medianas empresas con estrategia de TI, infraestructura de red cableada y Wi-Fi, conectividad global y SD-WAN, nube y transformación digital, automatización de procesos, IA y diseño web.',
       'nav.services': 'Servicios', 'nav.approach': 'Cómo trabajamos', 'nav.why': 'Por qué Cale', 'nav.about': 'Nosotros', 'nav.faq': 'Preguntas',
       'nav.cta': 'Agendar consulta', 'nav.menu': 'Menú',
       'hero.eyebrow': 'Consultoría tecnológica para pymes',
@@ -891,16 +907,17 @@
       'term.status': 'En curso', 'term.s1': 'Diagnóstico', 'term.s2': 'Piloto', 'term.s3': 'Escala', 'term.foot': 'Ejemplo ilustrativo',
       'term.lines': [['Sedes y redes revisadas', 3, ''], ['Brechas de cobertura Wi-Fi', 7, ''], ['Horas manuales por semana', 61, ' h'], ['Victorias rápidas con IA', 4, '']],
       'term.done': 'Hoja de ruta tecnológica lista · retorno est. 5 meses',
-      'marquee': ['Consultoría tecnológica', 'Diseño de redes', 'Wi-Fi empresarial', 'Cableado estructurado', 'Conectividad internacional', 'SD-WAN', 'Nube', 'Ciberseguridad', 'Transformación digital', 'Automatización de procesos', 'Adopción de IA', 'Agentes de IA'],
+      'marquee': ['Estrategia TI', 'CTO fraccional', 'Infraestructura de red', 'Wi-Fi empresarial', 'Cableado estructurado', 'SD-WAN', 'SASE', 'Conectividad global', 'Migración a la nube', 'Automatización de procesos', 'Estrategia de IA', 'Agentes de IA', 'Diseño y desarrollo web', 'SEO'],
       'sv.eyebrow': 'Servicios', 'sv.title': 'Todo lo que la tecnología de tu empresa necesita.',
-      'sv.sub': 'Seis áreas, un objetivo: tecnología que funciona de forma confiable hoy y está lista para lo que viene. Empezamos con un diagnóstico y solo recomendamos lo que tiene sentido para tu tamaño y presupuesto.',
+      'sv.sub': 'Siete áreas, un objetivo: tecnología que funciona de forma confiable hoy y está lista para lo que viene. Empezamos con un diagnóstico y solo recomendamos lo que tiene sentido para tu tamaño y presupuesto.',
       'sv.featured': 'Destacado',
-      'sv.cons.t': 'Consultoría tecnológica', 'sv.cons.d': 'Asesoría senior en estrategia de TI, arquitectura, selección de software y seguridad: como tener un CTO disponible, sin el costo de tiempo completo.', 'sv.cons.g': 'Estrategia · Arquitectura · Seguridad',
-      'sv.ai.t': 'Adopción de IA', 'sv.ai.d': 'Identificamos dónde la IA genera valor real, elegimos las herramientas adecuadas y capacitamos a tu equipo para usarlas con seguridad, desde asistentes hasta agentes a la medida.', 'sv.ai.g': 'IA generativa · Agentes · Capacitación',
-      'sv.net.t': 'Diseño de redes cableadas y Wi-Fi', 'sv.net.d': 'Redes confiables para oficinas, bodegas y locales: cableado estructurado, switching y Wi-Fi empresarial con cobertura total, buen rendimiento y seguridad.', 'sv.net.g': 'Cableado · Switching · Wi-Fi · Estudios de sitio',
-      'sv.intl.t': 'Conectividad internacional', 'sv.intl.d': 'Conectamos tus sedes y equipos entre países con la combinación adecuada de operadores, SD-WAN, VPN y enlaces a la nube: seguro, estable y a un costo razonable.', 'sv.intl.g': 'SD-WAN · VPN · Operadores · Multipaís',
-      'sv.auto.t': 'Automatización de procesos', 'sv.auto.d': 'Eliminamos tareas repetitivas en ventas, finanzas y operaciones conectando tus sistemas y automatizando flujos de principio a fin.', 'sv.auto.g': 'Flujos · Integraciones · RPA',
-      'sv.dx.t': 'Transformación digital', 'sv.dx.d': 'Modernizamos la forma en que trabaja tu empresa: nube, datos y procesos digitales que crecen con tu negocio en lugar de frenarlo.', 'sv.dx.g': 'Nube · Datos · Procesos digitales',
+      'sv.cons.t': 'Estrategia y consultoría TI', 'sv.cons.d': 'Acompañamiento senior en estrategia de TI, arquitectura, selección de proveedores y software, y seguridad: un CTO fraccional para tu empresa, sin el costo de tiempo completo.', 'sv.cons.g': 'CTO fraccional · Arquitectura · Selección de proveedores',
+      'sv.ai.t': 'Estrategia e implementación de IA', 'sv.ai.d': 'Identificamos los casos de uso de mayor impacto, elegimos las herramientas adecuadas y ponemos la IA a trabajar de forma segura: desde copilotos y asistentes hasta agentes de IA a la medida, con tu equipo capacitado para usarlos.', 'sv.ai.g': 'IA generativa · Agentes de IA · Copilotos · Capacitación',
+      'sv.net.t': 'Infraestructura de red: cableada y Wi-Fi', 'sv.net.d': 'Diseño e implementación de redes LAN y Wi-Fi empresarial confiables para oficinas, bodegas y locales: cableado estructurado, switching, estudios de cobertura inalámbrica y seguridad de red.', 'sv.net.g': 'LAN · Cableado estructurado · Wi-Fi 6/7 · Site survey',
+      'sv.intl.t': 'Conectividad global y SD-WAN', 'sv.intl.d': 'Conectamos tus sedes, equipos remotos y servicios en la nube entre países con la combinación adecuada de operadores, SD-WAN, SASE y VPN seguras, de forma confiable y a un costo razonable.', 'sv.intl.g': 'SD-WAN · SASE · Operadores · Multipaís',
+      'sv.auto.t': 'Automatización de procesos de negocio', 'sv.auto.d': 'Eliminamos el trabajo repetitivo en ventas, finanzas y operaciones integrando tus sistemas y automatizando flujos de principio a fin, cada vez más potenciados con IA.', 'sv.auto.g': 'Flujos · Integraciones · RPA · No-code',
+      'sv.dx.t': 'Nube y transformación digital', 'sv.dx.d': 'Modernizamos la forma en que trabaja tu empresa: migración a la nube, Microsoft 365 o Google Workspace, datos y procesos digitales que crecen con tu negocio.', 'sv.dx.g': 'Migración a la nube · M365 / Workspace · Datos',
+      'sv.web.t': 'Diseño y desarrollo web', 'sv.web.d': 'Sitios web rápidos, modernos y pensados para el celular, que fortalecen tu presencia digital, generan confianza y atraen clientes, con SEO, analítica y hosting configurados desde el primer día.', 'sv.web.g': 'Sitios web · SEO · Analítica · Hosting',
       'sv.link': 'Hablemos',
       'ap.eyebrow': 'Cómo trabajamos', 'ap.title': 'De la idea a los resultados, en pasos cortos y seguros.',
       'ap.sub': 'Sin proyectos eternos. Cada fase entrega algo que puedes usar y medir antes de invertir en la siguiente.',
@@ -936,7 +953,7 @@
     },
     pt: {
       'meta.title': 'Cale Consulting — Consultoria em tecnologia, redes e IA para PMEs',
-      'meta.desc': 'A Cale Consulting ajuda pequenas e médias empresas com consultoria em tecnologia, projeto de redes cabeadas e Wi-Fi, conectividade internacional, transformação digital, automação e IA.',
+      'meta.desc': 'A Cale Consulting ajuda pequenas e médias empresas com estratégia de TI, infraestrutura de rede cabeada e Wi-Fi, conectividade global e SD-WAN, nuvem e transformação digital, automação de processos, IA e design web.',
       'nav.services': 'Serviços', 'nav.approach': 'Como trabalhamos', 'nav.why': 'Por que a Cale', 'nav.about': 'Sobre nós', 'nav.faq': 'Perguntas',
       'nav.cta': 'Agendar consulta', 'nav.menu': 'Menu',
       'hero.eyebrow': 'Consultoria em tecnologia para PMEs',
@@ -947,16 +964,17 @@
       'term.status': 'Em execução', 'term.s1': 'Diagnóstico', 'term.s2': 'Piloto', 'term.s3': 'Escala', 'term.foot': 'Exemplo ilustrativo',
       'term.lines': [['Sedes e redes revisadas', 3, ''], ['Falhas de cobertura Wi-Fi', 7, ''], ['Horas manuais por semana', 61, ' h'], ['Ganhos rápidos com IA', 4, '']],
       'term.done': 'Roteiro de tecnologia pronto · retorno est. 5 meses',
-      'marquee': ['Consultoria em tecnologia', 'Projeto de redes', 'Wi-Fi corporativo', 'Cabeamento estruturado', 'Conectividade internacional', 'SD-WAN', 'Nuvem', 'Cibersegurança', 'Transformação digital', 'Automação de processos', 'Adoção de IA', 'Agentes de IA'],
+      'marquee': ['Estratégia de TI', 'CTO fracionado', 'Infraestrutura de rede', 'Wi-Fi corporativo', 'Cabeamento estruturado', 'SD-WAN', 'SASE', 'Conectividade global', 'Migração para a nuvem', 'Automação de processos', 'Estratégia de IA', 'Agentes de IA', 'Design e desenvolvimento web', 'SEO'],
       'sv.eyebrow': 'Serviços', 'sv.title': 'Tudo o que a tecnologia da sua empresa precisa.',
-      'sv.sub': 'Seis frentes, um objetivo: tecnologia que funciona de forma confiável hoje e está pronta para o que vem. Começamos com um diagnóstico e só recomendamos o que faz sentido para o seu porte e orçamento.',
+      'sv.sub': 'Sete frentes, um objetivo: tecnologia que funciona de forma confiável hoje e está pronta para o que vem. Começamos com um diagnóstico e só recomendamos o que faz sentido para o seu porte e orçamento.',
       'sv.featured': 'Destaque',
-      'sv.cons.t': 'Consultoria em tecnologia', 'sv.cons.d': 'Assessoria sênior em estratégia de TI, arquitetura, seleção de software e segurança — como ter um CTO à disposição, sem o custo de tempo integral.', 'sv.cons.g': 'Estratégia · Arquitetura · Segurança',
-      'sv.ai.t': 'Adoção de IA', 'sv.ai.d': 'Identificamos onde a IA gera valor real, escolhemos as ferramentas certas e capacitamos sua equipe para usá-las com segurança — de assistentes a agentes sob medida.', 'sv.ai.g': 'IA generativa · Agentes · Capacitação',
-      'sv.net.t': 'Projeto de redes cabeadas e Wi-Fi', 'sv.net.d': 'Redes confiáveis para escritórios, armazéns e lojas: cabeamento estruturado, switching e Wi-Fi corporativo com cobertura total, desempenho e segurança.', 'sv.net.g': 'Cabeamento · Switching · Wi-Fi · Site survey',
-      'sv.intl.t': 'Conectividade internacional', 'sv.intl.d': 'Conectamos suas sedes e equipes entre países com a combinação certa de operadoras, SD-WAN, VPN e links para a nuvem — seguro, estável e com custo adequado.', 'sv.intl.g': 'SD-WAN · VPN · Operadoras · Multipaís',
-      'sv.auto.t': 'Automação de processos', 'sv.auto.d': 'Eliminamos tarefas repetitivas em vendas, finanças e operações, conectando seus sistemas e automatizando fluxos de ponta a ponta.', 'sv.auto.g': 'Fluxos · Integrações · RPA',
-      'sv.dx.t': 'Transformação digital', 'sv.dx.d': 'Modernizamos a forma como sua empresa trabalha: nuvem, dados e processos digitais que crescem com o seu negócio em vez de travá-lo.', 'sv.dx.g': 'Nuvem · Dados · Processos digitais',
+      'sv.cons.t': 'Estratégia e consultoria de TI', 'sv.cons.d': 'Orientação sênior em estratégia de TI, arquitetura, seleção de fornecedores e software, e segurança — um CTO fracionado para sua empresa, sem o custo de tempo integral.', 'sv.cons.g': 'CTO fracionado · Arquitetura · Seleção de fornecedores',
+      'sv.ai.t': 'Estratégia e implementação de IA', 'sv.ai.d': 'Identificamos os casos de uso de maior impacto, escolhemos as ferramentas certas e colocamos a IA para trabalhar com segurança — de copilotos e assistentes a agentes de IA sob medida, com sua equipe capacitada para usá-los.', 'sv.ai.g': 'IA generativa · Agentes de IA · Copilotos · Capacitação',
+      'sv.net.t': 'Infraestrutura de rede: cabeada e Wi-Fi', 'sv.net.d': 'Projeto e implantação de redes LAN e Wi-Fi corporativo confiáveis para escritórios, armazéns e lojas: cabeamento estruturado, switching, site survey de cobertura sem fio e segurança de rede.', 'sv.net.g': 'LAN · Cabeamento estruturado · Wi-Fi 6/7 · Site survey',
+      'sv.intl.t': 'Conectividade global e SD-WAN', 'sv.intl.d': 'Conectamos suas sedes, equipes remotas e serviços em nuvem entre países com a combinação certa de operadoras, SD-WAN, SASE e VPN seguras — de forma confiável e com custo adequado.', 'sv.intl.g': 'SD-WAN · SASE · Operadoras · Multipaís',
+      'sv.auto.t': 'Automação de processos de negócio', 'sv.auto.d': 'Eliminamos o trabalho repetitivo em vendas, finanças e operações integrando seus sistemas e automatizando fluxos de ponta a ponta — cada vez mais potencializados por IA.', 'sv.auto.g': 'Fluxos · Integrações · RPA · No-code',
+      'sv.dx.t': 'Nuvem e transformação digital', 'sv.dx.d': 'Modernizamos a forma como sua empresa trabalha: migração para a nuvem, Microsoft 365 ou Google Workspace, dados e processos digitais que crescem com o seu negócio.', 'sv.dx.g': 'Migração para a nuvem · M365 / Workspace · Dados',
+      'sv.web.t': 'Design e desenvolvimento web', 'sv.web.d': 'Sites rápidos, modernos e pensados para o celular, que fortalecem sua presença digital, geram confiança e atraem clientes — com SEO, analytics e hospedagem configurados desde o primeiro dia.', 'sv.web.g': 'Sites · SEO · Analytics · Hospedagem',
       'sv.link': 'Fale conosco',
       'ap.eyebrow': 'Como trabalhamos', 'ap.title': 'Da ideia aos resultados, em passos curtos e seguros.',
       'ap.sub': 'Sem projetos intermináveis. Cada fase entrega algo que você pode usar e medir antes de investir na próxima.',

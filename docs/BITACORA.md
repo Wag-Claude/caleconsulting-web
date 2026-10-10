@@ -21,6 +21,19 @@ Registro de todo lo realizado, del más reciente al más antiguo. Agregar una en
 
 ## 2026-10-10 — Sesión 3
 
+### 6. Servicios con términos de mercado + Web Design & Development
+- Nuevo servicio **Web Design & Development** (ES: Diseño y desarrollo web; PT: Design e desenvolvimento web), con un ícono de navegador y código `</>`. "Presencia digital" se menciona en la descripción.
+- Servicios renombrados con la terminología actual del mercado:
+  - Technology Consulting → **IT Strategy & Advisory** (CTO fraccional, selección de proveedores).
+  - AI Adoption → **AI Strategy & Implementation** (copilotos, agentes de IA).
+  - Network Design → **Network Infrastructure: Wired & Wi-Fi** (LAN, Wi-Fi 6/7, site surveys).
+  - International Connectivity → **Global Connectivity & SD-WAN** (SASE).
+  - Process Automation → **Business Process Automation** (no-code, potenciada con IA).
+  - Digital Transformation → **Cloud & Digital Transformation** (migración a la nube, M365 / Google Workspace).
+- Cuadrícula de 4 columnas con la tarjeta de IA ocupando 2, para que queden 2 filas completas (en tableta, 2 columnas; en celular, 1).
+- Actualizados la marquesina, el formulario (7 opciones), el pie, el texto "Siete áreas…", la descripción para Google y los datos estructurados.
+- Error corregido antes de publicar: el script dejó el ícono de brújula en varias tarjetas. Se restauró el ícono correcto de cada servicio y se verificó uno por uno.
+
 ### 5. Logo nuevo: propuesta 01 "Señal"
 - El cliente eligió la propuesta 01. Se aplicó en el menú, el pie, el centro de la órbita, el favicon y en `web/assets/` (`logo-mark.svg`, `logo.svg`, `favicon.svg`).
 - Trazos del símbolo (viewBox 32×32): onda exterior `M24.08 7.97A12.5 12.5 0 1 0 24.08 24.03`, onda interior al 50 % `M20.25 11.18A7.5 7.5 0 1 0 20.25 20.82` (ambas de grosor 2.6) y punto naranja `#ee6018` en (14.5, 16) con radio 2.6.
