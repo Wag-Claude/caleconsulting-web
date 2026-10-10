@@ -21,6 +21,11 @@ Registro de todo lo realizado, del más reciente al más antiguo. Agregar una en
 
 ## 2026-10-10 — Sesión 3
 
+### 3. 🚀 Sitio publicado en https://caleconsulting.net
+- El usuario marcó **Enforce HTTPS** en GitHub.
+- Comprobado: `https://caleconsulting.net` responde 200 con certificado válido. `http://` y `www` redirigen con 301 a `https://caleconsulting.net/`. Fuentes, idiomas y formulario cargan bien, sin errores en la consola y sin desbordes en celular.
+- Falta la verificación del dominio en GitHub (registro TXT), que se hace desde la configuración de la cuenta: https://github.com/settings/pages
+
 ### 2. Suspensión levantada: el dominio ya abre la página
 - El usuario cambió el correo de contacto en Squarespace por uno externo y lo verificó. RDAP ya no muestra "client hold".
 - Comprobado: el MX del correo resuelve de nuevo. `http://caleconsulting.net` responde 200 con la página y `www` redirige con 301 al dominio sin www.

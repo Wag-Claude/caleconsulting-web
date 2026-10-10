@@ -1,6 +1,6 @@
 # Cale Consulting — sitio web
 
-Sitio corporativo de Cale Consulting para `caleconsulting.net` (dominio en Google Workspace).
+Sitio corporativo de Cale Consulting, **en línea en https://caleconsulting.net** (GitHub Pages; dominio en Squarespace vía Google Workspace).
 **Empieza leyendo:** [README.md](README.md) (estructura y cómo editar) y [docs/BITACORA.md](docs/BITACORA.md) (qué se ha hecho).
 
 ## Contexto del negocio
@@ -55,7 +55,8 @@ Sitio corporativo de Cale Consulting para `caleconsulting.net` (dominio en Googl
 - [ ] LinkedIn de la empresa.
 - [ ] Logo con el texto convertido a trazos (hoy `logo.svg` depende de la fuente Geist) y PNG para redes.
 - [ ] Imagen para compartir en redes (`og:image`, 1200×630).
-- [ ] Publicar en GitHub Pages y conectar el dominio, siguiendo [docs/PUBLICAR.md](docs/PUBLICAR.md) (solo registros web, no MX).
+- [x] Publicado en https://caleconsulting.net con HTTPS (2026-10-10).
+- [ ] Verificar el dominio en GitHub (TXT `_github-pages-challenge-wag-claude`, desde https://github.com/settings/pages).
 - [ ] Google Analytics + Search Console.
 - [ ] (Opcional) Páginas `/es/` y `/pt/` para SEO multilingüe.
 - [ ] (Opcional) Política de privacidad, recomendable al recoger datos con el formulario.

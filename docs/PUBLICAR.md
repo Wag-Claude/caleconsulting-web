@@ -67,7 +67,7 @@ La primera vez, Windows abre una ventana de **Git Credential Manager** para inic
 
 Esto evita que otra cuenta de GitHub pueda usar tu dominio.
 
-1. En GitHub: tu foto (arriba a la derecha) → **Settings** → menú izquierdo **Pages**.
+1. En GitHub: tu foto (arriba a la derecha) → **Settings** (de la **cuenta**, no del repositorio) → menú izquierdo **Pages**. Enlace directo: https://github.com/settings/pages
 2. **Add a domain** → escribe `caleconsulting.net` → **Add domain**.
 3. GitHub te muestra un registro **TXT** parecido a este:
    - Nombre/Host: `_github-pages-challenge-TU-USUARIO`
