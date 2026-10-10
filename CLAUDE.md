@@ -32,7 +32,8 @@ Sitio corporativo de Cale Consulting, **en línea en https://caleconsulting.net*
 | 2026-10-10 | Posicionamiento: **consultoría tecnológica integral**, no solo IA. 6 servicios: Consultoría tecnológica, Adopción de IA (destacada), Redes cableadas y Wi-Fi, Conectividad internacional, Automatización, Transformación digital | El cliente quiere que la IA sea relevante pero que la empresa no parezca solo de IA. |
 | 2026-10-08 | Formulario → Web3Forms | Gratis, sin servidor, oculta el correo. |
 | 2026-10-08 | Imágenes generadas con código (canvas/SVG), sin fotos de stock | Encajan con el estilo y no tienen problemas de licencia. |
-| 2026-10-08 | Logo: "C" abierta + punto naranja | No existía logo. |
+| 2026-10-08 | Logo v1: "C" abierta + punto naranja | No existía logo. |
+| 2026-10-10 | **Logo actual: propuesta 01 "Señal"**, una "C" de dos ondas concéntricas (la interior al 50 %) con punto naranja al centro | Elegido por el cliente entre 5 propuestas; refleja redes y conectividad. |
 
 ## Dónde encontrar qué
 
@@ -56,7 +57,7 @@ Sitio corporativo de Cale Consulting, **en línea en https://caleconsulting.net*
 - [ ] Confirmar los textos que implican compromisos: "respondemos en 1 día hábil", "atendemos en EN/ES/PT", plazos del método (semanas 1–2 / 3 / 4–8).
 - [ ] Nombre y foto del fundador para "About".
 - [ ] LinkedIn de la empresa.
-- [ ] Elegir logo entre las 5 propuestas de `docs/logos/propuestas.html` y aplicarlo (nav, pie, órbita, favicon, `web/assets/`).
+- [x] Logo elegido y aplicado: propuesta 01 "Señal" (2026-10-10).
 - [ ] Logo con el texto convertido a trazos (hoy `logo.svg` depende de la fuente Geist) y PNG para redes.
 - [ ] Imagen para compartir en redes (`og:image`, 1200×630).
 - [x] Publicado en https://caleconsulting.net con HTTPS (2026-10-10).

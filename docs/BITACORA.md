@@ -21,6 +21,11 @@ Registro de todo lo realizado, del más reciente al más antiguo. Agregar una en
 
 ## 2026-10-10 — Sesión 3
 
+### 5. Logo nuevo: propuesta 01 "Señal"
+- El cliente eligió la propuesta 01. Se aplicó en el menú, el pie, el centro de la órbita, el favicon y en `web/assets/` (`logo-mark.svg`, `logo.svg`, `favicon.svg`).
+- Trazos del símbolo (viewBox 32×32): onda exterior `M24.08 7.97A12.5 12.5 0 1 0 24.08 24.03`, onda interior al 50 % `M20.25 11.18A7.5 7.5 0 1 0 20.25 20.82` (ambas de grosor 2.6) y punto naranja `#ee6018` en (14.5, 16) con radio 2.6.
+- Publicado junto con los cambios v3.
+
 ### 4. Cambios pedidos por el cliente (v3)
 - **Idioma:** la página siempre abre en **inglés**. Se quitó la detección del idioma del navegador y la memoria del idioma elegido.
 - **Nombre más grande:** "Cale Consulting" en el menú pasó de 20px a 25px, con logo de 34px y barra de 76px. En celular pasó de 17px a 20px, y en el pie de página a 28px.
