@@ -5,7 +5,8 @@ Sitio corporativo de Cale Consulting, **en línea en https://caleconsulting.net*
 
 ## Contexto del negocio
 
-- Consultoría tecnológica para **pymes**, 7 servicios con nombres de mercado: IT Strategy & Advisory (CTO fraccional), **AI Strategy & Implementation** (destacada, pero **no** es una empresa solo de IA), Network Infrastructure: Wired & Wi-Fi, Global Connectivity & SD-WAN, Business Process Automation, Cloud & Digital Transformation, Web Design & Development.
+- Consultoría tecnológica para **pymes**, 5 servicios: IT Strategy & Advisory (CTO fraccional), **AI & Intelligent Automation** (destacada; incluye la automatización de procesos. **No** es una empresa solo de IA), Digital Transformation (cómo opera la empresa con tecnología digital, apalancada en IA; **no** es nube), Network Infrastructure & Connectivity (LAN, Wi-Fi, cableado; la conectividad entre sedes es **solo asesoría y selección de proveedores**), Web Design & Development.
+- **NO ofrece:** SD-WAN, SASE, migraciones a la nube, Microsoft 365 ni Google Workspace. No mencionarlos.
 - Empresa **nueva**. El fundador tiene +20 años en tecnología y una red de partners especialistas.
 - **No hay clientes, casos, testimonios ni cifras de resultados reales. No inventarlos.** Cualquier número ilustrativo debe ir marcado como ejemplo.
 - Nombre y foto del fundador: aún no proporcionados.
@@ -34,6 +35,7 @@ Sitio corporativo de Cale Consulting, **en línea en https://caleconsulting.net*
 | 2026-10-08 | Imágenes generadas con código (canvas/SVG), sin fotos de stock | Encajan con el estilo y no tienen problemas de licencia. |
 | 2026-10-08 | Logo v1: "C" abierta + punto naranja | No existía logo. |
 | 2026-10-10 | 7 servicios con **terminología de mercado** y nuevo servicio **Web Design & Development**; cuadrícula de 4 columnas con la IA ocupando 2 | Pedido del cliente: agregar presencia web y actualizar los términos. |
+| 2026-10-10 | Servicios reducidos a 5: sin SD-WAN ni SASE; conectividad dentro de Redes; automatización dentro de IA; transformación digital redefinida (sin nube). Cuadrícula 3 × 2 con la IA a doble ancho junto a IT Strategy (opción A) | Revisión del cliente: no ofrecer lo que no puede entregar y evitar que IA, automatización y transformación digital se pisen. |
 | 2026-10-10 | **Logo actual: propuesta 01 "Señal"**, una "C" de dos ondas concéntricas (la interior al 50 %) con punto naranja al centro | Elegido por el cliente entre 5 propuestas; refleja redes y conectividad. |
 
 ## Dónde encontrar qué

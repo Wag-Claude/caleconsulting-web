@@ -21,6 +21,14 @@ Registro de todo lo realizado, del más reciente al más antiguo. Agregar una en
 
 ## 2026-10-10 — Sesión 3
 
+### 7. Servicios reducidos a 5 (revisión del cliente)
+- Se quitaron **SD-WAN y SASE**, porque el cliente no los ofrece. La conectividad internacional pasó a ser parte de **Network Infrastructure & Connectivity**, como asesoría y selección de proveedores.
+- **Process Automation** se fusionó con IA → **AI & Intelligent Automation** (tarjeta destacada). El nombre lleva las dos palabras porque no toda automatización es IA.
+- **Digital Transformation** se redefinió: rediseño de procesos, herramientas, datos, hoja de ruta y gestión del cambio, apalancada en IA. Sin nube ni M365/Workspace, que el cliente no ofrece.
+- Cuadrícula de 3 columnas (opción A): fila 1 con IT Strategy y la IA a doble ancho; fila 2 con Digital Transformation, Network y Web.
+- Ajustados en consecuencia: la pregunta frecuente 5 (asesoría y selección de proveedores), la marquesina, la órbita ("Cloud" → "Web"), el formulario (5 opciones), el pie y el SEO.
+- Verificado en escritorio (3 × 2), tableta (2 columnas, sin huecos) y celular, sin errores.
+
 ### 6. Servicios con términos de mercado + Web Design & Development
 - Nuevo servicio **Web Design & Development** (ES: Diseño y desarrollo web; PT: Design e desenvolvimento web), con un ícono de navegador y código `</>`. "Presencia digital" se menciona en la descripción.
 - Servicios renombrados con la terminología actual del mercado:

@@ -73,7 +73,7 @@ Busca `'sv.title'` en el archivo y verás las 3 versiones (en, es, pt). Cambia l
 | `hero.*` | Portada (titular, subtítulo, botones) |
 | `term.*` | Terminal animada de la portada |
 | `marquee` | Franja de capacidades que se desplaza |
-| `sv.*` | Servicios: `sv.cons` IT Strategy & Advisory, `sv.ai` AI Strategy & Implementation (tarjeta destacada, ocupa 2 columnas), `sv.net` Network Infrastructure: Wired & Wi-Fi, `sv.intl` Global Connectivity & SD-WAN, `sv.auto` Business Process Automation, `sv.dx` Cloud & Digital Transformation, `sv.web` Web Design & Development. Cada uno tiene `.t` (título), `.d` (descripción) y `.g` (etiquetas). |
+| `sv.*` | Servicios: `sv.cons` IT Strategy & Advisory, `sv.ai` AI & Intelligent Automation (tarjeta destacada, ocupa 2 columnas), `sv.dx` Digital Transformation, `sv.net` Network Infrastructure & Connectivity, `sv.web` Web Design & Development. Cada uno tiene `.t` (título), `.d` (descripción) y `.g` (etiquetas). |
 | `ap.*` | Cómo trabajamos (4 pasos) |
 | `why.*` | Por qué Cale (tarjeta clara) |
 | `ab.*`, `orb.*` | Nosotros y la órbita de partners |
@@ -93,7 +93,7 @@ Al inicio del `<style>`, en `:root`, están las variables. Por ejemplo `--orange
 
 ### Agregar o quitar un servicio
 
-Copia o borra un bloque `<article class="card">` en la sección `#services`, agrega sus claves `sv.<nombre>.t/.d/.g` en los 3 idiomas, y súmalo también al selector del formulario (`#f-topic`) y a la lista del pie de página. La cuadrícula es de 4 columnas (`.cards`, con `grid-auto-flow: dense`), y la tarjeta `featured` ocupa 2. Con 7 servicios quedan 2 filas completas. Si cambia el número de servicios, revisa que no queden huecos. Los íconos de cada tarjeta son SVG dentro del `<article>`.
+Copia o borra un bloque `<article class="card">` en la sección `#services`, agrega sus claves `sv.<nombre>.t/.d/.g` en los 3 idiomas, y súmalo también al selector del formulario (`#f-topic`) y a la lista del pie de página. La cuadrícula es de 3 columnas (`.cards`, con `grid-auto-flow: dense`), y la tarjeta `featured` ocupa 2. Con 5 servicios quedan 2 filas completas (3 × 2). Si cambia el número de servicios, revisa que no queden huecos. Los íconos de cada tarjeta son SVG dentro del `<article>`.
 
 ---
 
