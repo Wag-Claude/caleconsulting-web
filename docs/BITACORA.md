@@ -28,6 +28,7 @@ Registro de todo lo realizado, del más reciente al más antiguo. Agregar una en
 - Cuadrícula de 3 columnas (opción A): fila 1 con IT Strategy y la IA a doble ancho; fila 2 con Digital Transformation, Network y Web.
 - Ajustados en consecuencia: la pregunta frecuente 5 (asesoría y selección de proveedores), la marquesina, la órbita ("Cloud" → "Web"), el formulario (5 opciones), el pie y el SEO.
 - Verificado en escritorio (3 × 2), tableta (2 columnas, sin huecos) y celular, sin errores.
+- El cliente aprobó los textos ajustados y se publicó en https://caleconsulting.net: el sitio en línea muestra 5 tarjetas y ninguna mención de SD-WAN, SASE ni M365.
 
 ### 6. Servicios con términos de mercado + Web Design & Development
 - Nuevo servicio **Web Design & Development** (ES: Diseño y desarrollo web; PT: Design e desenvolvimento web), con un ícono de navegador y código `</>`. "Presencia digital" se menciona en la descripción.
