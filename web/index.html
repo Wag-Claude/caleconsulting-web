@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cale Consulting — Technology & AI Consulting for SMBs</title>
-  <meta name="description" content="Cale Consulting helps small and mid-sized businesses adopt AI, automate processes and modernize their technology.">
-  <meta property="og:title" content="Cale Consulting — Technology & AI Consulting for SMBs">
-  <meta property="og:description" content="AI adoption, process automation, digital transformation and technology consulting for small and mid-sized businesses.">
+  <title>Cale Consulting — Technology Consulting, Networks & AI for SMBs</title>
+  <meta name="description" content="Cale Consulting helps small and mid-sized businesses with technology consulting, network design (wired and Wi-Fi), international connectivity, digital transformation, automation and AI.">
+  <meta property="og:title" content="Cale Consulting — Technology Consulting, Networks & AI for SMBs">
+  <meta property="og:description" content="Technology consulting, network design, international connectivity, digital transformation, automation and AI for small and mid-sized businesses.">
   <meta property="og:url" content="https://caleconsulting.net/">
   <meta property="og:type" content="website">
   <meta name="theme-color" content="#101010">
@@ -20,7 +20,7 @@
     "@type": "ProfessionalService",
     "name": "Cale Consulting",
     "url": "https://caleconsulting.net/",
-    "description": "Technology and AI consulting for small and mid-sized businesses: AI adoption, process automation, digital transformation and technology consulting.",
+    "description": "Technology consulting for small and mid-sized businesses: network design (wired and Wi-Fi), international connectivity, digital transformation, process automation and AI adoption.",
     "knowsLanguage": ["en", "es", "pt"]
   }
   </script>
@@ -119,10 +119,10 @@
     /* ---------- Navegación ---------- */
     .nav { position: fixed; inset: 0 0 auto 0; z-index: 50; transition: background-color .3s var(--ease), border-color .3s var(--ease); border-bottom: 1px solid transparent; }
     .nav.scrolled { background: rgba(16,16,16,.78); border-bottom-color: var(--lift); backdrop-filter: saturate(140%) blur(12px); -webkit-backdrop-filter: saturate(140%) blur(12px); }
-    .nav .wrap { height: 68px; display: flex; align-items: center; gap: 24px; }
+    .nav .wrap { height: 76px; display: flex; align-items: center; gap: 24px; }
     .brand { display: inline-flex; align-items: center; gap: 10px; }
-    .brand svg { width: 28px; height: 28px; }
-    .brand-name { font-size: 20px; font-weight: 500; letter-spacing: -0.035em; white-space: nowrap; color: var(--chalk); }
+    .brand svg { width: 34px; height: 34px; }
+    .brand-name { font-size: 25px; font-weight: 500; letter-spacing: -0.035em; white-space: nowrap; color: var(--chalk); }
     .brand-name em { font-style: normal; color: var(--stone); }
     .nav-links { display: flex; gap: 28px; font-size: 14px; margin-left: auto; }
     .nav-links a { color: var(--stone); transition: color .2s var(--ease); }
@@ -219,11 +219,11 @@
     .section-head p { margin: 0; max-width: 480px; }
 
     /* Tarjetas de servicio con foco de luz */
-    .cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
     .card {
       position: relative; overflow: hidden; isolation: isolate;
       border: 1px solid var(--lift); border-radius: 10px; padding: 24px;
-      display: flex; flex-direction: column; min-height: 400px; background: rgba(13,13,13,.6);
+      display: flex; flex-direction: column; min-height: 380px; background: rgba(13,13,13,.6);
       transition: border-color .3s var(--ease), transform .4s var(--ease-out);
     }
     .card::before {
@@ -232,6 +232,10 @@
     }
     .card:hover { border-color: var(--stroke); transform: translateY(-4px); }
     .card:hover::before { opacity: 1; }
+    .card.featured { border-color: rgba(238,96,24,.45); background: radial-gradient(120% 80% at 100% 0%, rgba(238,96,24,.12), transparent 60%), rgba(13,13,13,.6); box-shadow: 0 0 60px -20px rgba(238,96,24,.45); }
+    .card.featured:hover { border-color: rgba(238,96,24,.8); }
+    .card.featured .icon { color: var(--chalk); }
+    .badge { display: inline-flex; align-items: center; gap: 8px; color: var(--orange); border: 1px solid rgba(238,96,24,.4); border-radius: 3px; padding: 6px 8px; }
     .card .top { display: flex; justify-content: space-between; align-items: flex-start; }
     .card .num { color: var(--granite); }
     .icon { width: 48px; height: 48px; color: var(--bone); }
@@ -345,6 +349,8 @@
     .foot ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; font-size: 14px; }
     .foot ul a { color: var(--granite); transition: color .2s var(--ease); }
     .foot ul a:hover { color: var(--bone); }
+    .foot .brand-name { font-size: 28px; }
+    .foot .brand svg { width: 38px; height: 38px; }
     .foot-tag { color: var(--granite); font-size: 14px; max-width: 300px; margin: 20px 0 0; }
     .legal { display: flex; justify-content: space-between; gap: 16px; margin-top: 96px; color: var(--graphite); flex-wrap: wrap; }
     .bigword { margin-top: 64px; font-size: clamp(40px, 12.4vw, 156px); line-height: .9; letter-spacing: -0.055em; white-space: nowrap; font-weight: 500; text-align: center;
@@ -360,7 +366,7 @@
       .hero .wrap, .about, .why, .section-head, .contact-grid, .faq { grid-template-columns: 1fr; }
       .hero .wrap { gap: 56px; }
       .cards, .steps { grid-template-columns: 1fr 1fr; }
-      .card { min-height: 340px; }
+      .card { min-height: 360px; }
       .step:nth-child(4) { padding-left: 0; border-left: 0; }
       .step:nth-child(n+4) { padding-top: 48px; }
       .orbit-box { max-width: 520px; width: 100%; margin: 0 auto; }
@@ -374,7 +380,7 @@
       .nav-right { margin-left: auto; }
       .nav.open { background: var(--canvas); border-bottom-color: var(--lift); }
       .nav.open .nav-links {
-        display: flex; flex-direction: column; gap: 0; position: absolute; top: 68px; left: 0; right: 0;
+        display: flex; flex-direction: column; gap: 0; position: absolute; top: 76px; left: 0; right: 0;
         background: var(--canvas); border-bottom: 1px solid var(--lift); padding: 8px var(--gutter) 20px;
       }
       .nav.open .nav-links a { padding: 16px 0; border-bottom: 1px solid var(--lift); font-size: 16px; color: var(--bone); }
@@ -385,8 +391,8 @@
       .nav .wrap { gap: 10px; }
       .nav-right { gap: 8px; }
       .brand { gap: 8px; }
-      .brand svg { width: 24px; height: 24px; }
-      .brand-name { font-size: 17px; }
+      .brand svg { width: 28px; height: 28px; }
+      .brand-name { font-size: 20px; }
       .lang button { padding: 6px 6px; }
       .menu-btn { padding: 0 9px; }
       .hero { padding-top: 120px; }
@@ -455,7 +461,7 @@
       <div class="wrap">
         <div>
           <span class="eyebrow mono rv"><span class="dot pulse"></span><span class="eyebrow-brand">Cale Consulting</span><span class="sep">/</span><span data-i="hero.eyebrow">Technology &amp; AI for SMBs</span></span>
-          <h1 class="display rv" style="--d:.08s" data-ih="hero.title">Put <span class="shine">AI</span> to work in your business.</h1>
+          <h1 class="display rv" style="--d:.08s" data-ih="hero.title">Technology that <span class="shine">drives</span> your business forward.</h1>
           <p class="lead rv" style="--d:.16s" data-i="hero.lead">We help small and mid-sized companies adopt AI, automate repetitive work and modernize their technology — with senior guidance and a clear return on every step.</p>
           <div class="hero-actions rv" style="--d:.24s">
             <a href="#contact" class="btn btn-light"><span data-i="hero.cta1">Book a free consultation</span> <span class="arrow">→</span></a>
@@ -503,57 +509,62 @@
         <div class="cards">
           <article class="card rv">
             <div class="top">
-              <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
-                <path class="draw" d="M20 6c1.2 8.5 5.5 12.8 14 14-8.5 1.2-12.8 5.5-14 14-1.2-8.5-5.5-12.8-14-14 8.5-1.2 12.8-5.5 14-14z"/>
-                <path class="acc draw" d="M37 28c.6 3.6 2.4 5.4 6 6-3.6.6-5.4 2.4-6 6-.6-3.6-2.4-5.4-6-6 3.6-.6 5.4-2.4 6-6z" stroke="currentColor"/>
-              </svg>
+              <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle class="draw" cx="24" cy="24" r="17"/><path class="acc draw" d="M30.5 17.5l-4 9-9 4 4-9z" stroke="currentColor"/><path d="M24 4v4M24 40v4M4 24h4M40 24h4"/></svg>
               <span class="num mono">01</span>
             </div>
-            <h3 data-i="sv.1.t">AI Adoption</h3>
-            <p data-i="sv.1.d">We find where AI creates real value, choose the right tools and train your team to use them safely — from assistants to custom agents.</p>
-            <div class="tags mono" data-i="sv.1.g">GenAI · Agents · Training</div>
+            <h3 data-i="sv.cons.t"></h3>
+            <p data-i="sv.cons.d"></p>
+            <div class="tags mono" data-i="sv.cons.g"></div>
             <a href="#contact" class="link"><span data-i="sv.link">Talk to us</span> <span class="arrow">→</span></a>
           </article>
-          <article class="card rv" style="--d:.08s">
+          <article class="card rv featured" style="--d:0.08s">
             <div class="top">
-              <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
-                <path class="draw" d="M38 18a15 15 0 0 0-27-4"/><path d="M10 7v7h7"/>
-                <path class="draw" d="M10 30a15 15 0 0 0 27 4"/><path d="M38 41v-7h-7"/>
-                <circle class="acc" cx="24" cy="24" r="3" fill="currentColor" stroke="none"/>
-              </svg>
-              <span class="num mono">02</span>
+              <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path class="draw" d="M20 6c1.2 8.5 5.5 12.8 14 14-8.5 1.2-12.8 5.5-14 14-1.2-8.5-5.5-12.8-14-14 8.5-1.2 12.8-5.5 14-14z"/><path class="acc draw" d="M37 28c.6 3.6 2.4 5.4 6 6-3.6.6-5.4 2.4-6 6-.6-3.6-2.4-5.4-6-6 3.6-.6 5.4-2.4 6-6z" stroke="currentColor"/></svg>
+              <span class="badge mono"><span class="dot pulse"></span><span data-i="sv.featured">Featured</span></span>
             </div>
-            <h3 data-i="sv.2.t">Process Automation</h3>
-            <p data-i="sv.2.d">We remove repetitive tasks across sales, finance and operations by connecting your systems and automating workflows end to end.</p>
-            <div class="tags mono" data-i="sv.2.g">Workflows · Integrations · RPA</div>
+            <h3 data-i="sv.ai.t"></h3>
+            <p data-i="sv.ai.d"></p>
+            <div class="tags mono" data-i="sv.ai.g"></div>
             <a href="#contact" class="link"><span data-i="sv.link">Talk to us</span> <span class="arrow">→</span></a>
           </article>
-          <article class="card rv" style="--d:.16s">
+          <article class="card rv" style="--d:0.16s">
             <div class="top">
-              <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
-                <path class="draw" d="M24 8l18 9-18 9-18-9z"/>
-                <path class="draw" d="M6 24l18 9 18-9"/>
-                <path class="acc draw" d="M6 31l18 9 18-9" stroke="currentColor"/>
-              </svg>
+              <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path class="draw" d="M8 20a22 22 0 0 1 32 0"/><path class="draw" d="M13.5 25.5a14 14 0 0 1 21 0"/><path class="acc draw" d="M19 31a6.5 6.5 0 0 1 10 0" stroke="currentColor"/><circle class="acc" cx="24" cy="36" r="2" fill="currentColor" stroke="none"/><path d="M6 42h36M12 42v-3M24 42v-3M36 42v-3"/></svg>
               <span class="num mono">03</span>
             </div>
-            <h3 data-i="sv.3.t">Digital Transformation</h3>
-            <p data-i="sv.3.d">We modernize how your company works: cloud, data and digital processes that grow with your business instead of holding it back.</p>
-            <div class="tags mono" data-i="sv.3.g">Cloud · Data · Digital processes</div>
+            <h3 data-i="sv.net.t"></h3>
+            <p data-i="sv.net.d"></p>
+            <div class="tags mono" data-i="sv.net.g"></div>
             <a href="#contact" class="link"><span data-i="sv.link">Talk to us</span> <span class="arrow">→</span></a>
           </article>
-          <article class="card rv" style="--d:.24s">
+          <article class="card rv">
             <div class="top">
-              <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
-                <circle class="draw" cx="24" cy="24" r="17"/>
-                <path class="acc draw" d="M30.5 17.5l-4 9-9 4 4-9z" stroke="currentColor"/>
-                <path d="M24 4v4M24 40v4M4 24h4M40 24h4"/>
-              </svg>
+              <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle class="draw" cx="24" cy="24" r="17"/><ellipse class="draw" cx="24" cy="24" rx="7.5" ry="17"/><path d="M7 24h34M10 15h28M10 33h28"/><circle class="acc" cx="38" cy="12" r="3" fill="currentColor" stroke="none"/><circle class="acc" cx="10" cy="36" r="3" fill="currentColor" stroke="none"/></svg>
               <span class="num mono">04</span>
             </div>
-            <h3 data-i="sv.4.t">Technology Consulting</h3>
-            <p data-i="sv.4.d">Senior advice on architecture, software selection, security and IT strategy — like having a CTO on call, without the full-time cost.</p>
-            <div class="tags mono" data-i="sv.4.g">Strategy · Architecture · Security</div>
+            <h3 data-i="sv.intl.t"></h3>
+            <p data-i="sv.intl.d"></p>
+            <div class="tags mono" data-i="sv.intl.g"></div>
+            <a href="#contact" class="link"><span data-i="sv.link">Talk to us</span> <span class="arrow">→</span></a>
+          </article>
+          <article class="card rv" style="--d:0.08s">
+            <div class="top">
+              <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path class="draw" d="M38 18a15 15 0 0 0-27-4"/><path d="M10 7v7h7"/><path class="draw" d="M10 30a15 15 0 0 0 27 4"/><path d="M38 41v-7h-7"/><circle class="acc" cx="24" cy="24" r="3" fill="currentColor" stroke="none"/></svg>
+              <span class="num mono">05</span>
+            </div>
+            <h3 data-i="sv.auto.t"></h3>
+            <p data-i="sv.auto.d"></p>
+            <div class="tags mono" data-i="sv.auto.g"></div>
+            <a href="#contact" class="link"><span data-i="sv.link">Talk to us</span> <span class="arrow">→</span></a>
+          </article>
+          <article class="card rv" style="--d:0.16s">
+            <div class="top">
+              <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path class="draw" d="M24 8l18 9-18 9-18-9z"/><path class="draw" d="M6 24l18 9 18-9"/><path class="acc draw" d="M6 31l18 9 18-9" stroke="currentColor"/></svg>
+              <span class="num mono">06</span>
+            </div>
+            <h3 data-i="sv.dx.t"></h3>
+            <p data-i="sv.dx.d"></p>
+            <div class="tags mono" data-i="sv.dx.g"></div>
             <a href="#contact" class="link"><span data-i="sv.link">Talk to us</span> <span class="arrow">→</span></a>
           </article>
         </div>
@@ -678,6 +689,7 @@
           <details><summary><span data-i="faq.q2">Do we need to replace our current systems?</span><span class="plus">+</span></summary><p data-i="faq.a2">Usually not. We prefer to connect and get more out of the tools you already have, and only recommend new software when the return is clear.</p></details>
           <details><summary><span data-i="faq.q3">How much does a project cost?</span><span class="plus">+</span></summary><p data-i="faq.a3">It depends on the scope. The first consultation is free, and after the diagnosis you receive a written proposal with scope, timeline and cost before any commitment.</p></details>
           <details><summary><span data-i="faq.q4">Do you work remotely?</span><span class="plus">+</span></summary><p data-i="faq.a4">Yes. We work remotely with clients in English, Spanish and Portuguese, and on-site when the project calls for it.</p></details>
+          <details><summary><span data-i="faq.q5">Can you connect offices in different countries?</span><span class="plus">+</span></summary><p data-i="faq.a5"></p></details>
         </div>
       </div>
     </section>
@@ -728,10 +740,12 @@
           <div class="field full">
             <label class="mono" for="f-topic" data-i="f.topic">I'm interested in</label>
             <select id="f-topic" name="interest">
-              <option value="AI Adoption" data-i="sv.1.t">AI Adoption</option>
-              <option value="Process Automation" data-i="sv.2.t">Process Automation</option>
-              <option value="Digital Transformation" data-i="sv.3.t">Digital Transformation</option>
-              <option value="Technology Consulting" data-i="sv.4.t">Technology Consulting</option>
+              <option value="Technology Consulting" data-i="sv.cons.t">Technology Consulting</option>
+              <option value="AI Adoption" data-i="sv.ai.t">AI Adoption</option>
+              <option value="Network Design (Wired & Wi-Fi)" data-i="sv.net.t">Network Design: Wired &amp; Wi-Fi</option>
+              <option value="International Connectivity" data-i="sv.intl.t">International Connectivity</option>
+              <option value="Process Automation" data-i="sv.auto.t">Process Automation</option>
+              <option value="Digital Transformation" data-i="sv.dx.t">Digital Transformation</option>
               <option value="Not sure yet" data-i="f.topic5">Not sure yet</option>
             </select>
           </div>
@@ -774,10 +788,12 @@
         <div>
           <h4 class="mono" data-i="nav.services">Services</h4>
           <ul>
-            <li><a href="#services" data-i="sv.1.t">AI Adoption</a></li>
-            <li><a href="#services" data-i="sv.2.t">Process Automation</a></li>
-            <li><a href="#services" data-i="sv.3.t">Digital Transformation</a></li>
-            <li><a href="#services" data-i="sv.4.t">Technology Consulting</a></li>
+            <li><a href="#services" data-i="sv.cons.t">Technology Consulting</a></li>
+            <li><a href="#services" data-i="sv.ai.t">AI Adoption</a></li>
+            <li><a href="#services" data-i="sv.net.t">Network Design</a></li>
+            <li><a href="#services" data-i="sv.intl.t">International Connectivity</a></li>
+            <li><a href="#services" data-i="sv.auto.t">Process Automation</a></li>
+            <li><a href="#services" data-i="sv.dx.t">Digital Transformation</a></li>
           </ul>
         </div>
         <div>
@@ -808,29 +824,32 @@
   /* ================= TEXTOS (EN / ES / PT) ================= */
   const I18N = {
     en: {
-      'meta.title': 'Cale Consulting — Technology & AI Consulting for SMBs',
-      'meta.desc': 'Cale Consulting helps small and mid-sized businesses adopt AI, automate processes and modernize their technology.',
+      'meta.title': 'Cale Consulting — Technology Consulting, Networks & AI for SMBs',
+      'meta.desc': 'Cale Consulting helps small and mid-sized businesses with technology consulting, network design (wired and Wi-Fi), international connectivity, digital transformation, automation and AI.',
       'nav.services': 'Services', 'nav.approach': 'Approach', 'nav.why': 'Why Cale', 'nav.about': 'About', 'nav.faq': 'FAQ',
       'nav.cta': 'Book a consultation', 'nav.menu': 'Menu',
-      'hero.eyebrow': 'Technology & AI for SMBs',
-      'hero.title': 'Put <span class="shine">AI</span> to work in your business.',
-      'hero.lead': 'We help small and mid-sized companies adopt AI, automate repetitive work and modernize their technology — with senior guidance and a clear return on every step.',
+      'hero.eyebrow': 'Technology consulting for SMBs',
+      'hero.title': 'Technology that <span class="shine">drives</span> your business forward.',
+      'hero.lead': 'From the network your company runs on to the AI that helps it grow, we design, connect and modernize technology for small and mid-sized businesses — with senior guidance and a clear return on every step.',
       'hero.cta1': 'Book a free consultation', 'hero.cta2': 'Explore services',
       'hero.m1': '20+ years in technology', 'hero.m2': 'Specialist partner network', 'hero.m3': 'Built for SMBs',
       'term.status': 'Running', 'term.s1': 'Assess', 'term.s2': 'Pilot', 'term.s3': 'Scale', 'term.foot': 'Illustrative example',
-      'term.lines': [['Workflows mapped', 24, ''], ['Manual hours per week', 61, ' h'], ['Automation candidates', 9, ''], ['AI quick wins', 4, '']],
-      'term.done': 'Roadmap ready · est. payback 5 months',
-      'marquee': ['AI Adoption', 'Process Automation', 'Digital Transformation', 'Generative AI', 'AI Agents', 'Cloud', 'Data & Analytics', 'Integrations & APIs', 'Cybersecurity', 'Technology Strategy'],
-      'sv.eyebrow': 'Services', 'sv.title': 'Technology that pays for itself.',
-      'sv.sub': 'Four practices, one goal: less manual work, better decisions and a business ready to grow. We start with a diagnosis and only recommend what makes sense for your size and budget.',
-      'sv.1.t': 'AI Adoption', 'sv.1.d': 'We find where AI creates real value, choose the right tools and train your team to use them safely — from assistants to custom agents.', 'sv.1.g': 'GenAI · Agents · Training',
-      'sv.2.t': 'Process Automation', 'sv.2.d': 'We remove repetitive tasks across sales, finance and operations by connecting your systems and automating workflows end to end.', 'sv.2.g': 'Workflows · Integrations · RPA',
-      'sv.3.t': 'Digital Transformation', 'sv.3.d': 'We modernize how your company works: cloud, data and digital processes that grow with your business instead of holding it back.', 'sv.3.g': 'Cloud · Data · Digital processes',
-      'sv.4.t': 'Technology Consulting', 'sv.4.d': 'Senior advice on architecture, software selection, security and IT strategy — like having a CTO on call, without the full-time cost.', 'sv.4.g': 'Strategy · Architecture · Security',
+      'term.lines': [['Sites & networks reviewed', 3, ''], ['Wi-Fi coverage gaps', 7, ''], ['Manual hours per week', 61, ' h'], ['AI quick wins', 4, '']],
+      'term.done': 'Technology roadmap ready · est. payback 5 months',
+      'marquee': ['Technology Consulting', 'Network Design', 'Enterprise Wi-Fi', 'Structured Cabling', 'International Connectivity', 'SD-WAN', 'Cloud', 'Cybersecurity', 'Digital Transformation', 'Process Automation', 'AI Adoption', 'AI Agents'],
+      'sv.eyebrow': 'Services', 'sv.title': 'Everything your business technology needs.',
+      'sv.sub': 'Six practices, one goal: technology that works reliably today and is ready for what\'s next. We start with a diagnosis and only recommend what makes sense for your size and budget.',
+      'sv.featured': 'Featured',
+      'sv.cons.t': 'Technology Consulting', 'sv.cons.d': 'Senior advice on IT strategy, architecture, software selection and security — like having a CTO on call, without the full-time cost.', 'sv.cons.g': 'Strategy · Architecture · Security',
+      'sv.ai.t': 'AI Adoption', 'sv.ai.d': 'We find where AI creates real value, choose the right tools and train your team to use them safely — from assistants to custom agents.', 'sv.ai.g': 'GenAI · Agents · Training',
+      'sv.net.t': 'Network Design: Wired & Wi-Fi', 'sv.net.d': 'Reliable networks for offices, warehouses and venues: structured cabling, switching and enterprise Wi-Fi with full coverage, performance and security.', 'sv.net.g': 'Cabling · Switching · Wi-Fi · Site surveys',
+      'sv.intl.t': 'International Connectivity', 'sv.intl.d': 'We connect your sites and teams across countries with the right mix of carriers, SD-WAN, VPN and cloud links — secure, stable and cost-effective.', 'sv.intl.g': 'SD-WAN · VPN · Carriers · Multi-country',
+      'sv.auto.t': 'Process Automation', 'sv.auto.d': 'We remove repetitive tasks across sales, finance and operations by connecting your systems and automating workflows end to end.', 'sv.auto.g': 'Workflows · Integrations · RPA',
+      'sv.dx.t': 'Digital Transformation', 'sv.dx.d': 'We modernize how your company works: cloud, data and digital processes that grow with your business instead of holding it back.', 'sv.dx.g': 'Cloud · Data · Digital processes',
       'sv.link': 'Talk to us',
       'ap.eyebrow': 'How we work', 'ap.title': 'From idea to results, in small, safe steps.',
       'ap.sub': 'No never-ending projects. Every phase delivers something you can use and measure before you invest in the next one.',
-      'ap.1.k': '01 · Weeks 1–2', 'ap.1.t': 'Diagnose', 'ap.1.d': 'We map your processes, systems and data to find where technology saves the most time and money.',
+      'ap.1.k': '01 · Weeks 1–2', 'ap.1.t': 'Diagnose', 'ap.1.d': 'We review your network, systems and processes to find where technology saves the most time and money.',
       'ap.2.k': '02 · Week 3', 'ap.2.t': 'Roadmap', 'ap.2.d': 'A prioritized plan with costs, timelines and expected return — in plain language.',
       'ap.3.k': '03 · Weeks 4–8', 'ap.3.t': 'Pilot', 'ap.3.d': 'We build and launch the first quick win alongside your team, so results show up early.',
       'ap.4.k': '04 · Ongoing', 'ap.4.t': 'Scale', 'ap.4.d': 'We extend what works, train your people and stay on as your technology partner.',
@@ -839,13 +858,14 @@
       'why.s1': 'Years in technology', 'why.s2': 'Direct access to a senior lead', 'why.s3': 'Every initiative tied to a business result',
       'ab.eyebrow': 'About', 'ab.title': 'Built on two decades of technology experience.',
       'ab.p1': 'Cale Consulting is built on more than 20 years of hands-on experience designing, implementing and managing technology for organizations of every size.',
-      'ab.p2': 'We work with a network of trusted partners across cloud, data, cybersecurity, software development and AI — so you get the right specialist for each challenge, coordinated by a single point of contact.',
-      'orb.1': 'AI', 'orb.2': 'Cloud', 'orb.3': 'Data', 'orb.4': 'Security', 'orb.5': 'Software', 'orb.6': 'Automation', 'orb.cap': 'Partner network',
+      'ab.p2': 'We work with a network of trusted partners across networking, telecommunications, cloud, cybersecurity, software development and AI — so you get the right specialist for each challenge, coordinated by a single point of contact.',
+      'orb.1': 'AI', 'orb.2': 'Cloud', 'orb.3': 'Networks', 'orb.4': 'Security', 'orb.5': 'Connectivity', 'orb.6': 'Automation', 'orb.cap': 'Partner network',
       'faq.eyebrow': 'FAQ', 'faq.title': 'Questions, answered.',
       'faq.q1': 'Is AI really useful for a company our size?', 'faq.a1': 'Yes — often more than for large companies, because small teams feel every hour saved. We start with practical, low-cost use cases such as document processing, customer service and reporting.',
       'faq.q2': 'Do we need to replace our current systems?', 'faq.a2': 'Usually not. We prefer to connect and get more out of the tools you already have, and only recommend new software when the return is clear.',
       'faq.q3': 'How much does a project cost?', 'faq.a3': 'It depends on the scope. The first consultation is free, and after the diagnosis you receive a written proposal with scope, timeline and cost before any commitment.',
       'faq.q4': 'Do you work remotely?', 'faq.a4': 'Yes. We work remotely with clients in English, Spanish and Portuguese, and on-site when the project calls for it.',
+      'faq.q5': 'Can you connect offices in different countries?', 'faq.a5': 'Yes. We design international connectivity — links between sites, SD-WAN, VPN and carrier selection — so your teams work as if they were in the same office.',
       'ct.eyebrow': 'Free 30-minute consultation', 'ct.title': "Let's talk about your business.",
       'ct.sub': "Tell us a little about your company and what you'd like to improve. We'll get back to you within one business day to schedule a call.",
       'ct.b1': 'A clear view of your quick wins', 'ct.b2': 'Honest advice, no strings attached', 'ct.b3': 'Next steps you can act on',
@@ -857,32 +877,35 @@
       'f.ok': 'Thank you! We received your request and will contact you shortly.',
       'f.err': 'Something went wrong. Please try again in a few minutes.',
       'f.invalid': 'Please fill in your name, a valid email and your company.',
-      'ft.tag': 'Technology and AI consulting for small and mid-sized businesses.', 'ft.company': 'Company', 'ft.contact': 'Contact', 'ft.rights': 'All rights reserved.'
+      'ft.tag': 'Technology consulting, networks and AI for small and mid-sized businesses.', 'ft.company': 'Company', 'ft.contact': 'Contact', 'ft.rights': 'All rights reserved.'
     },
     es: {
-      'meta.title': 'Cale Consulting — Consultoría tecnológica y de IA para pymes',
-      'meta.desc': 'Cale Consulting ayuda a pequeñas y medianas empresas a adoptar IA, automatizar procesos y modernizar su tecnología.',
+      'meta.title': 'Cale Consulting — Consultoría tecnológica, redes e IA para pymes',
+      'meta.desc': 'Cale Consulting ayuda a pequeñas y medianas empresas con consultoría tecnológica, diseño de redes cableadas y Wi-Fi, conectividad internacional, transformación digital, automatización e IA.',
       'nav.services': 'Servicios', 'nav.approach': 'Cómo trabajamos', 'nav.why': 'Por qué Cale', 'nav.about': 'Nosotros', 'nav.faq': 'Preguntas',
       'nav.cta': 'Agendar consulta', 'nav.menu': 'Menú',
-      'hero.eyebrow': 'Tecnología e IA para pymes',
-      'hero.title': 'Pon la <span class="shine">IA</span> a trabajar en tu negocio.',
-      'hero.lead': 'Ayudamos a pequeñas y medianas empresas a adoptar inteligencia artificial, automatizar el trabajo repetitivo y modernizar su tecnología, con acompañamiento senior y un retorno claro en cada paso.',
+      'hero.eyebrow': 'Consultoría tecnológica para pymes',
+      'hero.title': 'Tecnología que <span class="shine">impulsa</span> tu negocio.',
+      'hero.lead': 'Desde la red sobre la que funciona tu empresa hasta la IA que la ayuda a crecer: diseñamos, conectamos y modernizamos la tecnología de pequeñas y medianas empresas, con acompañamiento senior y un retorno claro en cada paso.',
       'hero.cta1': 'Agenda una consulta gratuita', 'hero.cta2': 'Ver servicios',
       'hero.m1': '+20 años en tecnología', 'hero.m2': 'Red de partners especialistas', 'hero.m3': 'Pensado para pymes',
       'term.status': 'En curso', 'term.s1': 'Diagnóstico', 'term.s2': 'Piloto', 'term.s3': 'Escala', 'term.foot': 'Ejemplo ilustrativo',
-      'term.lines': [['Procesos mapeados', 24, ''], ['Horas manuales por semana', 61, ' h'], ['Candidatos a automatizar', 9, ''], ['Victorias rápidas con IA', 4, '']],
-      'term.done': 'Hoja de ruta lista · retorno est. 5 meses',
-      'marquee': ['Adopción de IA', 'Automatización de procesos', 'Transformación digital', 'IA generativa', 'Agentes de IA', 'Nube', 'Datos y analítica', 'Integraciones y APIs', 'Ciberseguridad', 'Estrategia tecnológica'],
-      'sv.eyebrow': 'Servicios', 'sv.title': 'Tecnología que se paga sola.',
-      'sv.sub': 'Cuatro áreas, un objetivo: menos trabajo manual, mejores decisiones y una empresa lista para crecer. Empezamos con un diagnóstico y solo recomendamos lo que tiene sentido para tu tamaño y presupuesto.',
-      'sv.1.t': 'Adopción de IA', 'sv.1.d': 'Identificamos dónde la IA genera valor real, elegimos las herramientas adecuadas y capacitamos a tu equipo para usarlas con seguridad, desde asistentes hasta agentes a la medida.', 'sv.1.g': 'IA generativa · Agentes · Capacitación',
-      'sv.2.t': 'Automatización de procesos', 'sv.2.d': 'Eliminamos tareas repetitivas en ventas, finanzas y operaciones conectando tus sistemas y automatizando flujos de principio a fin.', 'sv.2.g': 'Flujos · Integraciones · RPA',
-      'sv.3.t': 'Transformación digital', 'sv.3.d': 'Modernizamos la forma en que trabaja tu empresa: nube, datos y procesos digitales que crecen con tu negocio en lugar de frenarlo.', 'sv.3.g': 'Nube · Datos · Procesos digitales',
-      'sv.4.t': 'Consultoría tecnológica', 'sv.4.d': 'Asesoría senior en arquitectura, selección de software, seguridad y estrategia de TI: como tener un CTO disponible, sin el costo de tiempo completo.', 'sv.4.g': 'Estrategia · Arquitectura · Seguridad',
+      'term.lines': [['Sedes y redes revisadas', 3, ''], ['Brechas de cobertura Wi-Fi', 7, ''], ['Horas manuales por semana', 61, ' h'], ['Victorias rápidas con IA', 4, '']],
+      'term.done': 'Hoja de ruta tecnológica lista · retorno est. 5 meses',
+      'marquee': ['Consultoría tecnológica', 'Diseño de redes', 'Wi-Fi empresarial', 'Cableado estructurado', 'Conectividad internacional', 'SD-WAN', 'Nube', 'Ciberseguridad', 'Transformación digital', 'Automatización de procesos', 'Adopción de IA', 'Agentes de IA'],
+      'sv.eyebrow': 'Servicios', 'sv.title': 'Todo lo que la tecnología de tu empresa necesita.',
+      'sv.sub': 'Seis áreas, un objetivo: tecnología que funciona de forma confiable hoy y está lista para lo que viene. Empezamos con un diagnóstico y solo recomendamos lo que tiene sentido para tu tamaño y presupuesto.',
+      'sv.featured': 'Destacado',
+      'sv.cons.t': 'Consultoría tecnológica', 'sv.cons.d': 'Asesoría senior en estrategia de TI, arquitectura, selección de software y seguridad: como tener un CTO disponible, sin el costo de tiempo completo.', 'sv.cons.g': 'Estrategia · Arquitectura · Seguridad',
+      'sv.ai.t': 'Adopción de IA', 'sv.ai.d': 'Identificamos dónde la IA genera valor real, elegimos las herramientas adecuadas y capacitamos a tu equipo para usarlas con seguridad, desde asistentes hasta agentes a la medida.', 'sv.ai.g': 'IA generativa · Agentes · Capacitación',
+      'sv.net.t': 'Diseño de redes cableadas y Wi-Fi', 'sv.net.d': 'Redes confiables para oficinas, bodegas y locales: cableado estructurado, switching y Wi-Fi empresarial con cobertura total, buen rendimiento y seguridad.', 'sv.net.g': 'Cableado · Switching · Wi-Fi · Estudios de sitio',
+      'sv.intl.t': 'Conectividad internacional', 'sv.intl.d': 'Conectamos tus sedes y equipos entre países con la combinación adecuada de operadores, SD-WAN, VPN y enlaces a la nube: seguro, estable y a un costo razonable.', 'sv.intl.g': 'SD-WAN · VPN · Operadores · Multipaís',
+      'sv.auto.t': 'Automatización de procesos', 'sv.auto.d': 'Eliminamos tareas repetitivas en ventas, finanzas y operaciones conectando tus sistemas y automatizando flujos de principio a fin.', 'sv.auto.g': 'Flujos · Integraciones · RPA',
+      'sv.dx.t': 'Transformación digital', 'sv.dx.d': 'Modernizamos la forma en que trabaja tu empresa: nube, datos y procesos digitales que crecen con tu negocio en lugar de frenarlo.', 'sv.dx.g': 'Nube · Datos · Procesos digitales',
       'sv.link': 'Hablemos',
       'ap.eyebrow': 'Cómo trabajamos', 'ap.title': 'De la idea a los resultados, en pasos cortos y seguros.',
       'ap.sub': 'Sin proyectos eternos. Cada fase entrega algo que puedes usar y medir antes de invertir en la siguiente.',
-      'ap.1.k': '01 · Semanas 1–2', 'ap.1.t': 'Diagnóstico', 'ap.1.d': 'Mapeamos tus procesos, sistemas y datos para encontrar dónde la tecnología ahorra más tiempo y dinero.',
+      'ap.1.k': '01 · Semanas 1–2', 'ap.1.t': 'Diagnóstico', 'ap.1.d': 'Revisamos tu red, sistemas y procesos para encontrar dónde la tecnología ahorra más tiempo y dinero.',
       'ap.2.k': '02 · Semana 3', 'ap.2.t': 'Hoja de ruta', 'ap.2.d': 'Un plan priorizado con costos, plazos y retorno esperado, en lenguaje claro.',
       'ap.3.k': '03 · Semanas 4–8', 'ap.3.t': 'Piloto', 'ap.3.d': 'Construimos y lanzamos la primera victoria rápida junto a tu equipo, para ver resultados pronto.',
       'ap.4.k': '04 · Continuo', 'ap.4.t': 'Escala', 'ap.4.d': 'Extendemos lo que funciona, capacitamos a tu gente y seguimos como tu socio tecnológico.',
@@ -891,13 +914,14 @@
       'why.s1': 'Años en tecnología', 'why.s2': 'Acceso directo a un líder senior', 'why.s3': 'Cada iniciativa ligada a un resultado de negocio',
       'ab.eyebrow': 'Nosotros', 'ab.title': 'Construida sobre dos décadas de experiencia en tecnología.',
       'ab.p1': 'Cale Consulting nace de más de 20 años de experiencia práctica diseñando, implementando y gestionando tecnología para organizaciones de todos los tamaños.',
-      'ab.p2': 'Trabajamos con una red de partners de confianza en nube, datos, ciberseguridad, desarrollo de software e IA, para que tengas al especialista adecuado en cada desafío, coordinado por un único punto de contacto.',
-      'orb.1': 'IA', 'orb.2': 'Nube', 'orb.3': 'Datos', 'orb.4': 'Seguridad', 'orb.5': 'Software', 'orb.6': 'Automatización', 'orb.cap': 'Red de partners',
+      'ab.p2': 'Trabajamos con una red de partners de confianza en redes, telecomunicaciones, nube, ciberseguridad, desarrollo de software e IA, para que tengas al especialista adecuado en cada desafío, coordinado por un único punto de contacto.',
+      'orb.1': 'IA', 'orb.2': 'Nube', 'orb.3': 'Redes', 'orb.4': 'Seguridad', 'orb.5': 'Conectividad', 'orb.6': 'Automatización', 'orb.cap': 'Red de partners',
       'faq.eyebrow': 'Preguntas frecuentes', 'faq.title': 'Respuestas claras.',
       'faq.q1': '¿La IA realmente sirve para una empresa de nuestro tamaño?', 'faq.a1': 'Sí, y muchas veces más que en una gran empresa, porque en equipos pequeños cada hora ahorrada se nota. Empezamos con casos prácticos y de bajo costo, como procesamiento de documentos, atención al cliente y reportes.',
       'faq.q2': '¿Tenemos que cambiar nuestros sistemas actuales?', 'faq.a2': 'Normalmente no. Preferimos conectar y aprovechar mejor las herramientas que ya tienes, y solo recomendamos software nuevo cuando el retorno es claro.',
       'faq.q3': '¿Cuánto cuesta un proyecto?', 'faq.a3': 'Depende del alcance. La primera consulta es gratuita y, tras el diagnóstico, recibes una propuesta por escrito con alcance, plazos y costo antes de cualquier compromiso.',
       'faq.q4': '¿Trabajan de forma remota?', 'faq.a4': 'Sí. Trabajamos de forma remota con clientes en inglés, español y portugués, y de forma presencial cuando el proyecto lo requiere.',
+      'faq.q5': '¿Pueden conectar oficinas en distintos países?', 'faq.a5': 'Sí. Diseñamos la conectividad internacional (enlaces entre sedes, SD-WAN, VPN y selección de operadores) para que tus equipos trabajen como si estuvieran en la misma oficina.',
       'ct.eyebrow': 'Consulta gratuita de 30 minutos', 'ct.title': 'Hablemos de tu negocio.',
       'ct.sub': 'Cuéntanos un poco sobre tu empresa y qué te gustaría mejorar. Te responderemos en un día hábil para agendar la llamada.',
       'ct.b1': 'Una visión clara de tus oportunidades rápidas', 'ct.b2': 'Consejo honesto, sin compromiso', 'ct.b3': 'Próximos pasos concretos',
@@ -909,32 +933,35 @@
       'f.ok': '¡Gracias! Recibimos tu solicitud y te contactaremos pronto.',
       'f.err': 'Algo salió mal. Inténtalo de nuevo en unos minutos.',
       'f.invalid': 'Completa tu nombre, un correo válido y tu empresa.',
-      'ft.tag': 'Consultoría tecnológica y de IA para pequeñas y medianas empresas.', 'ft.company': 'Empresa', 'ft.contact': 'Contacto', 'ft.rights': 'Todos los derechos reservados.'
+      'ft.tag': 'Consultoría tecnológica, redes e IA para pequeñas y medianas empresas.', 'ft.company': 'Empresa', 'ft.contact': 'Contacto', 'ft.rights': 'Todos los derechos reservados.'
     },
     pt: {
-      'meta.title': 'Cale Consulting — Consultoria em tecnologia e IA para PMEs',
-      'meta.desc': 'A Cale Consulting ajuda pequenas e médias empresas a adotar IA, automatizar processos e modernizar sua tecnologia.',
+      'meta.title': 'Cale Consulting — Consultoria em tecnologia, redes e IA para PMEs',
+      'meta.desc': 'A Cale Consulting ajuda pequenas e médias empresas com consultoria em tecnologia, projeto de redes cabeadas e Wi-Fi, conectividade internacional, transformação digital, automação e IA.',
       'nav.services': 'Serviços', 'nav.approach': 'Como trabalhamos', 'nav.why': 'Por que a Cale', 'nav.about': 'Sobre nós', 'nav.faq': 'Perguntas',
       'nav.cta': 'Agendar consulta', 'nav.menu': 'Menu',
-      'hero.eyebrow': 'Tecnologia e IA para PMEs',
-      'hero.title': 'Coloque a <span class="shine">IA</span> para trabalhar no seu negócio.',
-      'hero.lead': 'Ajudamos pequenas e médias empresas a adotar inteligência artificial, automatizar o trabalho repetitivo e modernizar sua tecnologia, com orientação sênior e retorno claro em cada etapa.',
+      'hero.eyebrow': 'Consultoria em tecnologia para PMEs',
+      'hero.title': 'Tecnologia que <span class="shine">impulsiona</span> o seu negócio.',
+      'hero.lead': 'Da rede em que sua empresa funciona até a IA que a ajuda a crescer: projetamos, conectamos e modernizamos a tecnologia de pequenas e médias empresas, com orientação sênior e retorno claro em cada etapa.',
       'hero.cta1': 'Agende uma consulta gratuita', 'hero.cta2': 'Ver serviços',
       'hero.m1': '+20 anos em tecnologia', 'hero.m2': 'Rede de parceiros especialistas', 'hero.m3': 'Feito para PMEs',
       'term.status': 'Em execução', 'term.s1': 'Diagnóstico', 'term.s2': 'Piloto', 'term.s3': 'Escala', 'term.foot': 'Exemplo ilustrativo',
-      'term.lines': [['Processos mapeados', 24, ''], ['Horas manuais por semana', 61, ' h'], ['Candidatos à automação', 9, ''], ['Ganhos rápidos com IA', 4, '']],
-      'term.done': 'Roteiro pronto · retorno est. 5 meses',
-      'marquee': ['Adoção de IA', 'Automação de processos', 'Transformação digital', 'IA generativa', 'Agentes de IA', 'Nuvem', 'Dados e analytics', 'Integrações e APIs', 'Cibersegurança', 'Estratégia de tecnologia'],
-      'sv.eyebrow': 'Serviços', 'sv.title': 'Tecnologia que se paga.',
-      'sv.sub': 'Quatro frentes, um objetivo: menos trabalho manual, decisões melhores e uma empresa pronta para crescer. Começamos com um diagnóstico e só recomendamos o que faz sentido para o seu porte e orçamento.',
-      'sv.1.t': 'Adoção de IA', 'sv.1.d': 'Identificamos onde a IA gera valor real, escolhemos as ferramentas certas e capacitamos sua equipe para usá-las com segurança — de assistentes a agentes sob medida.', 'sv.1.g': 'IA generativa · Agentes · Capacitação',
-      'sv.2.t': 'Automação de processos', 'sv.2.d': 'Eliminamos tarefas repetitivas em vendas, finanças e operações, conectando seus sistemas e automatizando fluxos de ponta a ponta.', 'sv.2.g': 'Fluxos · Integrações · RPA',
-      'sv.3.t': 'Transformação digital', 'sv.3.d': 'Modernizamos a forma como sua empresa trabalha: nuvem, dados e processos digitais que crescem com o seu negócio em vez de travá-lo.', 'sv.3.g': 'Nuvem · Dados · Processos digitais',
-      'sv.4.t': 'Consultoria em tecnologia', 'sv.4.d': 'Assessoria sênior em arquitetura, seleção de software, segurança e estratégia de TI — como ter um CTO à disposição, sem o custo de tempo integral.', 'sv.4.g': 'Estratégia · Arquitetura · Segurança',
+      'term.lines': [['Sedes e redes revisadas', 3, ''], ['Falhas de cobertura Wi-Fi', 7, ''], ['Horas manuais por semana', 61, ' h'], ['Ganhos rápidos com IA', 4, '']],
+      'term.done': 'Roteiro de tecnologia pronto · retorno est. 5 meses',
+      'marquee': ['Consultoria em tecnologia', 'Projeto de redes', 'Wi-Fi corporativo', 'Cabeamento estruturado', 'Conectividade internacional', 'SD-WAN', 'Nuvem', 'Cibersegurança', 'Transformação digital', 'Automação de processos', 'Adoção de IA', 'Agentes de IA'],
+      'sv.eyebrow': 'Serviços', 'sv.title': 'Tudo o que a tecnologia da sua empresa precisa.',
+      'sv.sub': 'Seis frentes, um objetivo: tecnologia que funciona de forma confiável hoje e está pronta para o que vem. Começamos com um diagnóstico e só recomendamos o que faz sentido para o seu porte e orçamento.',
+      'sv.featured': 'Destaque',
+      'sv.cons.t': 'Consultoria em tecnologia', 'sv.cons.d': 'Assessoria sênior em estratégia de TI, arquitetura, seleção de software e segurança — como ter um CTO à disposição, sem o custo de tempo integral.', 'sv.cons.g': 'Estratégia · Arquitetura · Segurança',
+      'sv.ai.t': 'Adoção de IA', 'sv.ai.d': 'Identificamos onde a IA gera valor real, escolhemos as ferramentas certas e capacitamos sua equipe para usá-las com segurança — de assistentes a agentes sob medida.', 'sv.ai.g': 'IA generativa · Agentes · Capacitação',
+      'sv.net.t': 'Projeto de redes cabeadas e Wi-Fi', 'sv.net.d': 'Redes confiáveis para escritórios, armazéns e lojas: cabeamento estruturado, switching e Wi-Fi corporativo com cobertura total, desempenho e segurança.', 'sv.net.g': 'Cabeamento · Switching · Wi-Fi · Site survey',
+      'sv.intl.t': 'Conectividade internacional', 'sv.intl.d': 'Conectamos suas sedes e equipes entre países com a combinação certa de operadoras, SD-WAN, VPN e links para a nuvem — seguro, estável e com custo adequado.', 'sv.intl.g': 'SD-WAN · VPN · Operadoras · Multipaís',
+      'sv.auto.t': 'Automação de processos', 'sv.auto.d': 'Eliminamos tarefas repetitivas em vendas, finanças e operações, conectando seus sistemas e automatizando fluxos de ponta a ponta.', 'sv.auto.g': 'Fluxos · Integrações · RPA',
+      'sv.dx.t': 'Transformação digital', 'sv.dx.d': 'Modernizamos a forma como sua empresa trabalha: nuvem, dados e processos digitais que crescem com o seu negócio em vez de travá-lo.', 'sv.dx.g': 'Nuvem · Dados · Processos digitais',
       'sv.link': 'Fale conosco',
       'ap.eyebrow': 'Como trabalhamos', 'ap.title': 'Da ideia aos resultados, em passos curtos e seguros.',
       'ap.sub': 'Sem projetos intermináveis. Cada fase entrega algo que você pode usar e medir antes de investir na próxima.',
-      'ap.1.k': '01 · Semanas 1–2', 'ap.1.t': 'Diagnóstico', 'ap.1.d': 'Mapeamos seus processos, sistemas e dados para encontrar onde a tecnologia economiza mais tempo e dinheiro.',
+      'ap.1.k': '01 · Semanas 1–2', 'ap.1.t': 'Diagnóstico', 'ap.1.d': 'Revisamos sua rede, sistemas e processos para encontrar onde a tecnologia economiza mais tempo e dinheiro.',
       'ap.2.k': '02 · Semana 3', 'ap.2.t': 'Roteiro', 'ap.2.d': 'Um plano priorizado com custos, prazos e retorno esperado, em linguagem clara.',
       'ap.3.k': '03 · Semanas 4–8', 'ap.3.t': 'Piloto', 'ap.3.d': 'Construímos e lançamos o primeiro ganho rápido com sua equipe, para ver resultados cedo.',
       'ap.4.k': '04 · Contínuo', 'ap.4.t': 'Escala', 'ap.4.d': 'Ampliamos o que funciona, capacitamos sua equipe e seguimos como seu parceiro de tecnologia.',
@@ -943,13 +970,14 @@
       'why.s1': 'Anos em tecnologia', 'why.s2': 'Acesso direto a um líder sênior', 'why.s3': 'Cada iniciativa ligada a um resultado de negócio',
       'ab.eyebrow': 'Sobre nós', 'ab.title': 'Construída sobre duas décadas de experiência em tecnologia.',
       'ab.p1': 'A Cale Consulting nasce de mais de 20 anos de experiência prática no desenho, implementação e gestão de tecnologia para organizações de todos os portes.',
-      'ab.p2': 'Trabalhamos com uma rede de parceiros de confiança em nuvem, dados, cibersegurança, desenvolvimento de software e IA — para que você tenha o especialista certo para cada desafio, coordenado por um único ponto de contato.',
-      'orb.1': 'IA', 'orb.2': 'Nuvem', 'orb.3': 'Dados', 'orb.4': 'Segurança', 'orb.5': 'Software', 'orb.6': 'Automação', 'orb.cap': 'Rede de parceiros',
+      'ab.p2': 'Trabalhamos com uma rede de parceiros de confiança em redes, telecomunicações, nuvem, cibersegurança, desenvolvimento de software e IA — para que você tenha o especialista certo para cada desafio, coordenado por um único ponto de contato.',
+      'orb.1': 'IA', 'orb.2': 'Nuvem', 'orb.3': 'Redes', 'orb.4': 'Segurança', 'orb.5': 'Conectividade', 'orb.6': 'Automação', 'orb.cap': 'Rede de parceiros',
       'faq.eyebrow': 'Perguntas frequentes', 'faq.title': 'Respostas claras.',
       'faq.q1': 'A IA é realmente útil para uma empresa do nosso porte?', 'faq.a1': 'Sim — muitas vezes mais do que em grandes empresas, porque em equipes pequenas cada hora economizada faz diferença. Começamos com casos práticos e de baixo custo, como processamento de documentos, atendimento ao cliente e relatórios.',
       'faq.q2': 'Precisamos trocar nossos sistemas atuais?', 'faq.a2': 'Normalmente não. Preferimos conectar e aproveitar melhor as ferramentas que você já tem, e só recomendamos um novo software quando o retorno é claro.',
       'faq.q3': 'Quanto custa um projeto?', 'faq.a3': 'Depende do escopo. A primeira consulta é gratuita e, após o diagnóstico, você recebe uma proposta por escrito com escopo, prazos e custo antes de qualquer compromisso.',
       'faq.q4': 'Vocês trabalham remotamente?', 'faq.a4': 'Sim. Trabalhamos remotamente com clientes em inglês, espanhol e português, e presencialmente quando o projeto exige.',
+      'faq.q5': 'Vocês conseguem conectar escritórios em países diferentes?', 'faq.a5': 'Sim. Projetamos a conectividade internacional — links entre sedes, SD-WAN, VPN e seleção de operadoras — para que suas equipes trabalhem como se estivessem no mesmo escritório.',
       'ct.eyebrow': 'Consulta gratuita de 30 minutos', 'ct.title': 'Vamos conversar sobre o seu negócio.',
       'ct.sub': 'Conte um pouco sobre sua empresa e o que você gostaria de melhorar. Responderemos em até um dia útil para agendar a conversa.',
       'ct.b1': 'Uma visão clara dos seus ganhos rápidos', 'ct.b2': 'Conselho honesto, sem compromisso', 'ct.b3': 'Próximos passos concretos',
@@ -961,7 +989,7 @@
       'f.ok': 'Obrigado! Recebemos sua solicitação e entraremos em contato em breve.',
       'f.err': 'Algo deu errado. Tente novamente em alguns minutos.',
       'f.invalid': 'Preencha seu nome, um e-mail válido e sua empresa.',
-      'ft.tag': 'Consultoria em tecnologia e IA para pequenas e médias empresas.', 'ft.company': 'Empresa', 'ft.contact': 'Contato', 'ft.rights': 'Todos os direitos reservados.'
+      'ft.tag': 'Consultoria em tecnologia, redes e IA para pequenas e médias empresas.', 'ft.company': 'Empresa', 'ft.contact': 'Contato', 'ft.rights': 'Todos os direitos reservados.'
     }
   };
 
@@ -988,17 +1016,10 @@
     document.getElementById('menuBtn').setAttribute('aria-label', t('nav.menu'));
     buildMarquee();
     runTerminal();
-    store.set('cale-lang', lang);
   }
 
   document.querySelectorAll('.lang button').forEach(b => b.addEventListener('click', () => applyLang(b.dataset.lang)));
 
-  function initialLang() {
-    const saved = store.get('cale-lang');
-    if (saved && I18N[saved]) return saved;
-    const nav = (navigator.language || 'en').slice(0, 2).toLowerCase();
-    return I18N[nav] ? nav : 'en';
-  }
 
   /* ================= NAVEGACIÓN ================= */
   const navEl = document.getElementById('nav');
@@ -1030,7 +1051,7 @@
   async function runTerminal() {
     const id = ++runId;
     const lines = t('term.lines');
-    const cmd = '$ cale assess <b>--company</b> your-business';
+    const cmd = '$ cale assess <b>--scope</b> network,cloud,ai';
     if (reduceMotion) {
       term.innerHTML = `<div class="cmd">${cmd}</div>` + lines.map(([l, v, u]) => lineHTML(l, v + u)).join('') + lineHTML(t('term.done'), undefined, 'done');
       setStage(2); return;
@@ -1038,7 +1059,7 @@
     setStage(-1);
     term.innerHTML = '<div class="cmd"><span id="typed"></span><span class="caret"></span></div>';
     const typed = document.getElementById('typed');
-    const plain = '$ cale assess --company your-business';
+    const plain = '$ cale assess --scope network,cloud,ai';
     for (let i = 1; i <= plain.length; i++) {
       if (id !== runId) return;
       typed.textContent = plain.slice(0, i);
@@ -1169,7 +1190,8 @@
     }
   });
 
-  applyLang(initialLang());
+  // La página siempre abre en inglés; el visitante cambia de idioma con el selector.
+  applyLang('en');
   </script>
 </body>
 </html>

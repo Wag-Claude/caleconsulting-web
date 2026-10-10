@@ -3,7 +3,7 @@
 Sitio corporativo de **Cale Consulting** (consultoría tecnológica y de IA para pymes) para el dominio **caleconsulting.net**.
 
 - **Tipo:** sitio estático (un solo archivo HTML con estilos y código incluidos). No necesita servidor, base de datos ni instalación.
-- **Idiomas:** inglés (principal), español y portugués, con selector en el menú.
+- **Idiomas:** inglés (principal), español y portugués, con selector en el menú. La página **siempre abre en inglés**.
 - **Estado:** diseño y contenido listos. Falta conectar el formulario y publicar (ver [Pendientes](#pendientes)).
 
 ---
@@ -73,7 +73,7 @@ Busca `'sv.title'` en el archivo y verás las 3 versiones (en, es, pt). Cambia l
 | `hero.*` | Portada (titular, subtítulo, botones) |
 | `term.*` | Terminal animada de la portada |
 | `marquee` | Franja de capacidades que se desplaza |
-| `sv.*` | Servicios (`sv.1` = IA, `sv.2` = Automatización, `sv.3` = Transformación digital, `sv.4` = Consultoría) |
+| `sv.*` | Servicios: `sv.cons` Consultoría tecnológica, `sv.ai` Adopción de IA (tarjeta destacada), `sv.net` Redes cableadas y Wi-Fi, `sv.intl` Conectividad internacional, `sv.auto` Automatización, `sv.dx` Transformación digital. Cada uno tiene `.t` (título), `.d` (descripción) y `.g` (etiquetas). |
 | `ap.*` | Cómo trabajamos (4 pasos) |
 | `why.*` | Por qué Cale (tarjeta clara) |
 | `ab.*`, `orb.*` | Nosotros y la órbita de partners |
@@ -93,7 +93,7 @@ Al inicio del `<style>`, en `:root`, están las variables. Por ejemplo `--orange
 
 ### Agregar o quitar un servicio
 
-Copia/borra un bloque `<article class="card">` en la sección `#services`, agrega sus claves `sv.5.*` en los 3 idiomas y ajusta `.cards { grid-template-columns: repeat(4, 1fr) }` al nuevo número.
+Copia o borra un bloque `<article class="card">` en la sección `#services`, agrega sus claves `sv.<nombre>.t/.d/.g` en los 3 idiomas, y súmalo también al selector del formulario (`#f-topic`) y a la lista del pie de página. La cuadrícula es de 3 columnas (`.cards`). Para destacar una tarjeta se le agrega la clase `featured`.
 
 ---
 

@@ -5,7 +5,7 @@ Sitio corporativo de Cale Consulting, **en línea en https://caleconsulting.net*
 
 ## Contexto del negocio
 
-- Consultoría tecnológica para **pymes**: Adopción de IA, Automatización de procesos, Transformación digital, Consultoría tecnológica.
+- Consultoría tecnológica para **pymes**: Consultoría tecnológica, Adopción de IA (destacada, pero **no** es una empresa solo de IA), Diseño de redes cableadas y Wi-Fi, Conectividad internacional, Automatización de procesos, Transformación digital.
 - Empresa **nueva**. El fundador tiene +20 años en tecnología y una red de partners especialistas.
 - **No hay clientes, casos, testimonios ni cifras de resultados reales. No inventarlos.** Cualquier número ilustrativo debe ir marcado como ejemplo.
 - Nombre y foto del fundador: aún no proporcionados.
@@ -27,7 +27,9 @@ Sitio corporativo de Cale Consulting, **en línea en https://caleconsulting.net*
 | 2026-10-08 | Sitio estático a la medida, **no** Google Sites | Sites no reproduce la guía de estilo. |
 | 2026-10-08 | Hosting: **GitHub Pages** vía GitHub Actions (`.github/workflows/publicar.yml` publica `web/`) | $0 y HTTPS automático. El dominio se conecta con registros A/CNAME sin mover los nameservers, así que el correo de Workspace no corre riesgo (Cloudflare Pages exigía mover los nameservers para usar el dominio raíz). |
 | 2026-10-08 | Un solo `index.html` con CSS/JS/textos incluidos | Simple de mantener y publicar; sin dependencias ni compilación. |
-| 2026-10-08 | Traducción por JS (`I18N`), con detección del idioma del navegador y memoria en `localStorage` | Pedido EN/ES/PT. Limitación: Google solo indexa la versión en inglés. |
+| 2026-10-08 | Traducción por JS (`I18N`) | Pedido EN/ES/PT. Limitación: Google solo indexa la versión en inglés. |
+| 2026-10-10 | La página **siempre abre en inglés**: sin detección del idioma del navegador ni memoria del idioma elegido | Pedido del cliente. |
+| 2026-10-10 | Posicionamiento: **consultoría tecnológica integral**, no solo IA. 6 servicios: Consultoría tecnológica, Adopción de IA (destacada), Redes cableadas y Wi-Fi, Conectividad internacional, Automatización, Transformación digital | El cliente quiere que la IA sea relevante pero que la empresa no parezca solo de IA. |
 | 2026-10-08 | Formulario → Web3Forms | Gratis, sin servidor, oculta el correo. |
 | 2026-10-08 | Imágenes generadas con código (canvas/SVG), sin fotos de stock | Encajan con el estilo y no tienen problemas de licencia. |
 | 2026-10-08 | Logo: "C" abierta + punto naranja | No existía logo. |
@@ -40,6 +42,7 @@ Sitio corporativo de Cale Consulting, **en línea en https://caleconsulting.net*
 | Textos (3 idiomas) | `const I18N` al final de `web/index.html` |
 | Colores / variables | `:root` al inicio del `<style>` |
 | Logo y favicon | [web/assets/](web/assets/) |
+| Propuestas de logo (5 + actual) | [docs/logos/propuestas.html](docs/logos/propuestas.html) |
 | Guía de estilo | [DESIGN.md](DESIGN.md) |
 | Historial | [docs/BITACORA.md](docs/BITACORA.md) |
 | Repositorio en GitHub | https://github.com/Wag-Claude/caleconsulting-web |
@@ -53,6 +56,7 @@ Sitio corporativo de Cale Consulting, **en línea en https://caleconsulting.net*
 - [ ] Confirmar los textos que implican compromisos: "respondemos en 1 día hábil", "atendemos en EN/ES/PT", plazos del método (semanas 1–2 / 3 / 4–8).
 - [ ] Nombre y foto del fundador para "About".
 - [ ] LinkedIn de la empresa.
+- [ ] Elegir logo entre las 5 propuestas de `docs/logos/propuestas.html` y aplicarlo (nav, pie, órbita, favicon, `web/assets/`).
 - [ ] Logo con el texto convertido a trazos (hoy `logo.svg` depende de la fuente Geist) y PNG para redes.
 - [ ] Imagen para compartir en redes (`og:image`, 1200×630).
 - [x] Publicado en https://caleconsulting.net con HTTPS (2026-10-10).

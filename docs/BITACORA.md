@@ -21,6 +21,17 @@ Registro de todo lo realizado, del más reciente al más antiguo. Agregar una en
 
 ## 2026-10-10 — Sesión 3
 
+### 4. Cambios pedidos por el cliente (v3)
+- **Idioma:** la página siempre abre en **inglés**. Se quitó la detección del idioma del navegador y la memoria del idioma elegido.
+- **Nombre más grande:** "Cale Consulting" en el menú pasó de 20px a 25px, con logo de 34px y barra de 76px. En celular pasó de 17px a 20px, y en el pie de página a 28px.
+- **Nuevo posicionamiento** (no solo IA):
+  - Titular: *"Technology that drives your business forward."* (ES: *"Tecnología que impulsa tu negocio."*, PT: *"Tecnologia que impulsiona o seu negócio."*).
+  - 6 servicios en una cuadrícula de 3 columnas: Consultoría tecnológica, **Adopción de IA (tarjeta destacada con brillo naranja)**, Redes cableadas y Wi-Fi, Conectividad internacional, Automatización y Transformación digital. Hay íconos nuevos de Wi-Fi y de globo.
+  - Actualizados en consecuencia: la terminal animada (sedes, Wi-Fi, horas manuales, IA), la marquesina, el paso 1 del método, el texto de partners (redes y telecomunicaciones), la órbita (Networks, Connectivity), el formulario (6 opciones), el pie, la nueva pregunta frecuente 5 (oficinas en varios países), el SEO y los datos estructurados.
+  - Las claves de los servicios pasaron de `sv.1..4` a nombres: `sv.cons`, `sv.ai`, `sv.net`, `sv.intl`, `sv.auto`, `sv.dx`.
+- **Logo:** 5 propuestas en `docs/logos/propuestas.html` (Señal, Red, Globo, Chispa, Terminal) más la actual, mostradas en grande, junto al nombre sobre fondo oscuro y claro, y en tamaño ícono. Pendiente: la elección del cliente.
+- Verificado: todas las claves de texto existen en los 3 idiomas, la página abre en inglés aunque haya un idioma guardado, no hay errores en la consola, no hay desbordes en celular y la cuadrícula es de 3 columnas en escritorio.
+
 ### 3. 🚀 Sitio publicado en https://caleconsulting.net
 - El usuario marcó **Enforce HTTPS** en GitHub.
 - Comprobado: `https://caleconsulting.net` responde 200 con certificado válido. `http://` y `www` redirigen con 301 a `https://caleconsulting.net/`. Fuentes, idiomas y formulario cargan bien, sin errores en la consola y sin desbordes en celular.
