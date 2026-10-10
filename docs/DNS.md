@@ -41,7 +41,7 @@ No había registros A/CNAME para `@` ni `www`, así que no se borró nada.
 | AAAA | `@` | `2606:50c0:8002::153` |
 | AAAA | `@` | `2606:50c0:8003::153` |
 | CNAME | `www` | `wag-claude.github.io` |
-| TXT | `_github-pages-challenge-wag-claude` | *(código de verificación de GitHub; aún no agregado: es opcional pero recomendado)* |
+| TXT | `_github-pages-challenge-Wag-Claude` | `7a55538141de43c78a25e87e4f6c18` (verificación del dominio en GitHub; agregado el 2026-10-10. Es público por naturaleza, no es secreto) |
 
 ## ✅ Resuelto (2026-10-10): dominio en "clientHold"
 
