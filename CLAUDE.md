@@ -56,7 +56,7 @@ Sitio corporativo de Cale Consulting, **en línea en https://caleconsulting.net*
 - [ ] Logo con el texto convertido a trazos (hoy `logo.svg` depende de la fuente Geist) y PNG para redes.
 - [ ] Imagen para compartir en redes (`og:image`, 1200×630).
 - [x] Publicado en https://caleconsulting.net con HTTPS (2026-10-10).
-- [ ] Verificar el dominio en GitHub (TXT `_github-pages-challenge-wag-claude`, desde https://github.com/settings/pages).
+- [x] Dominio verificado en GitHub (2026-10-10).
 - [ ] Google Analytics + Search Console.
 - [ ] (Opcional) Páginas `/es/` y `/pt/` para SEO multilingüe.
 - [ ] (Opcional) Política de privacidad, recomendable al recoger datos con el formulario.

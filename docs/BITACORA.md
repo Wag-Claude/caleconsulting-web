@@ -24,7 +24,7 @@ Registro de todo lo realizado, del más reciente al más antiguo. Agregar una en
 ### 3. 🚀 Sitio publicado en https://caleconsulting.net
 - El usuario marcó **Enforce HTTPS** en GitHub.
 - Comprobado: `https://caleconsulting.net` responde 200 con certificado válido. `http://` y `www` redirigen con 301 a `https://caleconsulting.net/`. Fuentes, idiomas y formulario cargan bien, sin errores en la consola y sin desbordes en celular.
-- Se agregó en Squarespace el TXT de verificación de GitHub (`_github-pages-challenge-Wag-Claude`) y se confirmó que se ve públicamente con el valor correcto. Siguiente: hacer clic en **Verify** en https://github.com/settings/pages
+- Se agregó en Squarespace el TXT de verificación de GitHub (`_github-pages-challenge-Wag-Claude`) y se confirmó que se ve públicamente con el valor correcto. El usuario hizo clic en **Verify** y GitHub marcó el dominio como **verificado**. ✅ Publicación terminada.
 
 ### 2. Suspensión levantada: el dominio ya abre la página
 - El usuario cambió el correo de contacto en Squarespace por uno externo y lo verificó. RDAP ya no muestra "client hold".
