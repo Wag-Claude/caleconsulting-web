@@ -21,6 +21,12 @@ Registro de todo lo realizado, del más reciente al más antiguo. Agregar una en
 
 ## 2026-10-10 — Sesión 3
 
+### 2. Suspensión levantada: el dominio ya abre la página
+- El usuario cambió el correo de contacto en Squarespace por uno externo y lo verificó. RDAP ya no muestra "client hold".
+- Comprobado: el MX del correo resuelve de nuevo. `http://caleconsulting.net` responde 200 con la página y `www` redirige con 301 al dominio sin www.
+- HTTPS aún no responde porque GitHub está emitiendo el certificado. Falta marcar **Enforce HTTPS** en Settings → Pages.
+- El TXT de verificación de GitHub (`_github-pages-challenge-wag-claude`) todavía no está agregado.
+
 ### 1. El dominio no resuelve: está en clientHold
 - El usuario agregó los registros A/AAAA/CNAME en Squarespace y configuró el dominio personalizado en GitHub, pero GitHub mostró "DNS check unsuccessful" (InvalidDNSError).
 - Diagnóstico: los DNS públicos responden NXDOMAIN para todo el dominio, incluido el MX. RDAP de Verisign: estado **client hold**. El problema no son los registros, sino que el registrador tiene el dominio suspendido. Detalle y solución en `docs/DNS.md`.

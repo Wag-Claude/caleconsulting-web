@@ -41,9 +41,13 @@ No había registros A/CNAME para `@` ni `www`, así que no se borró nada.
 | AAAA | `@` | `2606:50c0:8002::153` |
 | AAAA | `@` | `2606:50c0:8003::153` |
 | CNAME | `www` | `wag-claude.github.io` |
-| TXT | `_github-pages-challenge-wag-claude` | *(código de verificación que da GitHub)* |
+| TXT | `_github-pages-challenge-wag-claude` | *(código de verificación de GitHub; aún no agregado: es opcional pero recomendado)* |
 
-## ⚠️ Problema detectado (2026-10-10): dominio en "clientHold"
+## ✅ Resuelto (2026-10-10): dominio en "clientHold"
+
+**Resolución:** Squarespace no podía verificar el contacto porque el correo era admin@caleconsulting.net, que no recibía mensajes justamente por la suspensión. El usuario cambió el contacto a un correo externo y lo verificó. La suspensión se levantó el 2026-10-10 a las 18:29 UTC: el MX, los A/AAAA y el CNAME de www ya resuelven. **Regla para el futuro:** el correo de contacto del dominio debe ser siempre uno externo al propio dominio.
+
+### Detalle original del problema
 
 - La consulta RDAP de Verisign (el registro de .net) muestra el estado **`client hold`** para caleconsulting.net. Con ese estado el dominio **no resuelve en internet**: ni la web, ni el correo (MX), ni nada. Los DNS públicos responden NXDOMAIN para todo.
 - Datos: registrado el 2024-01-31, vence el 2027-01-31, último cambio el 2026-01-16. Registrador: Squarespace Domains II LLC. Nameservers: `ns-cloud-d1..d4.googledomains.com`.
