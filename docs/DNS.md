@@ -43,6 +43,14 @@ No había registros A/CNAME para `@` ni `www`, así que no se borró nada.
 | CNAME | `www` | `wag-claude.github.io` |
 | TXT | `_github-pages-challenge-wag-claude` | *(código de verificación que da GitHub)* |
 
+## ⚠️ Problema detectado (2026-10-10): dominio en "clientHold"
+
+- La consulta RDAP de Verisign (el registro de .net) muestra el estado **`client hold`** para caleconsulting.net. Con ese estado el dominio **no resuelve en internet**: ni la web, ni el correo (MX), ni nada. Los DNS públicos responden NXDOMAIN para todo.
+- Datos: registrado el 2024-01-31, vence el 2027-01-31, último cambio el 2026-01-16. Registrador: Squarespace Domains II LLC. Nameservers: `ns-cloud-d1..d4.googledomains.com`.
+- Causa más común: **no se verificó el correo del titular** (verificación de contacto exigida por ICANN). El registrador pone el dominio en *hold* si no se confirma en 15 días. Como el vencimiento es en 2027, no parece un problema de pago.
+- Solución: en Squarespace → dominio → revisar avisos o "Información general" → reenviar el correo de verificación del contacto → hacer clic en el enlace. El *hold* se levanta en minutos u horas. Si no aparece ninguna opción, contactar al soporte de Squarespace Domains.
+- Comprobar el estado: `https://rdap.verisign.com/net/v1/domain/caleconsulting.net` (el estado debe dejar de incluir "client hold").
+
 ## Recomendación pendiente
 
 - Falta un registro **DMARC** (`TXT _dmarc`). No es urgente, pero mejora la entrega del correo y protege contra suplantación. Valor inicial sugerido: `v=DMARC1; p=none; rua=mailto:<correo-de-reportes>`.

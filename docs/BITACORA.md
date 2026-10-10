@@ -19,6 +19,13 @@ Registro de todo lo realizado, del más reciente al más antiguo. Agregar una en
 - En línea en https://wag-claude.github.io/caleconsulting-web/ : responde 200, el logo y el favicon cargan, y no hay errores en la consola.
 - Siguiente: conectar el dominio caleconsulting.net (Pasos 1, 5, 6 y 7 de `docs/PUBLICAR.md`).
 
+## 2026-10-10 — Sesión 3
+
+### 1. El dominio no resuelve: está en clientHold
+- El usuario agregó los registros A/AAAA/CNAME en Squarespace y configuró el dominio personalizado en GitHub, pero GitHub mostró "DNS check unsuccessful" (InvalidDNSError).
+- Diagnóstico: los DNS públicos responden NXDOMAIN para todo el dominio, incluido el MX. RDAP de Verisign: estado **client hold**. El problema no son los registros, sino que el registrador tiene el dominio suspendido. Detalle y solución en `docs/DNS.md`.
+- Consecuencia: el correo @caleconsulting.net probablemente **no recibe mensajes desde fuera** mientras dure el hold.
+
 ## 2026-10-08 — Sesión 1: diseño y construcción inicial
 
 ### 5. Preparación para publicar
