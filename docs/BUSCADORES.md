@@ -17,7 +17,7 @@
 2. **Agregar propiedad** → elige **Dominio** (la opción de la izquierda) → escribe `caleconsulting.net` → **Continuar**.
 3. Si aparece "Propiedad verificada automáticamente", listo: ocurre porque el dominio ya está verificado en Google Workspace con esa misma cuenta.
 4. Si pide un registro **TXT** (`google-site-verification=...`), agrégalo en Squarespace → DNS → Registros personalizados (tipo TXT, nombre `@`) y haz clic en **Verificar**. **No borres el TXT de SPF** que ya existe: son registros distintos y deben convivir.
-5. Menú izquierdo → **Sitemaps** → escribe `sitemap.xml` → **Enviar**.
+5. Menú izquierdo → **Sitemaps** → escribe la dirección **completa** `https://caleconsulting.net/sitemap.xml` (en una propiedad de tipo Dominio no basta con `sitemap.xml`) → **Enviar**.
 6. Barra superior → pega `https://caleconsulting.net/` → **Solicitar indexación**.
 
 ### 2. Bing Webmaster Tools (cubre Bing, Yahoo, DuckDuckGo, Ecosia y otros)
