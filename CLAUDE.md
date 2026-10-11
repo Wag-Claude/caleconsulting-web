@@ -51,6 +51,7 @@ Sitio corporativo de Cale Consulting, **en línea en https://caleconsulting.net*
 | Historial | [docs/BITACORA.md](docs/BITACORA.md) |
 | Repositorio en GitHub | https://github.com/Wag-Claude/caleconsulting-web |
 | DNS (respaldo y registros de la web) | [docs/DNS.md](docs/DNS.md) |
+| Buscadores (SEO, Search Console, Bing) | [docs/BUSCADORES.md](docs/BUSCADORES.md) |
 | Guía de publicación paso a paso | [docs/PUBLICAR.md](docs/PUBLICAR.md) |
 | Vista previa | config `cale-web` en `C:\Users\wwpch\.claude\launch.json` (la que lee el navegador integrado) y en `.claude/launch.json` → http://localhost:5500 |
 
@@ -65,6 +66,8 @@ Sitio corporativo de Cale Consulting, **en línea en https://caleconsulting.net*
 - [ ] Imagen para compartir en redes (`og:image`, 1200×630).
 - [x] Publicado en https://caleconsulting.net con HTTPS (2026-10-10).
 - [x] Dominio verificado en GitHub (2026-10-10).
-- [ ] Google Analytics + Search Console.
+- [x] robots.txt, sitemap.xml y dirección canónica (2026-10-11).
+- [ ] Google Search Console + sitemap, Bing Webmaster Tools y Perfil de Empresa de Google (lo hace el usuario; ver docs/BUSCADORES.md).
+- [ ] Google Analytics.
 - [ ] (Opcional) Páginas `/es/` y `/pt/` para SEO multilingüe.
 - [ ] (Opcional) Política de privacidad, recomendable al recoger datos con el formulario.

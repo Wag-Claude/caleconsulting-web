@@ -4,4 +4,4 @@ desktop.ini
 *.log
 
 # Notas personales sueltas en la raíz
-*.txt
+/*.txt
