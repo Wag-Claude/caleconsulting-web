@@ -43,6 +43,12 @@ No había registros A/CNAME para `@` ni `www`, así que no se borró nada.
 | CNAME | `www` | `wag-claude.github.io` |
 | TXT | `_github-pages-challenge-Wag-Claude` | `7a55538141de43c78a25e87e4f6c18` (verificación del dominio en GitHub; agregado el 2026-10-10. Es público por naturaleza, no es secreto) |
 
+## Registros para Google Search Console
+
+| Tipo | Nombre | Datos |
+|---|---|---|
+| TXT | `@` | `google-site-verification=jlwahXkka6xSIS11X8H7zJnU9qm8afF19qSHPPD0JmU` (agregado el 2026-10-11; convive con el TXT de SPF, **no borrar ninguno**) |
+
 ## ✅ Resuelto (2026-10-10): dominio en "clientHold"
 
 **Resolución:** Squarespace no podía verificar el contacto porque el correo era admin@caleconsulting.net, que no recibía mensajes justamente por la suspensión. El usuario cambió el contacto a un correo externo y lo verificó. La suspensión se levantó el 2026-10-10 a las 18:29 UTC: el MX, los A/AAAA y el CNAME de www ya resuelven. **Regla para el futuro:** el correo de contacto del dominio debe ser siempre uno externo al propio dominio.
