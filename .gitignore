@@ -5,3 +5,6 @@ desktop.ini
 
 # Notas personales sueltas en la raíz
 /*.txt
+
+# Documentos internos del negocio (precios, estrategia): nunca al repositorio público
+*.pdf
